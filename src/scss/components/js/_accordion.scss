@@ -1,0 +1,49 @@
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  &.active {
+    transition: all 0.4s;
+    .accordion__arrow {
+      transition: all 0.4s;
+      transform: rotate(180deg);
+    }
+  }
+  .accordion__arrow {
+    transition: all 0.4s;
+    transform: rotate(0deg);
+    margin-right: 6px;
+  }
+}
+
+/* Add a symbol to each button to indicate whether the collapsible content is open or closed */
+/* .accordion:after {
+  content: "\02795";
+  font-size: 10px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+} */
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  /* display: none; */
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}

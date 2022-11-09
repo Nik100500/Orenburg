@@ -1,0 +1,226 @@
+
+.nav {
+  display: -webkit-inline-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+  width: 100vw;
+  z-index: 999;
+  @media screen and (min-width: 640px){
+    padding: 0 80px;
+  }
+  @media screen and (min-width: 950px){
+    display: none;
+  }
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 16px;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  // z-index: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 24px;
+  svg {
+    -webkit-transition: .3s;
+    transition: .3s;
+    fill: #1d1d1d;
+  }
+  &.is-active {
+    color: #ED0807;
+    svg {
+      fill: #ED0807;
+      scale: 1.2;
+    }
+    .bottom-sheet-wrapper {
+      transition: all .25s;
+      z-index: 11;
+      .backdrop {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .bottom-sheet {
+        position: fixed;
+        bottom: 0;
+        left: 1.5%;
+        width: 97vw;
+        height: 30vh;
+        background: #FFFFFF;
+        border-radius: 16px 16px 0px 0px;
+      }
+    }
+  }
+  
+  /* .bottom-sheet-wrapper {
+    transition: all .25s;
+    transform: translateY(-100%);
+    .backdrop {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .bottom-sheet {
+      position: fixed;
+      bottom: 0;
+      left: 1.5%;
+      width: 97vw;
+      height: 30vh;
+      background: #FFFFFF;
+      border-radius: 16px 16px 0px 0px;
+    }
+  } */
+
+  .bottom-sheet-wrapper {
+    /* .backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background: rgba(0, 0, 0, 0.6);
+      transition: all 0.2s ease-in-out;
+      opacity: 0;
+      pointer-events: none;
+    }
+  
+    .bottom-sheet {
+      background: #fff;
+      width: 97%;
+      // min-height: 200px;
+      height: 0;
+      position: absolute;
+      z-index: 2;
+      border-radius: 15px;
+      transition: all 0.2s ease-in-out;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -110%;
+      opacity: 0;
+    } */
+  
+    /* &.show-modal {
+      height: 100px;
+      .backdrop {
+        opacity: 1;
+        pointer-events: all;
+      }
+  
+      .bottom-sheet {
+        bottom: 5px;
+      }
+  
+      
+  
+      .close {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin: 10px;
+        cursor: pointer;
+  
+        span {
+          display: block;
+          width: 100%;
+          height: 2px;
+          border-radius: 2px;
+          background: red;
+          transform: rotate(45deg);
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            border-radius: 2px;
+            background: red;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    } */
+  }
+}
+.nav-item:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #dfe2ea;
+  border-radius: 8px 8px 0 0;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+.nav-item:not(.is-active):hover {
+  color: #333;
+}
+
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+/* @media (max-width: 580px) {
+  .nav {
+    overflow: auto;
+  }
+} */
+
+
+/* Copyright (c) 2022 Ivan Teplov */
+
+/* html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+  overflow: hidden;
+  line-height: 1.5;
+
+  -webkit-tap-highlight-color: transparent;
+} */
+
+
+

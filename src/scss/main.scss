@@ -1,0 +1,32 @@
+// базовые подключения
+@import "reset";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+
+// @import "./components/js/modal";
+@import "./components/js/accordion";
+@import "./components/js/select-dropdown";
+@import "./components/js/filter";
+@import "./components/js/resize-form";
+@import "./components/js/tab-bar";
+@import "./components/js/keen-slider";
+@import "./components/js/bottom-sheet";
+
+@import "./components/input-sizer";
+@import "./components/switcher";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/management";
+@import "./components/residents";
+@import "./components/events";
+@import "./components/career";
+@import "./components/faq";
+@import "./components/preview";
+@import "./components/benefits";
+@import "./components/map";
+

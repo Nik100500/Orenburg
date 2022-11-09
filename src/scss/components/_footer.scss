@@ -1,0 +1,232 @@
+.footer {
+  background: #FFFFFF;
+  backdrop-filter: blur(333px);
+  font-family: 'Onest';
+  width: 100%;
+  padding: 20px 16px 32px 16px;
+  @media screen and (min-width: 950px) {
+    padding: 61px 16px 77px 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 61px 74px 77px 74px;
+  }
+  // border-bottom: 1px solid rgba(29, 29, 29, 0.2);
+  &__content {
+    flex-direction: row;
+    width: 100%;
+    display: none;
+    @media screen and (min-width: 950px){
+      display: flex;
+      .content {
+        &-left {
+          width: 187px;
+          color: #1D1D1D;
+          @media screen and (min-width: 1150px) {
+            width: 227px;
+          }
+          &__logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            margin-bottom: 28px;
+            .logo {
+              &__icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              &__title {
+                font-weight: 800;
+              }
+            }
+          }
+          &__rows {
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            .row {
+              &.row-1 {
+                margin-bottom: 16px;
+              }
+              &.row-2 {
+                margin-bottom: 28px;
+              }
+            }
+          }
+        }
+        &-center {
+          width: calc(100% - 277px);
+          @media screen and (min-width: 1150px) {
+            width: calc(100% - 454px);
+          }
+          color: #1D1D1D;
+          display: flex;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 300;
+          align-items: center;
+          justify-content: center;
+          &__cols {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 28px;
+            height: 100%;
+            @media screen and (min-width: 1150px) {
+              gap: 56px;
+            }
+            .col {
+              display: flex;
+              flex-direction: column;
+              gap: 11px;
+              &.center {
+                @media screen and (min-width: 1150px) {
+                  margin-right: 40px;
+                }
+              }
+              &__item {
+                &.title {
+                  text-transform: uppercase;
+                  font-weight: 500;
+                  font-size: 14px;
+                  margin-bottom: 7px;
+                  @media screen and (min-width: 1450px){
+                    font-size: 16px;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &-right {
+          width: 90px;
+          @media screen and (min-width: 1150px) {
+            width: 227px;
+          }
+          &__items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 12px;
+            height: 100%;
+            .item {
+              height: 38px;
+              width: 38px;
+              background: rgba(12, 49, 76, .1);
+              border-radius: 6px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &.telegram {
+                padding-right: 2.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    
+    &-mobile {
+      display: block;
+      .content {
+        display: flex;
+        flex-direction: column;
+        &__top {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 35px;
+          .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            &__title {
+              font-weight: 800;
+              font-size: 18px;
+              line-height: 23px;
+              display: flex;
+              align-items: center;
+              color: #1D1D1D;
+            }
+          }
+          .social {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            &__item {
+              height: 38px;
+              width: 38px;
+              background: rgba(12, 49, 76, .1);
+              border-radius: 6px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &.telegram {
+                padding-right: 2.5px;
+              }
+            }
+          }
+        }
+        .accordion {
+          background: #FFF;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .panel {
+          .col {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            margin-left: 18px;
+            &__item {
+              color: #1D1D1D;
+              display: flex;
+              font-size: 14px;
+              line-height: 18px;
+              font-weight: 300;
+              &:last-child {
+                margin-bottom: 16px;
+              }
+            }
+          }
+        }
+      }
+      .discription {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 36px;
+        padding: 0 2px;
+        &__item {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 15px;
+          display: flex;
+          align-items: center;
+          color: #1D1D1D;
+          opacity: 0.7;        
+        }
+        .underline {
+          width: 100%;
+          height: 1px;
+          background: #1D1D1D;
+          opacity: .1;
+        }
+      }
+      @media screen and (min-width: 950px){
+        display: none;
+      }
+    }
+  }
+}

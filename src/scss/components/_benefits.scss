@@ -1,0 +1,53 @@
+.benefits {
+  &__main {
+    &__content {
+      .content {
+        &-infrastructure {
+          padding: 120px 24px 170px 24px;
+          background: linear-gradient(183.29deg, #002136 13.99%, #110036 93.14%);
+          &__container {
+            max-width: 1172px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+          }
+          &__title {
+            margin-bottom: 160px;
+            font-weight: 800;
+            font-size: 80px;
+            line-height: 102px;
+            color: rgba(255, 255, 255, 1);
+          }
+          &__list {
+            margin-left: 76px;
+            .list {
+              &-title {
+                opacity: 0.2;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 92px;
+                letter-spacing: 0.26em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 48px;
+              }
+              &-discription {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 31px;
+                color: rgba(255, 255, 255, 0.8);
+                .bold {
+                  font-weight: 800;
+                  color: rgba(255, 255, 255, 1);
+                }
+                margin-bottom: 58.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

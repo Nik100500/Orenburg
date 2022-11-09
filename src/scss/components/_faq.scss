@@ -1,0 +1,162 @@
+.faq {
+  background: #F3F6F8;
+  &__banner {
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1D1D1D;
+    background: #F3F6F8;
+    margin-bottom: 20px;
+    @media screen and (min-width: 640px){
+      height: 300px;
+      background: #FFFFFF;
+      margin-bottom: 0px;
+    }
+    &__container {
+      padding: 0 16px;
+      @media screen and (min-width: 1220px) {
+        padding: 0 24px;
+      }
+    }
+    .banner {
+      &__content {
+        max-width: 1172px;
+        margin: 0 auto;
+        .content {
+          &-breadcrumbs {
+            padding-top: 24px;
+            padding-bottom: 26px;
+            @media screen and (min-width: 640px){
+              padding-top: 30px;
+              padding-bottom: 100px;
+              
+            }
+            flex-direction: row;
+            align-items: center;
+            gap: 14px;
+            display: flex;
+            .breadcrumbs {
+              &-item {
+                display: none;
+                align-items: center;
+                color: #1D1D1D;
+                transition: all .25s;
+                opacity: 1;
+                &.disabled {
+                  opacity: 0.5;
+                  &.hover {
+                    &:hover {
+                      opacity: 1;
+                    }
+                  }
+                }
+                &.mobile {
+                  display: flex;
+                }
+                @media screen and (min-width: 640px) {
+                  display: flex;
+                  
+                  &.mobile {
+                    display: none;
+                  }
+                }
+              }
+            }
+            /* @media screen and (min-width: 640px) {
+              display: flex;
+            } */
+          }
+          &-main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .main {
+              &-title {
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 41px;
+                padding-bottom: 20px;
+                @media screen and (min-width: 640px) {
+                  font-size: 58px;
+                  line-height: 74px;
+                  padding-bottom: 0;
+                }   
+              }
+            }
+          }
+        }
+      }
+    }
+    // background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 35.08%, rgba(0, 0, 0, 0) 100%), #FFFFFF;
+  }
+  &__main {
+    background: transparent;
+    position: relative;
+    padding: 0 16px 100px 16px;
+    margin-top: 0px;
+    @media screen and (min-width: 640px) {
+      padding: 48px 16px 282px 16px;
+      // margin-top: -270px;
+    }
+    @media screen and (min-width: 1240px){
+      padding: 48px 24px 212px 24px;
+    }
+    &__content {
+      max-width: 1172px;
+      margin: 0 auto;
+      color: #FFFFFF;
+      .item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        @media screen and (min-width: 640px) {
+          margin-bottom: 24px;
+        }
+        padding: 19px 29px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 6px;
+        max-width: 772px;
+        .accordion {
+          padding: 0;
+          background: #FFFFFF;
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 25px;
+
+          display: flex;
+          align-items: center;
+          
+          color: #0C314C;
+
+          &__arrow {
+            margin-right: 16px;
+          }
+        }
+        .panel {
+          .col {
+            padding-top: 18px;
+            padding-left: 34px;
+            padding-bottom: 9px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            opacity: .7;
+            color: #1D1D1D;
+          }
+        }
+      }
+    }
+  }
+}
+.content-logo {
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  display: none;
+  @media screen and (min-width: 640px){
+    display: block;
+  }
+}

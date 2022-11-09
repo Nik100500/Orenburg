@@ -1,0 +1,99 @@
+
+.resize-form {
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  &.active {
+    transition: all 0.4s;
+    .resize-form__arrow {
+      transition: all 0.4s;
+      transform: rotate(180deg);
+    }
+  }
+  .resize-form__arrow {
+    transition: all 0.4s;
+    transform: rotate(0deg);
+    margin-right: 6px;
+  }
+  &.active {
+  }
+}
+
+.main-button {
+  width: 145px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F3F6F8;    
+  padding: 9px 16px;
+  background: #30A5E2;
+  border-radius: 6px;  
+  &.resize-form {
+    z-index: 2;
+    &.active {
+      z-index: 0;
+    }
+  }
+  &.submit-button {
+    position: absolute;
+    bottom: 16px;
+    z-index: 1;
+    @media screen and (min-width: 1024px) {
+      bottom: 28px;
+    }
+  }
+}
+
+
+.active,
+.resize-form:hover {
+}
+.panel {
+}
+.panel {
+  padding: 0;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    textarea:focus-visible {
+      outline: 0px solid #30A5E2;
+    }
+    textarea {
+      width: 100%;
+      height: 140px;
+      border: 1px solid rgba(12, 49, 76, 0.2);
+      border-radius: 6px;
+      padding: 14px 16px;
+      resize: none;
+    }
+    &__input {
+      margin-bottom: 12px;
+    }
+    &__resume {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 13.25px;
+      padding: 10px;
+      background: #FFFFFF;
+      border: 1px solid rgba(12, 49, 76, 0.2);
+      border-radius: 6px;
+    }
+  }
+}
