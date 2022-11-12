@@ -124,6 +124,19 @@ table {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
 }
 
 *,
@@ -156,9 +169,7 @@ a {
 }
 
 .site-container {
-  overflow: hidden;
   width: 100%;
-  height: 100%;
 }
 
 .is-hidden {
@@ -251,6 +262,10 @@ a {
 
 .mt-4 {
   margin-top: 16px;
+}
+
+.hide {
+  display: none;
 }
 
 .hidden-1024px {
@@ -782,16 +797,10 @@ a {
   overflow: hidden;
   max-width: 100%;
   background-color: #fff;
-  padding: 0 20px;
   -webkit-box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
   box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
   width: 100vw;
   z-index: 999;
-}
-@media screen and (min-width: 640px) {
-  .nav {
-    padding: 0 80px;
-  }
 }
 @media screen and (min-width: 950px) {
   .nav {
@@ -808,6 +817,7 @@ a {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  z-index: 3;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,6 +833,8 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   line-height: 24px;
+  background: #FFFFFF;
+  width: 25%;
   /* .bottom-sheet-wrapper {
     transition: all .25s;
     transform: translateY(-100%);
@@ -984,7 +996,7 @@ a {
   -o-transition: 0.4s;
   transition: 0.4s;
   height: 5px;
-  z-index: 1;
+  z-index: 4;
   border-radius: 8px 8px 0 0;
 }
 
@@ -1054,15 +1066,14 @@ body {
   --overlay: #888;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000;
-    --foreground: #fff;
-    --divider: #333;
-  }
-}
-body.overflow {
+html.overflow {
   overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+html.overflow body {
+  position: relative;
+  height: 100%;
 }
 
 button {
@@ -1085,6 +1096,7 @@ button {
   -webkit-transition: opacity 0.5s, visibility 0.5s;
   -o-transition: opacity 0.5s, visibility 0.5s;
   transition: opacity 0.5s, visibility 0.5s;
+  overflow: hidden;
 }
 
 #sheet[aria-hidden=true] {
@@ -1116,9 +1128,11 @@ button {
   -ms-transform: translateY(0);
   transform: translateY(0);
   max-height: 100vh;
-  height: 30vh;
   max-width: 70rem;
   margin: 0 auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 1rem;
@@ -1127,6 +1141,11 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
+}
+#sheet .contents .sheet {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 #sheet .contents .sheet-header {
   text-align: center;
@@ -1164,7 +1183,7 @@ button {
 #sheet .contents .sheet .sheet-button svg {
   fill: #1D1D1D;
 }
-#sheet .contents .sheet .sheet-button:hover {
+#sheet .contents .sheet .sheet-button:active {
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
@@ -1172,7 +1191,7 @@ button {
   background: linear-gradient(183.29deg, #080C2C 13.99%, #110036 93.14%);
   color: #FFFFFF;
 }
-#sheet .contents .sheet .sheet-button:hover svg {
+#sheet .contents .sheet .sheet-button:active svg {
   fill: #FFFFFF;
 }
 #sheet .contents .sheet .sheet-button.content-row {
@@ -1188,6 +1207,10 @@ button {
   flex-direction: column;
 }
 #sheet .contents .sheet-buttons {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1274,12 +1297,6 @@ button {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-}
-
-#sheet .body {
-  height: 100%;
-  overflow-y: auto;
-  gap: 1rem;
 }
 
 .input-sizer {
@@ -1662,7 +1679,7 @@ button {
   backdrop-filter: blur(333px);
   font-family: "Onest";
   width: 100%;
-  padding: 20px 16px 32px 16px;
+  padding: 20px 16px 100px 16px;
 }
 @media screen and (min-width: 950px) {
   .footer {
@@ -2826,6 +2843,49 @@ button {
     width: 38px;
     height: 38px;
   }
+}
+.residents__banner .banner__content .graph-modal__content {
+  color: #1d1d1d;
+  padding: 12px 16px;
+}
+.residents__banner .banner__content .graph-modal__content .content-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 24px;
+}
+.residents__banner .banner__content .graph-modal__content .content-filter .filter-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 4px;
+}
+.residents__banner .banner__content .graph-modal__content .content-filter .filter-item {
+  height: 48px;
+  border-bottom: 1px solid rgba(29, 29, 29, 0.15);
+}
+.residents__banner .banner__content .graph-modal__content .content-filter .filter-item__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.residents__banner .banner__content .graph-modal__content .content-filter .filter-item:last-child {
+  border: 0px solid #FFF;
+  margin-bottom: 20px;
+}
+.residents__banner .banner__content .graph-modal__content .content-filter .filter-item__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 .residents__main {
   background: transparent;

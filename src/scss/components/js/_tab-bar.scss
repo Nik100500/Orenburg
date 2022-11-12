@@ -9,12 +9,12 @@
   overflow: hidden;
   max-width: 100%;
   background-color: #fff;
-  padding: 0 20px;
+  // padding: 0 20px;
   box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
   width: 100vw;
   z-index: 999;
   @media screen and (min-width: 640px){
-    padding: 0 80px;
+    // padding: 0 80px;
   }
   @media screen and (min-width: 950px){
     display: none;
@@ -29,13 +29,15 @@
   text-decoration: none;
   -webkit-transition: .3s;
   transition: .3s;
-  // z-index: 3;
+  z-index: 3;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 24px;
+  background: #FFFFFF;
+  width: 25%;
   svg {
     -webkit-transition: .3s;
     transition: .3s;
@@ -194,7 +196,7 @@
   -webkit-transition: .4s;
   transition: .4s;
   height: 5px;
-  z-index: 1;
+  z-index: 4;
   border-radius: 8px 8px 0 0;
 }
 

@@ -435,63 +435,6 @@
         </div>
       </div>
     </main>
-    <button type="button" id="open-sheet" aria-controls="sheet">Open Sheet</button>
-
-    <!-- The sheet component -->
-    <div id="sheet" class="column items-center justify-end" aria-hidden="true">
-      <!-- Dark background for the sheet -->
-      <div class="overlay"></div>
-
-      <!-- The sheet itself -->
-      <div class="contents column">
-        <!-- Sheet controls -->
-        <header class="controls">
-          <!-- The thing to drag if you want to resize the sheet -->
-          <div class="draggable-area">
-            <div class="draggable-thumb"></div>
-          </div>
-          <!-- Button to close the sheet -->
-          <div class="close-sheet">&times;</div>
-        </header>
-
-        <!-- Body of the sheet -->
-        <main class="body fill column">
-          <div class="sheet">
-            <div class="sheet-header">
-              Инвесторам
-            </div>
-            <div class="sheet-button button-row">
-              <div class="sheet-button__text">Преимущества</div>
-              <div class="sheet-button__icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.7">
-                  <path d="M9.27982 5.04798C9.45267 4.88351 9.68376 4.79441 9.92228 4.80026C10.1608 4.80611 10.3872 4.90643 10.5518 5.07918L16.553 11.3792C16.7126 11.5466 16.8016 11.7689 16.8016 12.0002C16.8016 12.2314 16.7126 12.4538 16.553 12.6212L10.553 18.9212C10.4715 19.0068 10.374 19.0756 10.266 19.1235C10.1579 19.1715 10.0415 19.1977 9.92331 19.2006C9.80514 19.2036 9.68754 19.1832 9.57723 19.1407C9.46693 19.0983 9.36607 19.0345 9.28042 18.953C9.19477 18.8715 9.12601 18.774 9.07806 18.6659C9.03011 18.5579 9.00391 18.4414 9.00096 18.3233C8.998 18.2051 9.01836 18.0875 9.06085 17.9772C9.10334 17.8669 9.16715 17.766 9.24862 17.6804L14.6594 11.9996L9.24742 6.31878C9.08311 6.14577 8.99422 5.9146 9.00029 5.67607C9.00637 5.43755 9.10691 5.2112 9.27982 5.04678V5.04798Z" fill="#1D1D1D"/>
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div class="sheet-button button-row">
-              <div class="sheet-button__text">Резиденты</div>
-              <div class="sheet-button__icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.7">
-                  <path d="M9.27982 5.04798C9.45267 4.88351 9.68376 4.79441 9.92228 4.80026C10.1608 4.80611 10.3872 4.90643 10.5518 5.07918L16.553 11.3792C16.7126 11.5466 16.8016 11.7689 16.8016 12.0002C16.8016 12.2314 16.7126 12.4538 16.553 12.6212L10.553 18.9212C10.4715 19.0068 10.374 19.0756 10.266 19.1235C10.1579 19.1715 10.0415 19.1977 9.92331 19.2006C9.80514 19.2036 9.68754 19.1832 9.57723 19.1407C9.46693 19.0983 9.36607 19.0345 9.28042 18.953C9.19477 18.8715 9.12601 18.774 9.07806 18.6659C9.03011 18.5579 9.00391 18.4414 9.00096 18.3233C8.998 18.2051 9.01836 18.0875 9.06085 17.9772C9.10334 17.8669 9.16715 17.766 9.24862 17.6804L14.6594 11.9996L9.24742 6.31878C9.08311 6.14577 8.99422 5.9146 9.00029 5.67607C9.00637 5.43755 9.10691 5.2112 9.27982 5.04678V5.04798Z" fill="#1D1D1D"/>
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div class="sheet-buttons buttons-2">
-              <div class="sheet-button button-50">
-                Площадка Оренбург
-              </div>
-              <div class="sheet-button button-50">
-                Площадка Орск
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
-    </div>
     @include('partials/footer.html')
     
     <nav class="nav">
@@ -571,7 +514,7 @@
           <main class="body fill column">
             <div class="sheet">
               <div class="sheet-header">
-                Инвесторам
+                Управляющая компания
               </div>
               <div class="sheet-buttons buttons-row mb-3">
                 <div class="sheet-button button-33">

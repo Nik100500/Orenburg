@@ -3,6 +3,20 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  // height: max-content;
+  height: 100%;
+}
+
+main {
+	height: 100%;
+}
+
+.main-container {
+	height: 100%;
 }
 
 *,
@@ -35,9 +49,9 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  // overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
   width: 100%;
-  height: 100%;
+  // height: 100%;
 }
 
 .is-hidden {
@@ -129,6 +143,10 @@ a {
 }
 .mt-4 {
   margin-top: 16px;
+}
+
+.hide {
+  display: none;
 }
 
 .hidden-1024px {

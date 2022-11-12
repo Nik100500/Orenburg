@@ -7,17 +7,18 @@
   --overlay: #888;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000;
-    --foreground: #fff;
-    --divider: #333;
+
+html.overflow {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  body {
+    // overflow: hidden;
+    position: relative;
+    height: 100%;
   }
 }
 
-body.overflow {
-  overflow: hidden;
-}
 
 button {
   font-size: 1rem;
@@ -38,6 +39,7 @@ button {
   z-index: 2;
   visibility: visible;
   transition: opacity 0.5s, visibility 0.5s;
+  overflow: hidden;
 }
 
 #sheet[aria-hidden="true"] {
@@ -71,10 +73,10 @@ button {
   transform: translateY(0);
 
   max-height: 100vh;
-  height: 30vh;
 
   max-width: 70rem;
   margin: 0 auto;
+  height: max-content;
 
   box-sizing: border-box;
   padding: 1rem;
@@ -84,6 +86,7 @@ button {
   right: 0;
   bottom: 0;
   .sheet {
+    height: max-content;
     &-header {
       text-align: center;
       font-weight: 800;
@@ -109,7 +112,7 @@ button {
         fill: #1D1D1D;
       }
 
-      &:hover {
+      &:active {
         transition: all 0.25s;
         background: linear-gradient(183.29deg, #080C2C 13.99%, #110036 93.14%);
         color: #FFFFFF;
@@ -127,6 +130,7 @@ button {
       }
     }
     &-buttons {
+      user-select: none;
       justify-content: space-between;
       align-items: center;
       display: flex;
@@ -194,9 +198,9 @@ button {
   cursor: pointer;
 }
 
-#sheet .body {
-  height: 100%;
-  overflow-y: auto;
-  gap: 1rem;
-}
+// #sheet .body {
+//   height: 100%;
+//   overflow-y: auto;
+//   gap: 1rem;
+// }
 
