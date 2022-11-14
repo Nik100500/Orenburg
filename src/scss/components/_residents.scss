@@ -391,15 +391,21 @@
               @media screen and (min-width: 1024px){
                 
               }
-              .content {
+             .content {
                 &-flex-row {
                   display: flex;
                   flex-direction: row;
                   justify-content: space-between;
                 }
-                &-flex-col {
+                &-flex-col { 
                   display: flex;
                   flex-direction: column;
+                  &.left {
+                    width: 100%;
+                    @media screen and (min-width: 1024px) {
+                      width: 67.2%;
+                    }
+                  }
                 }
                 &-status {
                   border-radius: 6px;  
@@ -599,7 +605,7 @@
                   width: 100%;
                   padding: 16px;
                   @media screen and (min-width: 1024px) {
-                    width: 67.2%;
+                    // width: 67.2%;
                     padding: 38px;
                     margin-bottom: 38px;  
                   }                
@@ -653,6 +659,7 @@
                     position: sticky;
                     top: 38px;
                     right: 0;
+                    height: max-content;
                   }
                   &__title {
                     font-weight: 800;
@@ -747,7 +754,7 @@
                   padding: 16px;
                   width: 100%;
                   @media screen and (min-width: 1024px) {
-                    width: 67.2%;
+                    // width: 67.2%;
                     padding: 38px;
                     margin-bottom: 38px;
                   }                
@@ -836,7 +843,7 @@
                   padding: 0 16px;
                   width: 100%;
                   @media screen and (min-width: 1024px) {
-                    width: 67.2%;
+                    // width: 67.2%;
                     padding: 0;
                     margin-bottom: 38px;
                   }
@@ -927,7 +934,7 @@
                   padding: 0 16px;
                   width: 100%;
                   @media screen and (min-width: 1024px) {
-                    width: 67.2%;
+                    // width: 67.2%;
                     padding: 0;
                     margin-bottom: 0;
                   }

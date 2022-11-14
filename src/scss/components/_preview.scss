@@ -1,21 +1,23 @@
 @keyframes slidein {
   0% {
-    // top: 0px;
-    // left: 0px;
+    top: 0px;
+    left: 0px;
     // transform: scale(1) translate(0%, 0%);
-    // transform: scale(0);
+    transform: scale(0);
   }
 
   80% {
-    transform: scale(1) translate(0%, 0%);
+    // transform: scale(1) translate(0%, 0%);
 
   }
 
   100% {
     // transform: translate(0.85%, 18%);
-    transform: scale(13) translate(8.85%, 18%);
-    // top: 2200px;
-    // left: 2200px;
+    // transform: scale(13) translate(8.85%, 18%);
+
+    transform: scale(13);
+    top: 2200px;
+    left: 2200px;
   }
 }
 .preview {
@@ -40,14 +42,15 @@
               animation: slidein 8s forwards;
               // top: 2200px;
               // left: 2200px;
-              top: 0px;
-              left: 0px;
+              // top: 0px;
+              // left: 0px;
               height: 100%;
               width: 100%;
-              // transform: scale(13) translate(8.85%, 18%);
-              transform: scale(1) translate(0%, 0%);
+              animation-delay: 1.15s;
+              // transform: scale(13) translate(8.85%, 18%); 
               // transform: translate(0.85%, 18%);
               z-index: 0;
+              // transform: scale(1) translate(0%, 0%);
             }
           }
         }
@@ -646,5 +649,300 @@
       }
     }
   }
+}
+
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes animation-opacity-0-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-text {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animate-plane-1 {
+  0% {
+    transform: translate(-600px, 90px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(380px, 90px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(380px, 90px);
+    opacity: 0;
+  }
+}
+@keyframes animate-plane-2 {
+  0% {
+    transform: translate(25px, 185px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(350px, -105px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(350px, -105px);
+    opacity: 0;
+  }
+}
+@keyframes animate-plane-3 {
+  0% {
+    transform: translate(100px, 150px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(375px, 45px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(375px, 45px);
+    opacity: 0;
+  }
+}
+@keyframes animate-plane-4 {
+  0% {
+    transform: translate(500px, -65px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(-165px, 10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-165px, 10px);
+    opacity: 0;
+  }
+}
+@keyframes animate-plane-5 {
+  0% {
+    transform: translate(500px, 200px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(-300px, -125px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-300px, -125px);
+    opacity: 0;
+  }
+}
+.orsk-map {
+  fill: #FFFFFF;
+}
+
+.plane-1 {
+  opacity: 0;
+  animation: animate-plane-1 18s linear forwards;
+  animation-delay: 14s;
+}
+.plane-2 {
+  opacity: 0;
+  animation: animate-plane-2 8s linear forwards;
+  animation-delay: 14s;
+}
+.plane-3 {
+  opacity: 0;
+  animation: animate-plane-3 8s linear forwards;
+  animation-delay: 14s;
+}
+.plane-4 {
+  opacity: 0;
+  animation: animate-plane-4 10s linear forwards;
+  animation-delay: 14s;
+}
+.plane-5 {
+  opacity: 0;
+  animation: animate-plane-5 12s linear forwards;
+  animation-delay: 14s;
+}
+
+.orsk-orenburg-map {
+  opacity: 0;
+  animation: animation-opacity-0-1 .25s linear forwards;
+  animation-delay: 9.75s;
+  &__background {
+    
+  }
+  &__border {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dash 15s linear infinite;
+    animation-delay: 10s;
+  }
+}
+.orenburg-map {
+  opacity: 0;
+  animation: animation-opacity-0-1 .55s linear forwards;
+  animation-delay: 10.25s;
+  &-logo {
+    &__1 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 11.5s;
+    }
+    &__2 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 11.65s;
+    }
+    &__3 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 11.8s;
+    }
+    &__4 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 11.95s;
+    }
+    &__5 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.1s;
+    }
+    &__6 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.25s;
+    }
+    &__7 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.4s;
+    }
+    &__8 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.55s;
+    }
+    &__9 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.7s;
+    }
+    &__10 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.85s;
+    }
+    &__11 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 13s;
+    }
+    &__12 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 13.15s;
+    }
+  }
+  &-text {
+    path {
+      transform: translateY(-30px);
+      animation: animation-text .75s linear forwards;
+      animation-delay: 13.15s;
+    }
+  }
+}
+.orsk-map {
+  opacity: 0;
+  animation: animation-opacity-0-1 .25s linear forwards;
+  animation-delay: 10.25s;
+  &-logo {
+    &__1 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 11.5s;
+    }
+    &__2 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 11.65s;
+    }
+    &__3 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 11.8s;
+    }
+    &__4 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 11.95s;
+    }
+    &__5 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.1s;
+    }
+    &__6 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.25s;
+    }
+    &__7 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.4s;
+    }
+    &__8 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.55s;
+    }
+    &__9 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.7s;
+    }
+    &__10 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 12.85s;
+    }
+    &__11 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 13s;
+    }
+    &__12 {
+      opacity: 0;
+      animation: animation-opacity-0-1 .15s linear forwards;
+      animation-delay: 13.15s;
+    }
+  }
+  &-text {
+    path {
+      transform: translateY(-30px);
+      animation: animation-text .75s linear forwards;
+      animation-delay: 13.15s;
+    }
+  }
+}
+
+.lake {
+  opacity: 1;
 }
 
