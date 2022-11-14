@@ -6882,6 +6882,7 @@ button {
   padding: 120px 24px 170px 24px;
   background: -o-linear-gradient(266.71deg, #002136 13.99%, #110036 93.14%);
   background: linear-gradient(183.29deg, #002136 13.99%, #110036 93.14%);
+  height: calc(100vh + 380px);
 }
 .benefits__main__content .content-infrastructure__container {
   max-width: 1172px;
@@ -6927,6 +6928,73 @@ button {
 .benefits__main__content .content-infrastructure__list .list-discription .bold {
   font-weight: 800;
   color: rgb(255, 255, 255);
+}
+.benefits__main__content .content-export {
+  background: -o-linear-gradient(229.71deg, #223ED2 -9.02%, #8618AC 127.26%);
+  background: linear-gradient(220.29deg, #223ED2 -9.02%, #8618AC 127.26%);
+}
+.benefits__main__content .content-export__container {
+  padding: 160px 24px;
+  max-width: 1172px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.benefits__main__content .content-export__list {
+  margin-left: 76px;
+}
+.benefits__main__content .content-export__list .list-title {
+  opacity: 0.2;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 92px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+.benefits__main__content .content-economy {
+  background: -o-linear-gradient(266.71deg, #002136 13.99%, #110036 93.14%);
+  background: linear-gradient(183.29deg, #002136 13.99%, #110036 93.14%);
+}
+.benefits__main__content .content-economy__container {
+  padding: 160px 24px;
+  max-width: 1172px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.benefits__main__content .content-economy__list {
+  margin-left: 76px;
+}
+.benefits__main__content .content-economy__list .list-title {
+  opacity: 0.2;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 92px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+.benefits__main__content .content-economy__list .list-title.nowrap {
+  white-space: nowrap;
 }
 
 .map__banner {

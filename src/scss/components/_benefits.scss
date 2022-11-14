@@ -5,6 +5,7 @@
         &-infrastructure {
           padding: 120px 24px 170px 24px;
           background: linear-gradient(183.29deg, #002136 13.99%, #110036 93.14%);
+          height: calc(100vh + 380px);
           &__container {
             max-width: 1172px;
             margin: 0 auto;
@@ -43,6 +44,61 @@
                   color: rgba(255, 255, 255, 1);
                 }
                 margin-bottom: 58.5px;
+              }
+            }
+          }
+        }
+        &-export {
+          background: linear-gradient(220.29deg, #223ED2 -9.02%, #8618AC 127.26%);
+          &__container {
+            padding: 160px 24px;
+            max-width: 1172px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          &__list {
+            margin-left: 76px;
+            .list {
+              &-title {
+                opacity: 0.2;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 92px;
+                letter-spacing: 0.26em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 48px;
+              }
+            }
+          }
+        }
+        &-economy {
+          background: linear-gradient(183.29deg, #002136 13.99%, #110036 93.14%);
+          &__container {
+            padding: 160px 24px;
+            max-width: 1172px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          &__list {
+            margin-left: 76px;
+            .list {
+              &-title {
+                opacity: 0.2;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 92px;
+                letter-spacing: 0.26em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 48px;
+                &.nowrap {
+                  white-space: nowrap;
+                }
               }
             }
           }
