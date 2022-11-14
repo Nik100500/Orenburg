@@ -7,5 +7,6 @@ import './components/input-slider.js';
 import './components/tab-bar.js';
 import './components/keen-slider.js';
 import './components/bottom-sheet.js';
+import './components/preview-calculator.js';
 // import './components/cupertino-pane.js';
 console.log('components');

@@ -112,7 +112,7 @@ button {
         fill: #1D1D1D;
       }
 
-      &:active {
+      &:active, &.active {
         transition: all 0.25s;
         background: linear-gradient(183.29deg, #080C2C 13.99%, #110036 93.14%);
         color: #FFFFFF;
@@ -147,6 +147,19 @@ button {
       .button-33 {
         width: calc(33.333% - 10px);
         height: 67px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .sheet-button__icon {
+          width: max-content;
+          height: 100%;
+        }
+        .sheet-button__text {
+          width: max-content;
+          height: 100%;
+          font-size: 12px;
+        }
       }
     }
   }

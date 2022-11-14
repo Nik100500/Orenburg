@@ -25,7 +25,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_keen_slider_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_keen_slider_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _components_bottom_sheet_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/bottom-sheet.js */ "./src/js/components/bottom-sheet.js");
 /* harmony import */ var _components_bottom_sheet_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_bottom_sheet_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_preview_calculator_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/preview-calculator.js */ "./src/js/components/preview-calculator.js");
+/* harmony import */ var _components_preview_calculator_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_preview_calculator_js__WEBPACK_IMPORTED_MODULE_8__);
 // import './components/modal.js';
+
 
 
 
@@ -1354,6 +1357,20 @@ class RollCounterRange {
       console.error(n);
     }
   };
+});
+
+/***/ }),
+
+/***/ "./src/js/components/preview-calculator.js":
+/*!*************************************************!*\
+  !*** ./src/js/components/preview-calculator.js ***!
+  \*************************************************/
+/***/ (() => {
+
+var exporterCheckbox = document.getElementById('exporter');
+var exporterInput = document.getElementById('exporter-input');
+exporterCheckbox.addEventListener('click', function () {
+  exporterCheckbox.checked ? exporterInput.classList.add('active') : exporterInput.classList.remove('active');
 });
 
 /***/ }),

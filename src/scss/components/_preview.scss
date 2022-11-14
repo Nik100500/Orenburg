@@ -3,7 +3,7 @@
     top: 0px;
     left: 0px;
     // transform: scale(1) translate(0%, 0%);
-    transform: scale(0);
+    transform: scale(1);
   }
 
   80% {
@@ -37,6 +37,15 @@
             // transform: scale(13);
             z-index: 0;
             position: relative;
+            .ellipse-1 {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 538px;
+              height: 448px;
+              background: #30A5E2;
+              filter: blur(131px);
+            }
             svg {
               position: absolute;
               animation: slidein 8s forwards;
@@ -360,6 +369,12 @@
                   user-select: none;
                 }
               }
+              #exporter-input {
+                display: none;
+                &.active {
+                  display: block;
+                }
+              }
               .note {
                 display: flex;
                 flex-direction: row;
@@ -381,7 +396,12 @@
               }
             }
             &__results {
-
+              .results {
+                &-icon {
+                  opacity: 0.6;
+                  filter: blur(4px);
+                }
+              }
             }
 
             .range, .range__counter {
@@ -789,7 +809,7 @@
   &__border {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    animation: dash 15s linear infinite;
+    animation: dash 10s linear infinite;
     animation-delay: 10s;
   }
 }
@@ -943,6 +963,8 @@
 }
 
 .lake {
-  opacity: 1;
+  opacity: 0;
+  animation: animation-opacity-0-1 .15s linear forwards;
+  animation-delay: 10s;
 }
 
