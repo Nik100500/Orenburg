@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-
 @include('partials/head.html')
-
 <body class="page__body">
-  
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
       <div class="main-container">
-  
         <div class="events">
           <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
             <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
@@ -26,55 +22,6 @@
                 <div class="content-filters__item filter" data-filter="orenburg">ОЭЗ «Оренбуржье»</div>
                 <div class="content-filters__item filter" data-filter="ms">СМИ о нас</div>
                 <div class="content-filters__item filter" data-filter="news">Новости резидентов</div>
-                <!-- <div class="dropdown platforms">
-                  <input type="checkbox" class="dropdown__switch platforms" id="filter-switch-platforms" hidden />
-                  <label for="filter-switch-platforms" class="dropdown__options-filter">
-                    <ul class="dropdown__filter platforms filters" role="listbox" tabindex="-1">
-                      <li class="dropdown__filter-selected platforms" aria-selected="true">
-                        Все площадки  
-                      </li>
-                      <li>
-                        <ul class="dropdown__select platforms">
-                          <li data-filter="all" class="dropdown__select-option platforms filter">
-                            Все площадки
-                          </li>
-                          <li data-filter="orsk" class="dropdown__select-option platforms filter">
-                            Орск
-                          </li>
-                          <li data-filter="orenburg" class="dropdown__select-option platforms filter">
-                            Оренбург
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>			
-                  </label>
-                </div>
-                <div class="dropdown statuses">
-                  <input type="checkbox" class="dropdown__switch statuses" id="filter-switch-statuses" hidden />
-                  <label for="filter-switch-statuses" class="dropdown__options-filter">
-                    <ul class="dropdown__filter statuses filters" role="listbox" tabindex="-1">
-                      <li class="dropdown__filter-selected statuses" aria-selected="true">
-                        Все статусы  
-                      </li>
-                      <li>
-                        <ul class="dropdown__select statuses">
-                          <li data-filter2="all" class="dropdown__select-option statuses filter2">
-                            Все статусы
-                          </li>
-                          <li data-filter2="project" class="dropdown__select-option statuses filter2">
-                            Проект
-                          </li>
-                          <li data-filter2="build" class="dropdown__select-option statuses filter2">
-                            Строится
-                          </li>
-                          <li data-filter2="valid" class="dropdown__select-option statuses filter2">
-                            Действует
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>			
-                  </label>
-                </div> -->
               </div>
               <div class="content-cards projects">
                 <div data-graph-path="second" data-filter="orenburg" class="btn-reset modal-btn modal-2 card project">
@@ -243,18 +190,18 @@
                         <div class="content-right__container">
                           <div class="content-right__title">Другие события</div>
                           <div class="content-right__cards">
-                            <div class="card">
+                            <a href="/" class="card">
                               <div class="card-date">3 сентября, понедельник</div>
                               <div class="card-title">В оренбургском МФЦ появится сектор пользовательского сопровождения</div>
-                            </div>
-                            <div class="card">
+                            </a>
+                            <a href="/" class="card">
                               <div class="card-date">3 сентября, понедельник</div>
                               <div class="card-title">В оренбургском МФЦ появится сектор пользовательского сопровождения</div>
-                            </div>
-                            <div class="card">
+                            </a>
+                            <a href="/" class="card">
                               <div class="card-date">3 сентября, понедельник</div>
                               <div class="card-title">В оренбургском МФЦ появится сектор пользовательского сопровождения</div>
-                            </div>
+                            </a>
                           </div>
                         </div>
                       </div>

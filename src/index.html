@@ -9,412 +9,226 @@
     @include('partials/header.html')
     <main class="main">
       <div class="main-container">
-  
-        <div class="benefits">
-          <div class="benefits__main">
-            <div class="benefits__main__content">
-              <div class="content-infrastructure">
-                <div class="content-infrastructure__container">
-                  <div class="content-infrastructure__line"></div>
-                  <div class="content-infrastructure__point">
-                    <div class="point-white"></div>
+        <div class="preview">
+          @include('partials/preview/index.html')
+          <div class="preview__main">
+            <div class="preview__main__content">
+              <div class="content-start">
+                <div class="ellipse-1"></div>
+                @include('partials/preview/svg.html')
+              </div>
+              <div class="content-cards">
+                <div class="card first">
+                  <div class="card-container">
+                    <div class="card-count">50+</div>
+                    <div class="card-content">
+                      <div class="card-content__tags">
+                        <div class="tag">налоги</div>
+                        <div class="tag">Инфраструктура</div>
+                        <div class="tag">Экспорт</div>
+                      </div>
+                      <div class="card-content__title">Причин открыть бизнес в ОЭЗ оренбуржье</div>
+                    </div>
                   </div>
-                  <div class="content-infrastructure__title">Преимущества ОЭЗ</div>
-                  <div class="content-infrastructure__list">
-                    <div class="list-title">Готовая инфраструктура</div>
+                  <div class="card-button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.6897 26.3883C17.2899 26.7692 16.6568 26.7538 16.2759 26.3539C15.8949 25.954 15.9104 25.321 16.3103 24.94L24.6453 17.0007L5 17.0007C4.44772 17.0007 4 16.5531 4 16.0007C4 15.4484 4.44772 15.0007 5 15.0007L24.6459 15.0007L16.3103 7.061C15.9104 6.68008 15.8949 6.04711 16.2759 5.6472C16.6568 5.24731 17.2899 5.23191 17.6897 5.61283L27.5816 15.0351C27.8071 15.2498 27.9403 15.5236 27.9815 15.8084C27.9936 15.8707 28 15.935 28 16.0007C28 16.067 27.9936 16.1318 27.9812 16.1944C27.9397 16.4786 27.8065 16.7518 27.5816 16.966L17.6897 26.3883Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="content-cards__container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-header__subtitle">Площадка</div>
+                      <div class="card-header__title">Оренбург</div>
+                    </div>
+                    <div class="card-text">Логистико-производственное направление</div>
+                    <div class="card-bottom">
+                      <div class="card-bottom__items">
+                        <div class="item">
+                          <div class="item-count">25</div>
+                          <div class="item-text">Свободных мест</div>
+                        </div>
+                        <div class="item">
+                          <div class="item-count">3 га</div>
+                          <div class="item-text">Общая площадь</div>
+                        </div>
+                      </div>
+                      <div class="card-bottom__button">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.6897 26.3883C17.2899 26.7692 16.6568 26.7538 16.2759 26.3539C15.8949 25.954 15.9104 25.321 16.3103 24.94L24.6453 17.0007L5 17.0007C4.44772 17.0007 4 16.5531 4 16.0007C4 15.4484 4.44772 15.0007 5 15.0007L24.6459 15.0007L16.3103 7.061C15.9104 6.68008 15.8949 6.04711 16.2759 5.6472C16.6568 5.24731 17.2899 5.23191 17.6897 5.61283L27.5816 15.0351C27.8071 15.2498 27.9403 15.5236 27.9815 15.8084C27.9936 15.8707 28 15.935 28 16.0007C28 16.067 27.9936 16.1318 27.9812 16.1944C27.9397 16.4786 27.8065 16.7518 27.5816 16.966L17.6897 26.3883Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-header__subtitle">Площадка</div>
+                      <div class="card-header__title">Оренбург</div>
+                    </div>
+                    <div class="card-text">Логистико-производственное направление</div>
+                    <div class="card-bottom">
+                      <div class="card-bottom__items">
+                        <div class="item">
+                          <div class="item-count">25</div>
+                          <div class="item-text">Свободных мест</div>
+                        </div>
+                        <div class="item">
+                          <div class="item-count">3 га</div>
+                          <div class="item-text">Общая площадь</div>
+                        </div>
+                      </div>
+                      <div class="card-bottom__button">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.6897 26.3883C17.2899 26.7692 16.6568 26.7538 16.2759 26.3539C15.8949 25.954 15.9104 25.321 16.3103 24.94L24.6453 17.0007L5 17.0007C4.44772 17.0007 4 16.5531 4 16.0007C4 15.4484 4.44772 15.0007 5 15.0007L24.6459 15.0007L16.3103 7.061C15.9104 6.68008 15.8949 6.04711 16.2759 5.6472C16.6568 5.24731 17.2899 5.23191 17.6897 5.61283L27.5816 15.0351C27.8071 15.2498 27.9403 15.5236 27.9815 15.8084C27.9936 15.8707 28 15.935 28 16.0007C28 16.067 27.9936 16.1318 27.9812 16.1944C27.9397 16.4786 27.8065 16.7518 27.5816 16.966L17.6897 26.3883Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="content-export">
-                <div class="content-export__container">
-                  <div class="content-export__line"></div>
-                  <div class="content-export__line-prev"></div>
-                  <div class="content-export__point">
-                    <div class="point-white"></div>
+              <div class="content-steps">
+                <div class="content-steps__container">
+                  <div class="content-steps__title">
+                    <div class="title-count">3</div>
+                    <div class="title-content">
+                      <div class="title-content__tags">
+                        <div class="tag">26 дней</div>
+                        <div class="tag">Онлайн</div>
+                      </div>
+                      <div class="title-content__text">шага, чтобы стать резидентом</div>
+                    </div>
                   </div>
-                  <div class="content-export__list">
-                    <div class="list-title">Простой Экспорт</div>
-                    <div class="list-slider">
-                      <div class="swiffy-slider slider-nav-arrow slider-nav-sm slider-nav-autoplay slider-nav-autopause slider-indicators-square slider-indicators-sm slider-nav-mousedrag" data-slider-nav-autoplay-interval="444500">
-                        <ul class="slider-container">
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      
-                        <button type="button" class="slider-nav">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.7232 18.9494C14.5503 19.1138 14.3192 19.2029 14.0807 19.1971C13.8422 19.1912 13.6157 19.0909 13.4512 18.9182L7.44877 12.6182C7.28921 12.4508 7.2002 12.2284 7.2002 11.9972C7.2002 11.7659 7.28921 11.5435 7.44877 11.3762L13.45 5.07616C13.5306 4.9871 13.6282 4.91507 13.737 4.86432C13.8459 4.81357 13.9638 4.78512 14.0838 4.78065C14.2039 4.77618 14.3236 4.79579 14.4359 4.8383C14.5482 4.88082 14.6509 4.9454 14.7379 5.02822C14.8249 5.11104 14.8944 5.21044 14.9424 5.32055C14.9904 5.43067 15.0158 5.54927 15.0172 5.66938C15.0187 5.78948 14.996 5.90865 14.9507 6.01987C14.9053 6.13109 14.8382 6.23211 14.7532 6.31696L9.34357 11.9978L14.7532 17.6774C14.9178 17.8501 15.0071 18.0811 15.0015 18.3196C14.9959 18.5581 14.8957 18.7846 14.7232 18.9494V18.9494Z" fill="#0C314C"/>
-                          </svg>
-                        </button>
-                        <button type="button" class="slider-nav slider-nav-next">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.27683 18.9494C9.44968 19.1138 9.68077 19.2029 9.91929 19.1971C10.1578 19.1912 10.3843 19.0909 10.5488 18.9182L16.5512 12.6182C16.7108 12.4508 16.7998 12.2284 16.7998 11.9972C16.7998 11.7659 16.7108 11.5435 16.5512 11.3762L10.55 5.07616C10.4694 4.9871 10.3718 4.91507 10.263 4.86432C10.1541 4.81357 10.0362 4.78512 9.91617 4.78065C9.79614 4.77618 9.67643 4.79579 9.5641 4.8383C9.45176 4.88082 9.34908 4.9454 9.26209 5.02822C9.1751 5.11104 9.10557 5.21044 9.0576 5.32055C9.00962 5.43067 8.98417 5.54927 8.98275 5.66938C8.98133 5.78948 9.00396 5.90865 9.04932 6.01987C9.09467 6.13109 9.16183 6.23211 9.24683 6.31696L14.6564 11.9978L9.24683 17.6774C9.08221 17.8501 8.9929 18.0811 8.99852 18.3196C9.00415 18.5581 9.10425 18.7846 9.27683 18.9494V18.9494Z" fill="#0C314C"/>
-                          </svg>
-                        </button>
-                      
-                        <div class="slider-indicators archSlide number">
-                          <button class="number-slide active">1/6</button>
-                          <button class="number-slide">2/6</button>
-                          <button class="number-slide">3/6</button>
-                          <button class="number-slide">4/6</button>
-                          <button class="number-slide">5/6</button>
-                          <button class="number-slide">6/6</button>
-                        </div>
-                      
-                        <div class="slider-indicators archSlide">
-                          <button class="active"></button>
-                          <button></button>
-                          <button></button>
-                          <button></button>
-                          <button></button>
-                          <button></button>
+                  <div class="content-steps__list">
+                    <div class="list-buttons">
+                      <div class="button active">Подача заявки</div>
+                      <div class="button">Рассмотрение</div>
+                      <div class="button">Подписание</div>
+                    </div>
+                    <div class="list-items">
+                      <div class="item">
+                        <div class="item-title">1 день</div>
+                        <div class="item-discription">Подача заявки и пакета документов в Комитет по промышленной политике, инновациям и торговле</div>
+                        <div class="item-button">
+                          <div class="main-button">В личный кабинет</div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="content-economy">
-                <div class="content-economy__container">
-                  <div class="content-economy__line"></div>
-                  <div class="content-economy__line-prev"></div>
-                  <div class="content-economy__point">
-                    <div class="point-white"></div>
-                  </div>
-                  <div class="content-economy__list">
-                    <div class="list-title">Экономия на налогах</div>
-                    <div class="list-content">
-                      <div class="list-content__persents">
-                        <div class="num">
-                          <span class="number">0</span>%
-                        </div>
-                        <div class="absolute">
-                          <div class="num">
-                            <span class="number">0</span>%
-                          </div>
-                          <div class="ellipse z-0"></div>
-                        </div>
+              <div class="content-calc">
+                <div class="content-calc__container">
+                  <div class="content-calc__title">Расчитайте выгоду за 10 лет</div>
+                  <div class="content-calc__graph">
+                    <form class="content-calc__graph__inputs">
+                      <div class="input">
+                        <label class="input-title" for="range1">Прибыль организации
+                          <div class="input-currency">млн. руб.</div>
+                        </label>
+                        <input id="range1" name="range1" type="range" min="0" max="999" value="150">
                       </div>
-                      <div class="list-content__items">
-                        <div class="item">
-                          <div class="item-subtitle">Без ОЭЗ: До 1000 ₽ на 1 ед. мощность</div>
-                          <div class="item-title">Налог на транспорт</div>
-                        </div>
-                        <div class="item">
-                          <div class="item-subtitle">Без ОЭЗ: 1,5%</div>
-                          <div class="item-title">Налог на землю</div>
-                        </div>
-                        <div class="item">
-                          <div class="item-subtitle">Без ОЭЗ: До 2,2%</div>
-                          <div class="item-title">Налог на имущество</div>
-                        </div>
-                        <div class="item">
-                          <div class="item-subtitle">Без ОЭЗ: 0%, 10%, 20%</div>
-                          <div class="item-title">Таможенный НДС</div>
-                        </div>
-                        <div class="item">
-                          <div class="item-subtitle">Без ОЭЗ: От 5%</div>
-                          <div class="item-title">Ввозные пошлины</div>
-                        </div>
+                      <div class="input">
+                        <label class="input-title" for="range2">Стоимость имущества
+                          <div class="input-currency">млн. руб.</div>
+                        </label>
+                        <input id="range2" name="range2" type="range" min="0" max="70" value="47">
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content-income">
-                <div class="content-income__container">
-                  
-                  <div class="content-income__line"></div>
-                  <div class="content-income__line-prev"></div>
-                  <div class="content-income__point">
-                    <div class="point-white"></div>
-                  </div>
-                  <div class="content-income__list">
-                    <div class="list-title">Налог на прибыль</div>
-                    <div class="list-content">
-                      <div class="list-content__header">Без ОЭЗ: 17%</div>
-                      <div class="underline"></div>
-                      <div class="list-content__items">
-                        <div class="item">
-                          <div class="item-persents">2%</div>
-                            <div class="item-text">До 5 лет <span>*</span>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <div class="item-persents">7%</div>
-                            <div class="item-text">5 - 10 лет</div>
-                        </div>
-                        <div class="item">
-                          <div class="item-persents">15,5%</div>
-                            <div class="item-text">От 10 лет до 2070 г.</div>
-                        </div>
+                      <div class="input">
+                        <label class="input-title" for="range3">Стоимость транспорта
+                          <div class="input-currency">млн. руб.</div>
+                        </label>
+                        <input id="range3" name="range3" type="range" min="0" max="50" value="13">
                       </div>
-                      <div class="list-content__ps">
-                        <span>*</span> С момента получения прибыли
+                      <div class="input">
+                        <label class="input-title" for="range4">Кадастровая стоимость участка
+                          <div class="input-currency">млн. руб.</div>
+                        </label>
+                        <input id="range4" name="range4" type="range" min="0" max="500" value="400">
+                      </div>
+                      <div class="input-switcher">
+                        <label class="toggle">
+                          <input id="exporter" class="toggle__checkbox" type="checkbox">
+                          <span class="toggle__switch"></span>
+                          <span class="toggle__label">Экспортер</span>
+                        </label>
+                      </div>
+                      <div id="exporter-input" class="input">
+                        <label class="input-title" for="range5">Таможенная стоимость
+                          <div class="input-currency">млн. руб.</div>
+                        </label>
+                        <input id="range5" name="range5" type="range" min="0" max="500" value="400">
+                      </div>
+                      <div class="note">
+                        <div class="note-star">*</div>
+                        <div class="note-text">Все расчеты на сайте носят ознакомительный характер</div>
+                      </div>
+                    </form>
+                    <div class="content-calc__graph__results">
+                      <div class="results-icon">
+                        <svg width="415" height="415" viewBox="0 0 415 415" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1359_36063)">
+                          <path d="M4.62049 163.92C-1.54016 192.651 -1.54016 222.361 4.62049 251.092L52.2609 207.506L4.62049 163.92Z" fill="#EABD00"/>
+                          <path d="M45.5664 77.8665C32.3951 94.2851 21.8038 112.616 14.1576 132.227L70.0497 183.38C73.6988 162.287 82.1707 142.321 94.8049 125.041L95.7399 123.823L45.5664 77.8665Z" fill="#ED0707"/>
+                          <path d="M114.807 21.8713C96.2784 31.1589 79.2394 43.1598 64.2533 57.4776L63.601 58.1408L68.5694 62.6962L113.807 104.097C129.44 89.874 148.103 79.3934 168.384 73.4487L170.558 72.8834L114.807 21.8713Z" fill="#0C314C"/>
+                          <path d="M410.376 163.92C416.552 192.649 416.552 222.363 410.376 251.092L362.747 207.506L410.376 163.92Z" fill="#EABD00"/>
+                          <path d="M369.491 77.8665C382.659 94.2878 393.25 112.618 400.9 132.227L345.019 183.38C341.358 162.281 332.867 142.314 320.209 125.041L319.274 123.823L369.491 77.8665Z" fill="#ED0707"/>
+                          <path d="M300.184 21.8713C318.716 31.1536 335.756 43.155 350.738 57.4776L351.402 58.1408L346.422 62.6962L301.185 104.097C285.569 89.8799 266.925 79.3995 246.662 73.4487L244.488 72.8834L300.184 21.8713Z" fill="#0C314C"/>
+                          <path d="M45.5664 337.479C32.3951 321.06 21.8038 302.73 14.1576 283.118L70.0497 231.965C73.6988 253.059 82.1707 273.024 94.8049 290.305L95.7399 291.523L45.5664 337.479Z" fill="#ED0707"/>
+                          <path d="M114.807 393.476C96.2784 384.188 79.2394 372.187 64.2533 357.87L63.601 357.206L68.5694 352.651L113.807 311.25C129.44 325.473 148.103 335.954 168.384 341.899L170.558 342.464L114.807 393.476Z" fill="#0C314C"/>
+                          <path d="M369.491 337.479C382.659 321.058 393.25 302.728 400.9 283.118L345.019 231.965C341.358 253.065 332.867 273.031 320.209 290.305L319.274 291.523L369.491 337.479Z" fill="#ED0707"/>
+                          <path d="M300.187 393.476C318.719 384.194 335.759 372.192 350.741 357.87L351.404 357.206L346.425 352.651L301.187 311.25C285.571 325.467 266.927 335.948 246.665 341.899L244.49 342.464L300.187 393.476Z" fill="#0C314C"/>
+                          <path d="M238.983 375.672C234.844 371.53 229.929 368.246 224.519 366.007C219.109 363.769 213.31 362.619 207.455 362.625H207.379C201.513 362.614 195.703 363.761 190.282 366C184.86 368.239 179.934 371.525 175.785 375.672L144.061 405.027L145.79 405.646C185.931 418.098 228.903 418.098 269.044 405.646L270.773 405.027L238.983 375.672Z" fill="#4994BA"/>
+                          <path d="M237.913 39.3379C233.772 43.4766 228.856 46.7589 223.447 48.9975C218.037 51.236 212.239 52.3869 206.385 52.3845H206.298C200.443 52.3869 194.646 51.236 189.236 48.9975C183.826 46.7589 178.91 43.4766 174.769 39.3379L143.035 9.98319L144.774 9.36348C184.909 -3.10326 227.882 -3.10326 268.017 9.36348L269.757 9.98319L237.913 39.3379Z" fill="#4994BA"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1359_36063">
+                          <rect width="415" height="415" fill="white"/>
+                          </clipPath>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
-              <div class="content-rent">
-                <div class="content-rent__container">
-                  <div class="content-rent__line"></div>
-                  <div class="content-rent__line-prev"></div>
-                  <div class="content-rent__point">
-                    <div class="point-white"></div>
+              <div class="content-contacts">
+                <div class="content-contacts__container">
+                  <div class="content-contacts__title">
+                    <div class="title">С нами на связи</div>
+                    <div class="discription">Узнавай всё в наших социальных сетях</div>
                   </div>
-                  <div class="content-rent__list">
-                    <div class="list-title">аренда земельного участка</div>
-                    <div class="list-cards">
-                      <div class="card">
-                        <div class="card-location">Оренбург</div>
-                        <div class="card-cost">
-                          <div class="card-cost__number">35 000 ₽</div>
-                          <div class="card-cost__ga">/га</div>
-                        </div>
-                        <div class="underline"></div>
-                        <div class="card-discription">
-                          В год от кадастровой стоимости — максимальный размер арендной платы за земельные участки, предоставляемые резиденту
-                        </div>
+                  <div class="content-contacts__media">
+                    <div class="item vk">
+                      <svg width="111" height="62" viewBox="0 0 111 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M107.555 4.75176C108.316 2.37437 107.555 0.627441 103.935 0.627441H91.9634C88.9195 0.627441 87.5162 2.13653 86.7551 3.80061C86.7551 3.80061 80.6672 17.7082 72.043 26.7421C69.2528 29.3572 67.9844 30.1892 66.4624 30.1892C65.7015 30.1892 64.6 29.3572 64.6 26.98V4.75178C64.6 1.89889 63.7166 0.627441 61.1798 0.627441H42.3676C40.4654 0.627441 39.3214 1.95153 39.3214 3.20641C39.3214 5.91088 43.6333 6.53456 44.0778 14.1422V30.6649C44.0778 34.2874 43.3798 34.9442 41.8578 34.9442C37.7994 34.9442 27.9275 20.9744 22.0725 4.98941C20.925 1.88248 19.7741 0.627441 16.7146 0.627441H4.74319C1.32279 0.627441 0.638672 2.13653 0.638672 3.80061C0.638672 6.7724 4.69724 21.5121 19.5361 41.0063C29.4285 54.3193 43.3663 61.536 56.0492 61.536C63.6588 61.536 64.6002 59.9331 64.6002 57.1722V47.1103C64.6002 43.9045 65.3211 43.2648 67.7308 43.2648C69.5064 43.2648 72.5503 44.0968 79.6528 50.5157C87.7697 58.1231 89.1079 61.536 93.6736 61.536H105.645C109.065 61.536 110.776 59.9331 109.789 56.77C108.709 53.6174 104.834 49.0434 99.6917 43.6213C96.9013 40.5308 92.7161 37.2027 91.4477 35.5382C89.6721 33.3988 90.1795 32.4477 91.4477 30.546C91.4477 30.546 106.033 11.2894 107.555 4.75176Z" fill="white"/>
+                      </svg>
+                    </div>
+                    <div class="item telegram">
+                      <svg width="83" height="71" viewBox="0 0 83 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.07669 30.8118C5.07669 30.8118 41.6972 15.3879 54.3977 9.95679C59.2665 7.78452 75.7773 0.832637 75.7773 0.832637C75.7773 0.832637 83.3979 -2.20855 82.7628 5.17749C82.5509 8.21898 80.8576 18.8636 79.1643 30.3774C76.624 46.6705 73.8722 64.4841 73.8722 64.4841C73.8722 64.4841 73.4489 69.4808 69.8504 70.3497C66.2519 71.2186 60.3247 67.3085 59.2665 66.4393C58.4195 65.7877 43.3905 56.0117 37.8869 51.2324C36.4051 49.9291 34.7117 47.3223 38.0984 44.2808C45.719 37.1119 54.8211 28.2051 60.3247 22.5569C62.865 19.9499 65.405 13.8672 54.821 21.2532C39.792 31.8981 24.9745 41.8912 24.9745 41.8912C24.9745 41.8912 21.5875 44.0635 15.2373 42.1083C8.88669 40.1534 1.47793 37.5463 1.47793 37.5463C1.47793 37.5463 -3.60207 34.2878 5.07669 30.8118Z" fill="white"/>
+                      </svg>
+                    </div>
+                    <div class="items-backdrop">
+                      <div class="item-backdrop vk">
+                        <svg width="167" height="93" viewBox="0 0 167 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M162.394 6.86927C163.544 3.27676 162.394 0.636963 156.924 0.636963H138.833C134.234 0.636963 132.113 2.91736 130.963 5.43198C130.963 5.43198 121.764 26.4479 108.731 40.0992C104.515 44.0508 102.599 45.3081 100.299 45.3081C99.1489 45.3081 97.4843 44.0507 97.4843 40.4585V6.86929C97.4843 2.55827 96.1495 0.636963 92.316 0.636963H63.8887C61.0143 0.636963 59.2856 2.63781 59.2856 4.53408C59.2856 8.62082 65.8014 9.56328 66.473 21.0593V46.0269C66.473 51.5009 65.4182 52.4934 63.1184 52.4934C56.9857 52.4934 42.0681 31.3835 33.2205 7.22837C31.4866 2.53346 29.7475 0.636963 25.1242 0.636963H7.03405C1.86544 0.636963 0.831665 2.91736 0.831665 5.43198C0.831665 9.92268 6.96462 32.1959 29.3877 61.6539C44.3363 81.7713 65.3979 92.6765 84.5631 92.6765C96.0621 92.6765 97.4846 90.2544 97.4846 86.0823V70.8777C97.4846 66.0335 98.574 65.0667 102.215 65.0667C104.898 65.0667 109.498 66.324 120.231 76.0236C132.496 87.5194 134.519 92.6765 141.418 92.6765H159.508C164.677 92.6765 167.261 90.2544 165.77 85.4745C164.139 80.7106 158.282 73.7989 150.512 65.6055C146.295 60.9354 139.971 55.9062 138.054 53.391C135.371 50.1582 136.138 48.7209 138.054 45.8472C138.054 45.8472 160.094 16.7483 162.394 6.86927Z" fill="white"/>
+                        </svg>
                       </div>
-                      <div class="card">
-                        <div class="card-location">Оренбург</div>
-                        <div class="card-cost">
-                          <div class="card-cost__number">35 000 ₽</div>
-                          <div class="card-cost__ga">/га</div>
-                        </div>
-                        <div class="underline"></div>
-                        <div class="card-discription">
-                          В год от кадастровой стоимости — максимальный размер арендной платы за земельные участки, предоставляемые резиденту
-                        </div>
+                      <div class="item-backdrop telegram">
+                        <svg width="126" height="108" viewBox="0 0 126 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.67138 47.182C7.67138 47.182 63.009 23.8748 82.2009 15.6677C89.5582 12.3852 114.508 1.88011 114.508 1.88011C114.508 1.88011 126.023 -2.71545 125.064 8.44567C124.744 13.0417 122.185 29.1269 119.626 46.5255C115.787 71.1462 111.629 98.0645 111.629 98.0645C111.629 98.0645 110.989 105.615 105.552 106.928C100.114 108.241 91.1572 102.332 89.5582 101.019C88.2783 100.034 65.5678 85.2619 57.2512 78.0398C55.012 76.0703 52.4532 72.1312 57.5708 67.5352C69.0864 56.7021 82.8406 43.243 91.1572 34.7079C94.9959 30.7684 98.8341 21.5768 82.8406 32.7379C60.1301 48.8235 37.7392 63.9242 37.7392 63.9242C37.7392 63.9242 32.6211 67.2067 23.0251 64.2522C13.4287 61.2981 2.23325 57.3586 2.23325 57.3586C2.23325 57.3586 -5.44319 52.4346 7.67138 47.182Z" fill="white"/>
+                        </svg>
                       </div>
                     </div>
+                    <div class="ellipse"></div>
                   </div>
                 </div>
               </div>
-              <div class="content-support">
-                <div class="content-support__container">
-                  <div class="content-support__line"></div>
-                  <div class="content-support__line-prev"></div>
-                  <div class="content-support__point">
-                    <div class="point-white"></div>
-                  </div>
-                  <div class="content-support__list">
-                    <div class="list-title">сильная поддержка</div>
-                    <div class="list-slider">
-                      <div class="swiffy-slider slider-nav-arrow slider-nav-sm slider-nav-autoplay slider-nav-autopause slider-indicators-square slider-indicators-sm slider-nav-mousedrag" data-slider-nav-autoplay-interval="444500">
-                        <ul class="slider-container">
-                          <li class="slider-container__item">
-                            <div class="item-img__bg" style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 35.3%), url('/img/benefits/support/1.jpg'), rgba(255, 255, 255, 0.3)"></div>
-                            <div class="item">
-                              <div class="item-img" style="background-image: url('/img/benefits/support/1.jpg')">
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                                
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <div class="item-img">
-                              </div>
-                              <div class="item-content">
-                                <div class="item-content__title">
-                                  Москвы в Китай - самый короткий маршрут (Короче на 2219 км, чем через Забайкалье) 
-                                </div>
-                                <div class="item-content__discription">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      
-                        <button type="button" class="slider-nav">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.7232 18.9494C14.5503 19.1138 14.3192 19.2029 14.0807 19.1971C13.8422 19.1912 13.6157 19.0909 13.4512 18.9182L7.44877 12.6182C7.28921 12.4508 7.2002 12.2284 7.2002 11.9972C7.2002 11.7659 7.28921 11.5435 7.44877 11.3762L13.45 5.07616C13.5306 4.9871 13.6282 4.91507 13.737 4.86432C13.8459 4.81357 13.9638 4.78512 14.0838 4.78065C14.2039 4.77618 14.3236 4.79579 14.4359 4.8383C14.5482 4.88082 14.6509 4.9454 14.7379 5.02822C14.8249 5.11104 14.8944 5.21044 14.9424 5.32055C14.9904 5.43067 15.0158 5.54927 15.0172 5.66938C15.0187 5.78948 14.996 5.90865 14.9507 6.01987C14.9053 6.13109 14.8382 6.23211 14.7532 6.31696L9.34357 11.9978L14.7532 17.6774C14.9178 17.8501 15.0071 18.0811 15.0015 18.3196C14.9959 18.5581 14.8957 18.7846 14.7232 18.9494V18.9494Z" fill="#FFFFFF"/>
-                          </svg>
-                        </button>
-                        <button type="button" class="slider-nav slider-nav-next">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.27683 18.9494C9.44968 19.1138 9.68077 19.2029 9.91929 19.1971C10.1578 19.1912 10.3843 19.0909 10.5488 18.9182L16.5512 12.6182C16.7108 12.4508 16.7998 12.2284 16.7998 11.9972C16.7998 11.7659 16.7108 11.5435 16.5512 11.3762L10.55 5.07616C10.4694 4.9871 10.3718 4.91507 10.263 4.86432C10.1541 4.81357 10.0362 4.78512 9.91617 4.78065C9.79614 4.77618 9.67643 4.79579 9.5641 4.8383C9.45176 4.88082 9.34908 4.9454 9.26209 5.02822C9.1751 5.11104 9.10557 5.21044 9.0576 5.32055C9.00962 5.43067 8.98417 5.54927 8.98275 5.66938C8.98133 5.78948 9.00396 5.90865 9.04932 6.01987C9.09467 6.13109 9.16183 6.23211 9.24683 6.31696L14.6564 11.9978L9.24683 17.6774C9.08221 17.8501 8.9929 18.0811 8.99852 18.3196C9.00415 18.5581 9.10425 18.7846 9.27683 18.9494V18.9494Z" fill="#FFFFFF"/>
-                          </svg>
-                        </button>
-                      
-                        <div class="slider-indicators archSlide number">
-                          <button class="number-slide active">1/6</button>
-                          <button class="number-slide">2/6</button>
-                          <button class="number-slide">3/6</button>
-                          <button class="number-slide">4/6</button>
-                          <button class="number-slide">5/6</button>
-                          <button class="number-slide">6/6</button>
-                        </div>
-                      
-                        <div class="slider-indicators archSlide">
-                          <button class="active"></button>
-                          <button></button>
-                          <button></button>
-                          <button></button>
-                          <button></button>
-                          <button></button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="content-welcome">
+                <div class="content-welcome__text">
+                  Добро пожаловать в ОЭЗ Оренбуржье!
+                  Добро пожаловать в ОЭЗ Оренбуржье!
                 </div>
               </div>
             </div>
@@ -422,17 +236,16 @@
         </div>
       </div>
     </main>
-
     @include('partials/footer.html')
     
     <nav class="nav">
-      <div class="nav-item open-sheet" active-color="#ED0807">
+      <div class="nav-item is-active open-sheet" active-color="#ED0807">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18.75 20H5.25C4.41986 20.0001 3.62117 19.6824 3.01777 19.1123C2.41437 18.5422 2.052 17.7628 2.005 16.934L2 16.75V6.25C1.99993 5.67987 2.2163 5.13098 2.60537 4.71425C2.99444 4.29751 3.52721 4.04402 4.096 4.005L4.25 4H16.75C17.3201 3.99993 17.869 4.2163 18.2858 4.60537C18.7025 4.99444 18.956 5.52721 18.995 6.096L19 6.25V7H19.75C20.3201 6.99993 20.869 7.2163 21.2858 7.60537C21.7025 7.99444 21.956 8.52721 21.995 9.096L22 9.25V16.75C22.0001 17.5801 21.6824 18.3788 21.1123 18.9822C20.5422 19.5856 19.7628 19.948 18.934 19.995L18.75 20H5.25H18.75ZM5.25 18.5H18.75C19.1893 18.5 19.6126 18.3347 19.9357 18.037C20.2588 17.7392 20.4581 17.3309 20.494 16.893L20.5 16.75V9.25C20.5 9.06876 20.4344 8.89366 20.3152 8.75707C20.1961 8.62048 20.0316 8.53165 19.852 8.507L19.75 8.5H19V16.25C19 16.4312 18.9344 16.6063 18.8152 16.7429C18.6961 16.8795 18.5316 16.9684 18.352 16.993L18.25 17C18.0688 17 17.8937 16.9344 17.7571 16.8152C17.6205 16.6961 17.5316 16.5316 17.507 16.352L17.5 16.25V6.25C17.5 6.06876 17.4344 5.89366 17.3152 5.75707C17.1961 5.62048 17.0316 5.53165 16.852 5.507L16.75 5.5H4.25C4.06876 5.50001 3.89366 5.56564 3.75707 5.68477C3.62048 5.80389 3.53165 5.96845 3.507 6.148L3.5 6.25V16.75C3.50002 17.1892 3.66517 17.6123 3.96268 17.9354C4.26019 18.2585 4.6683 18.4579 5.106 18.494L5.25 18.5H18.75H5.25ZM12.246 14.5H15.252C15.442 14.5001 15.6249 14.5722 15.7638 14.702C15.9026 14.8317 15.9871 15.0093 16 15.1989C16.013 15.3885 15.9535 15.5759 15.8336 15.7233C15.7137 15.8707 15.5422 15.9671 15.354 15.993L15.252 16H12.246C12.056 15.9999 11.8731 15.9278 11.7342 15.798C11.5954 15.6683 11.5109 15.4907 11.498 15.3011C11.485 15.1115 11.5445 14.9241 11.6644 14.7767C11.7843 14.6293 11.9558 14.5329 12.144 14.507L12.246 14.5H15.252H12.246ZM9.243 11.005C9.44191 11.005 9.63268 11.084 9.77333 11.2247C9.91398 11.3653 9.993 11.5561 9.993 11.755V15.25C9.993 15.4489 9.91398 15.6397 9.77333 15.7803C9.63268 15.921 9.44191 16 9.243 16H5.748C5.54909 16 5.35832 15.921 5.21767 15.7803C5.07702 15.6397 4.998 15.4489 4.998 15.25V11.755C4.998 11.5561 5.07702 11.3653 5.21767 11.2247C5.35832 11.084 5.54909 11.005 5.748 11.005H9.243ZM8.493 12.505H6.498V14.5H8.493V12.505ZM12.246 11.005H15.252C15.442 11.0051 15.6249 11.0772 15.7638 11.207C15.9026 11.3367 15.9871 11.5143 16 11.7039C16.013 11.8935 15.9535 12.0809 15.8336 12.2283C15.7137 12.3757 15.5422 12.4721 15.354 12.498L15.252 12.505H12.246C12.0546 12.5069 11.8697 12.4357 11.7292 12.3057C11.5887 12.1758 11.5032 11.9971 11.4901 11.8061C11.4771 11.6152 11.5375 11.4265 11.6591 11.2787C11.7807 11.1308 11.9541 11.0351 12.144 11.011L12.246 11.005H15.252H12.246ZM5.748 7.502H15.252C15.4434 7.50005 15.6283 7.57134 15.7688 7.70127C15.9093 7.8312 15.9948 8.00993 16.0079 8.20088C16.0209 8.39182 15.9605 8.58052 15.8389 8.72834C15.7173 8.87616 15.5439 8.97192 15.354 8.996L15.252 9.002H5.748C5.55798 9.00194 5.37506 8.92976 5.23621 8.80003C5.09736 8.6703 5.01293 8.4927 4.99997 8.30312C4.98702 8.11354 5.04652 7.92611 5.16643 7.7787C5.28635 7.63129 5.45775 7.5349 5.646 7.509L5.748 7.502H15.252H5.748Z"/>
           </svg>
           События
       </div>
-      <div class="nav-item open-sheet is-active" active-color="#ED0807">
+      <div class="nav-item open-sheet" active-color="#ED0807">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.754 10C15.72 10 16.504 10.784 16.504 11.75V15H16.5V15.25C16.5 15.4489 16.421 15.6397 16.2803 15.7803C16.1397 15.921 15.9489 16 15.75 16C15.5511 16 15.3603 15.921 15.2197 15.7803C15.079 15.6397 15 15.4489 15 15.25V13H15.004V11.75C15.004 11.6837 14.9777 11.6201 14.9308 11.5732C14.8839 11.5263 14.8203 11.5 14.754 11.5H9.252C9.1857 11.5 9.12211 11.5263 9.07522 11.5732C9.02834 11.6201 9.002 11.6837 9.002 11.75V15H9V15.25C9 15.4489 8.92098 15.6397 8.78033 15.7803C8.63968 15.921 8.44891 16 8.25 16C8.05109 16 7.86032 15.921 7.71967 15.7803C7.57902 15.6397 7.5 15.4489 7.5 15.25V13H7.502V11.75C7.502 10.784 8.285 10 9.252 10H14.754ZM20.5 11.75V15.25C20.5 15.4489 20.579 15.6397 20.7197 15.7803C20.8603 15.921 21.0511 16 21.25 16C21.4489 16 21.6397 15.921 21.7803 15.7803C21.921 15.6397 22 15.4489 22 15.25V11.75C22 11.2859 21.8156 10.8408 21.4874 10.5126C21.1592 10.1844 20.7141 10 20.25 10H16.875C17.218 10.415 17.442 10.932 17.493 11.5H20.25C20.3163 11.5 20.3799 11.5263 20.4268 11.5732C20.4737 11.6201 20.5 11.6837 20.5 11.75ZM2 15.25C2 15.4489 2.07902 15.6397 2.21967 15.7803C2.36032 15.921 2.55109 16 2.75 16C2.94891 16 3.13968 15.921 3.28033 15.7803C3.42098 15.6397 3.5 15.4489 3.5 15.25V11.75C3.5 11.6837 3.52634 11.6201 3.57322 11.5732C3.62011 11.5263 3.6837 11.5 3.75 11.5H6.513C6.56274 10.949 6.7782 10.4261 7.131 10H3.75C3.28587 10 2.84075 10.1844 2.51256 10.5126C2.18437 10.8408 2 11.2859 2 11.75V15.25ZM12 3C12.7956 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6C15 6.79565 14.6839 7.55871 14.1213 8.12132C13.5587 8.68393 12.7956 9 12 9C11.2044 9 10.4413 8.68393 9.87868 8.12132C9.31607 7.55871 9 6.79565 9 6C9 5.20435 9.31607 4.44129 9.87868 3.87868C10.4413 3.31607 11.2044 3 12 3ZM12 4.5C11.6022 4.5 11.2206 4.65804 10.9393 4.93934C10.658 5.22064 10.5 5.60218 10.5 6C10.5 6.39782 10.658 6.77936 10.9393 7.06066C11.2206 7.34196 11.6022 7.5 12 7.5C12.3978 7.5 12.7794 7.34196 13.0607 7.06066C13.342 6.77936 13.5 6.39782 13.5 6C13.5 5.60218 13.342 5.22064 13.0607 4.93934C12.7794 4.65804 12.3978 4.5 12 4.5ZM18.5 4C19.163 4 19.7989 4.26339 20.2678 4.73223C20.7366 5.20107 21 5.83696 21 6.5C21 7.16304 20.7366 7.79893 20.2678 8.26777C19.7989 8.73661 19.163 9 18.5 9C17.837 9 17.2011 8.73661 16.7322 8.26777C16.2634 7.79893 16 7.16304 16 6.5C16 5.83696 16.2634 5.20107 16.7322 4.73223C17.2011 4.26339 17.837 4 18.5 4ZM18.5 5.5C18.2348 5.5 17.9804 5.60536 17.7929 5.79289C17.6054 5.98043 17.5 6.23478 17.5 6.5C17.5 6.76522 17.6054 7.01957 17.7929 7.20711C17.9804 7.39464 18.2348 7.5 18.5 7.5C18.7652 7.5 19.0196 7.39464 19.2071 7.20711C19.3946 7.01957 19.5 6.76522 19.5 6.5C19.5 6.23478 19.3946 5.98043 19.2071 5.79289C19.0196 5.60536 18.7652 5.5 18.5 5.5ZM5.5 4C6.16304 4 6.79893 4.26339 7.26777 4.73223C7.73661 5.20107 8 5.83696 8 6.5C8 7.16304 7.73661 7.79893 7.26777 8.26777C6.79893 8.73661 6.16304 9 5.5 9C4.83696 9 4.20107 8.73661 3.73223 8.26777C3.26339 7.79893 3 7.16304 3 6.5C3 5.83696 3.26339 5.20107 3.73223 4.73223C4.20107 4.26339 4.83696 4 5.5 4ZM5.5 5.5C5.23478 5.5 4.98043 5.60536 4.79289 5.79289C4.60536 5.98043 4.5 6.23478 4.5 6.5C4.5 6.76522 4.60536 7.01957 4.79289 7.20711C4.98043 7.39464 5.23478 7.5 5.5 7.5C5.76522 7.5 6.01957 7.39464 6.20711 7.20711C6.39464 7.01957 6.5 6.76522 6.5 6.5C6.5 6.23478 6.39464 5.98043 6.20711 5.79289C6.01957 5.60536 5.76522 5.5 5.5 5.5ZM2.75 17C2.55109 17 2.36032 17.079 2.21967 17.2197C2.07902 17.3603 2 17.5511 2 17.75V18.25C2 19.2446 2.39509 20.1984 3.09835 20.9017C3.80161 21.6049 4.75544 22 5.75 22H18.25C19.2446 22 20.1984 21.6049 20.9017 20.9017C21.6049 20.1984 22 19.2446 22 18.25V17.75C22 17.5511 21.921 17.3603 21.7803 17.2197C21.6397 17.079 21.4489 17 21.25 17H2.75ZM5.75 20.5C5.19656 20.5 4.66254 20.296 4.25004 19.927C3.83754 19.5581 3.57549 19.05 3.514 18.5H20.486C20.4245 19.05 20.1625 19.5581 19.75 19.927C19.3375 20.296 18.8034 20.5 18.25 20.5H5.75Z"/>
           </svg>
@@ -452,7 +265,7 @@
               <div class="sheet-header">
                 Инвесторам
               </div>
-              <div class="sheet-button content-row is-active mb-4">
+              <div class="sheet-button content-row mb-4">
                 <div class="sheet-button__text">Преимущества</div>
                 <div class="sheet-button__icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -624,170 +437,6 @@
       <span class="nav-indicator"></span>
     </nav>
   </div>
-    
-    
   </div>
 </body>
-<script>
-  const swiffyslider = {
-  // version: "1.6.0",
-  init(e = document.body) {
-      for (let t of e.querySelectorAll(".swiffy-slider")) this.initSlider(t)
-  },
-  initSlider(e) {
-      for (let t of e.querySelectorAll(".slider-nav")) {
-          let i = t.classList.contains("slider-nav-next");
-          t.addEventListener("click", () => this.slide(e, i), {
-              passive: !0
-          })
-      }
-      for (let t of e.querySelectorAll(".slider-indicators")) t.addEventListener("click", () => this.slideToByIndicator()), this.onSlideEnd(e, () => this.handleIndicators(e), 60);
-      if (e.classList.contains("slider-nav-autoplay")) {
-          const t = e.getAttribute("data-slider-nav-autoplay-interval") ? e.getAttribute("data-slider-nav-autoplay-interval") : 2500;
-          this.autoPlay(e, t, e.classList.contains("slider-nav-autopause"))
-      }
-      if (["slider-nav-autohide", "slider-nav-animation"].some(t => e.classList.contains(t))) {
-          const t = e.getAttribute("data-slider-nav-animation-threshold") ? e.getAttribute("data-slider-nav-animation-threshold") : .3;
-          this.setVisibleSlides(e, t)
-      }
-  },
-  setVisibleSlides(e, t = .3) {
-      let i = new IntersectionObserver(t => {
-          t.forEach(e => {
-              e.isIntersecting ? e.target.classList.add("slide-visible") : e.target.classList.remove("slide-visible")
-          }), e.querySelector(".slider-container>*:first-child").classList.contains("slide-visible") ? e.classList.add("slider-item-first-visible") : e.classList.remove("slider-item-first-visible"), e.querySelector(".slider-container>*:last-child").classList.contains("slide-visible") ? e.classList.add("slider-item-last-visible") : e.classList.remove("slider-item-last-visible")
-      }, {
-          root: e.querySelector(".slider-container"),
-          threshold: t
-      });
-      for (let t of e.querySelectorAll(".slider-container>*")) i.observe(t)
-  },
-  slide(e, t = !0) {
-      const i = e.querySelector(".slider-container"),
-          s = e.classList.contains("slider-nav-page"),
-          l = e.classList.contains("slider-nav-noloop"),
-          r = e.classList.contains("slider-nav-nodelay"),
-          o = i.children,
-          n = parseInt(window.getComputedStyle(i).columnGap),
-          a = o[0].offsetWidth + n;
-      let d = t ? i.scrollLeft + a : i.scrollLeft - a;
-      s && (d = t ? i.scrollLeft + i.offsetWidth : i.scrollLeft - i.offsetWidth), i.scrollLeft < 1 && !t && !l && (d = i.scrollWidth - i.offsetWidth), i.scrollLeft >= i.scrollWidth - i.offsetWidth && t && !l && (d = 0), i.scroll({
-          left: d,
-          behavior: r ? "auto" : "smooth"
-      })
-  },
-  slideToByIndicator() {
-      const e = window.event.target,
-          t = Array.from(e.parentElement.children).indexOf(e),
-          i = e.parentElement.children.length,
-          s = e.closest(".swiffy-slider"),
-          l = s.querySelector(".slider-container").children.length / i * t;
-      this.slideTo(s, l)
-  },
-  slideTo(e, t) {
-      const i = e.querySelector(".slider-container"),
-          s = parseInt(window.getComputedStyle(i).columnGap),
-          l = i.children[0].offsetWidth + s,
-          r = e.classList.contains("slider-nav-nodelay");
-      i.scroll({
-          left: l * t,
-          behavior: r ? "auto" : "smooth"
-      })
-  },
-  onSlideEnd(e, t, i = 125) {
-      let s;
-      e.querySelector(".slider-container").addEventListener("scroll", (function() {
-          window.clearTimeout(s), s = setTimeout(t, i)
-      }), {
-          capture: !1,
-          passive: !0
-      })
-  },
-  autoPlay(e, t, i) {
-      t = t < 750 ? 750 : t;
-      let s = setInterval(() => this.slide(e), t);
-      const l = () => this.autoPlay(e, t, i);
-      return i && (["mouseover", "touchstart"].forEach((function(t) {
-          e.addEventListener(t, (function() {
-              window.clearTimeout(s)
-          }), {
-              once: !0,
-              passive: !0
-          })
-      })), ["mouseout", "touchend"].forEach((function(t) {
-          e.addEventListener(t, (function() {
-              l()
-          }), {
-              once: !0,
-              passive: !0
-          })
-      }))), s
-  },
-  handleIndicators(e) {
-      if (!e) return;
-      const t = e.querySelector(".slider-container"),
-          i = t.scrollWidth - t.offsetWidth,
-          s = t.scrollLeft / i;
-      for (let t of e.querySelectorAll(".slider-indicators")) {
-          let e = t.children,
-              i = Math.abs(Math.round((e.length - 1) * s));
-          for (let t of e) t.classList.remove("active");
-          e[i].classList.add("active")
-      }
-  }
-};
-window.swiffyslider = swiffyslider, document.currentScript.hasAttribute("data-noinit") || (document.currentScript.hasAttribute("defer") ? swiffyslider.init() : document.onreadystatechange = () => {
-  "interactive" === document.readyState && swiffyslider.init()
-});
-//# sourceMappingURL=swiffy-slider.min.js.map
-</script>
-
-<script>
-  const swiffysliderextensions = {
-    version: "1.6.0",
-    draggingtimer: null,
-    init(e = document.body) {
-        for (const s of e.querySelectorAll(".swiffy-slider")) this.initSlider(s)
-    },
-    initSlider(e) {
-        e.classList.contains("slider-nav-mousedrag") && e.addEventListener("mousedown", s => this.handleMouseDrag(s, e), {
-            passive: !0
-        })
-    },
-    handleMouseDrag(e, s) {
-        if (e.srcElement.classList.contains("slider-nav") || e.srcElement.parentElement.classList.contains("slider-indicators")) return;
-        const t = s.querySelector(".slider-container");
-        s.classList.contains("dragging") && clearTimeout(this.draggingtimer), t.style.cursor = "grabbing", s.classList.add("dragging");
-        const i = t.scrollLeft,
-            n = e.clientX,
-            r = t.children[0].offsetWidth + parseInt(window.getComputedStyle(t).columnGap),
-            o = r * (t.children.length - 1),
-            l = t.scrollLeft;
-        let d = l;
-        const a = e => {
-            const s = e.clientX - n,
-                a = i - 1.8 * s;
-            a > 0 && a <= o && (t.scrollLeft = a, s < 0 ? d = o <= l ? l : t.scrollLeft + (r + 1.8 * s) : l > 0 && (d = t.scrollLeft - (r - 1.8 * s)))
-        };
-        t.addEventListener("mousemove", a, {
-            passive: !0
-        }), document.addEventListener("mouseup", () => {
-            t.removeEventListener("mousemove", a), t.style.cursor = null, d < 0 && (d = 0), t.scroll({
-                left: d,
-                behavior: "smooth"
-            }), this.draggingtimer = setTimeout(() => {
-                s.classList.remove("dragging")
-            }, 550)
-        }, {
-            once: !0,
-            passive: !0
-        })
-    }
-};
-window.swiffyslider.extensions = swiffysliderextensions, document.currentScript.hasAttribute("data-noinit") || window.addEventListener("load", () => {
-    swiffyslider.extensions.init()
-});
-</script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script> -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous"> -->
 </html>

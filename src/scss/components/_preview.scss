@@ -2,8 +2,8 @@
   0% {
     top: 0px;
     left: 0px;
-    // transform: scale(1) translate(0%, 0%);
-    transform: scale(1);
+    transform: scale(1) translate(0%, 0%);
+    // transform: scale(1);
   }
 
   80% {
@@ -13,11 +13,10 @@
 
   100% {
     // transform: translate(0.85%, 18%);
-    // transform: scale(13) translate(8.85%, 18%);
-
-    transform: scale(13);
-    top: 2200px;
-    left: 2200px;
+    transform: scale(13) translate(8.85%, 18%);
+    // transform: scale(13);
+    // top: 2200px;
+    // left: 2200px;
   }
 }
 .preview {
@@ -47,7 +46,7 @@
               filter: blur(131px);
             }
             svg {
-              position: absolute;
+              // position: absolute;
               animation: slidein 8s forwards;
               // top: 2200px;
               // left: 2200px;
@@ -322,7 +321,6 @@
           // opacity: 0.3;
           backdrop-filter: blur(1px);
           padding: 120px 24px 74px 24px;
-          margin-top: 120px;
           &__container {
             max-width: 1172px;
             width: 100%;

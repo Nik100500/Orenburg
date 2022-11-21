@@ -193,7 +193,9 @@ button,
 input {
 	/* 1 */
 	overflow: visible;
-}
+	outline: none !important;
+}                
+
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.

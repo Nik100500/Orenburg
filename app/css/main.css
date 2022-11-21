@@ -546,9 +546,11 @@ a {
   margin-top: 23px;
   width: 294px;
   left: -26px;
+  font-size: 14px;
 }
 .dropdown__select.lang {
   margin-top: 14px;
+  font-size: 14px;
 }
 @media screen and (min-width: 950px) {
   .dropdown__select.lang {
@@ -6328,9 +6330,17 @@ button {
   padding-bottom: 9px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 23px;
   opacity: 0.7;
   color: #1D1D1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .content-logo {
@@ -6349,14 +6359,12 @@ button {
   0% {
     top: 0px;
     left: 0px;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(1) translate(0%, 0%);
+    transform: scale(1) translate(0%, 0%);
   }
   100% {
-    -webkit-transform: scale(13);
-    transform: scale(13);
-    top: 2200px;
-    left: 2200px;
+    -webkit-transform: scale(13) translate(8.85%, 18%);
+    transform: scale(13) translate(8.85%, 18%);
   }
 }
 
@@ -6364,14 +6372,12 @@ button {
   0% {
     top: 0px;
     left: 0px;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(1) translate(0%, 0%);
+    transform: scale(1) translate(0%, 0%);
   }
   100% {
-    -webkit-transform: scale(13);
-    transform: scale(13);
-    top: 2200px;
-    left: 2200px;
+    -webkit-transform: scale(13) translate(8.85%, 18%);
+    transform: scale(13) translate(8.85%, 18%);
   }
 }
 .preview__main__content {
@@ -6408,7 +6414,6 @@ button {
   filter: blur(131px);
 }
 .preview__main__content .content-start .map-svg svg {
-  position: absolute;
   -webkit-animation: slidein 8s forwards;
   animation: slidein 8s forwards;
   height: 100%;
@@ -6777,7 +6782,6 @@ button {
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
   padding: 120px 24px 74px 24px;
-  margin-top: 120px;
 }
 .preview__main__content .content-calc__container {
   max-width: 1172px;
@@ -8828,6 +8832,7 @@ button {
   margin: 0 auto;
   background: #FFFFFF;
   padding: 38px 24px;
+  z-index: 1;
 }
 @media screen and (min-width: 640px) {
   .map__main__content .content-contacts__form .form {
@@ -8902,6 +8907,7 @@ button {
   font-size: 16px;
   line-height: 20px;
   width: 100%;
+  outline: none;
 }
 .map__main__content .content-contacts__form .form-input ::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgba(29, 29, 29, 0.3);
@@ -8917,6 +8923,9 @@ button {
 }
 .map__main__content .content-contacts__form .form-input ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgba(29, 29, 29, 0.3);
+}
+.map__main__content .content-contacts__form .form-input input:focus {
+  border-color: #30A5E2;
 }
 .map__main__content .content-contacts__form .form .main-button {
   padding: 14px 32px;

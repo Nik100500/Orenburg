@@ -142,9 +142,12 @@
             padding-bottom: 9px;
             font-weight: 500;
             font-size: 16px;
-            line-height: 22px;
+            line-height: 23px;
             opacity: .7;
             color: #1D1D1D;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
           }
         }
       }
