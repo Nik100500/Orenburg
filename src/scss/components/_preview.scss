@@ -665,9 +665,27 @@
           color: #FFFFFF;
           white-space: nowrap;
           padding-bottom: 240px;
+          backdrop-filter: blur(1px);
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          &__text {
+            white-space: nowrap;
+            animation: marquee 15s infinite linear;
+            &:after{
+            }
+          }
         }
       }
     }
+  }
+}
+@keyframes marquee{
+  0% {
+      transform: translateX(0)
+  }
+  100% {
+      transform: translateX(-50%)
   }
 }
 

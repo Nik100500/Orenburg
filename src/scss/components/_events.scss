@@ -538,6 +538,8 @@
                       padding: 38px 28px;
                       display: block;
                       &__container {
+                        position: sticky;
+                        top: 24px;
                       }
                       &__title {
                         font-weight: 800;

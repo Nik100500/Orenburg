@@ -49,9 +49,9 @@ document.addEventListener('click', (e) => {
 
 	const isDropdownChild = element.closest('.dropdown__filter.lang')		
 	
-	if (!isDropdownChild) {
+	/* if (!isDropdownChild) {
 		toggle.checked = false
-	}
+	} */
 })
 
 // Platforms selector
@@ -72,9 +72,9 @@ document.addEventListener('click', (e) => {
 
 	const isDropdownChild = element.closest('.dropdown__filter.platforms')		
 	
-	if (!isDropdownChild) {
+	/* if (!isDropdownChild) {
 		toggle.checked = false
-	}
+	} */
 })
 
 // Statuses selector
@@ -95,7 +95,7 @@ document.addEventListener('click', (e) => {
 
 	const isDropdownChild = element.closest('.dropdown__filter.statuses')		
 	
-	if (!isDropdownChild) {
+	/* if (!isDropdownChild) {
 		toggle.checked = false
-	}
+	} */
 })
