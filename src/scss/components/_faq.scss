@@ -133,6 +133,13 @@
 
           &__arrow {
             margin-right: 16px;
+            width: 18px;
+            path {
+              width: 18px;
+            }
+          }
+          &__text {
+            width: calc(100% - 36px);
           }
         }
         .panel {
