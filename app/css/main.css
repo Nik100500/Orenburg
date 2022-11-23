@@ -3812,9 +3812,6 @@ button {
     border: 1px solid rgba(12, 49, 76, 0.2);
     border-radius: 6px;
     text-transform: none;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   .residents__main__content .content-filters .dropdown .dropdown__filter-selected.statuses {
     display: -webkit-box;
@@ -3824,9 +3821,9 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .residents__main__content .content-filters .dropdown .dropdown__filter-selected.platforms {
     display: -webkit-box;
@@ -3836,14 +3833,11 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .residents__main__content .content-filters .dropdown .dropdown__filter.platforms.filters {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     background: #F3F6F8;
     width: 181px;
     padding: 9px 18px;
@@ -3999,21 +3993,38 @@ button {
   }
 }
 .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-nav {
-  left: 26px;
-  top: calc(50% - 29px);
-  width: 58px;
-  height: 58px;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  fill: #FFFFFF;
+  display: none;
 }
-.residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-nav svg {
-  fill: #FFFFFF;
+@media screen and (min-width: 1024px) {
+  .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-nav {
+    display: block;
+    left: 26px;
+    top: calc(50% - 29px);
+    width: 58px;
+    height: 58px;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    fill: #FFFFFF;
+  }
+  .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-nav svg {
+    fill: #FFFFFF;
+  }
+  .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-nav.slider-nav-next {
+    left: auto;
+    right: 26px;
+  }
 }
-.residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-nav.slider-nav-next {
-  left: auto;
-  right: 26px;
+@media screen and (max-width: 1024px) {
+  .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-container__item {
+    padding: 0 16px;
+  }
+  .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-container__item .item {
+    border-radius: 6px;
+  }
+  .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-container__item .item img {
+    border-radius: 6px;
+  }
 }
 .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-indicators {
   margin-bottom: -100px;
@@ -4021,8 +4032,9 @@ button {
 .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-indicators > * {
   display: none;
 }
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 1024px) {
   .residents__main__content .content-modals .graph-modal__container .swiffy-slider.residents-gallery .slider-indicators > * {
+    display: block;
     background: none;
     width: 129px;
     height: 75px;
@@ -4135,7 +4147,11 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .residents__main__content .content-modals .graph-modal__container .graph-modal__content .content-flex-row {
+    margin-top: 200px;
+  }
 }
 .residents__main__content .content-modals .graph-modal__container .graph-modal__content .content-flex-col {
   display: -webkit-box;
@@ -4337,7 +4353,7 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 38px;
+  margin: 38px 0;
 }
 .residents__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__item {
   width: calc(33.333% - 10px);
