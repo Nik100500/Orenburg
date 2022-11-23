@@ -156,16 +156,18 @@
             margin-top: 48px;
           }
           .card {
-            &:nth-child(5n+1), &:nth-child(5n+2) {
-              width: 100%;
-              height: 335px;
-              @media screen and (min-width: 640px){
-                width: calc(50% - 14px);
-                height: 511px;
-              }
-              @media screen and (min-width: 1024px){
-                .card__img {
-                  height: 330px;
+            &.show {
+              &:nth-child(5n+1), &:nth-child(5n+2) {
+                width: 100%;
+                height: 335px;
+                @media screen and (min-width: 640px){
+                  width: calc(50% - 14px);
+                  height: 511px;
+                }
+                @media screen and (min-width: 1024px){
+                  .card__img {
+                    height: 330px;
+                  }
                 }
               }
             }
@@ -419,10 +421,39 @@
                       margin-top: -160px;
                       padding: 0 16px;
                       order: 3;
+                      @media screen and (max-width: 1024px) {
+                        margin: 0 auto;
+                        margin-bottom: 38px;
+                        margin-top: -160px;
+                        .events-gallery {
+                          .slider {
+                            &-container {
+                              &__item {
+                                .item {
+                                  width: 100%;
+                                  img {
+                                    width: 100%;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                       .gallery {
                         &-item {
-                          width: 100%;
-                          border-radius: 6px;
+                          display: none;
+                          @media screen and (min-width: 1024px){
+                            width: 100%;
+                            border-radius: 6px;
+                            display: block;
+                          }
+                        }
+                      }
+                      
+                      @media screen and (min-width: 1024px) {
+                        .events-gallery {
+                          display: none;
                         }
                       }
                     }
