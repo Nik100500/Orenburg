@@ -1,6 +1,6 @@
 .map {
   &__banner {
-    height: 375px;
+    height: 356px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,9 +211,9 @@
             align-items: center;
             padding-bottom: 80px;
             @media screen and (min-width: 640px) {
-              padding-top: 188px;
+              padding-top: 120px;
               flex-direction: row;
-              padding-bottom: 240px;
+              padding-bottom: 140px;
             }
             .item {
               width: 100%;
@@ -315,7 +315,7 @@
                   color: rgba(29, 29, 29, 0.7);
                   margin-bottom: 8px;
                 }
-                input {
+                input, textarea {
                   border: 1px solid rgba(12, 49, 76, 0.2);
                   border-radius: 6px;
                   padding: 14px 16px;
@@ -328,8 +328,16 @@
                 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
                   color: rgba(29, 29, 29, 0.3);
                 }
+
+                textarea {
+                  height: 182px;
+                  @media screen and (min-width: 950px) {
+                    height: 174px;
+                    
+                  }
+                }
                 
-                input:focus {
+                input:focus, textarea:focus {
                   border-color: #30A5E2;
                 }
               }
