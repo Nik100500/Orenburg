@@ -9,7 +9,11 @@ html {
 body {
   // height: max-content;
   height: 100%;
+  &.overflow {
+    overflow: hidden;
+  }
 }
+
 
 main {
 	height: 100%;
