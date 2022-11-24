@@ -7,3 +7,4 @@ import './components/input-slider.js';
 import './components/tab-bar.js';
 import './components/bottom-sheet.js';
 import './components/preview-calculator.js';
+import './components/map-preview-animation.js';

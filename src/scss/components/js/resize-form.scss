@@ -38,6 +38,7 @@
   padding: 9px 16px;
   background: #30A5E2;
   border-radius: 6px;  
+  width: max-content;
   &.resize-form {
     z-index: 2;
     &.active {
