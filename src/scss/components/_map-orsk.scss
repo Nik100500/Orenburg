@@ -1,0 +1,33 @@
+.management {
+  &__banner {
+    height: 356px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    @media screen and (min-width: 640px) {
+      height: 500px;
+    }
+    &__container {
+      padding: 0 16px;
+      @media screen and (min-width: 1220px) {
+        padding: 0 24px;
+      }
+    }
+  }
+  &__main {
+    background: linear-gradient(183.29deg, #080C2C 13.99%, #110036 93.14%);
+    position: relative;
+    padding: 48px 24px 160px 24px;
+    @media screen and (min-width: 640px) {
+      padding: 100px 24px 240px 24px;
+    }
+    &__content {
+      max-width: 1172px;
+      margin: 0 auto;
+      color: #FFFFFF;
+      .content {
+      }
+    }
+  }
+}
