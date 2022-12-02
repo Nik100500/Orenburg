@@ -11400,6 +11400,121 @@ main.main.overflow-map {
   background: -o-linear-gradient(200.09deg, #0BCAD7 -12.95%, #1ABEBF 48.01%, #0FE7DA 102.71%);
   background: linear-gradient(249.91deg, #0BCAD7 -12.95%, #1ABEBF 48.01%, #0FE7DA 102.71%);
 }
+.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 9px;
+    margin: 17.5px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__cost {
+    color: #1D1D1D;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__cost .cost-number {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__cost .cost-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.7;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__structure-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 34px;
+    margin-bottom: 77px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__structure-items .underline {
+    background: #1d1d1d;
+    width: 100%;
+    height: 1px;
+    opacity: 0.15;
+    margin: 20px 0;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__structure-items .underline.absolute {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    margin: 0;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__structure-items .item {
+    width: calc(50% - 17px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__structure-items .item-icon {
+    width: 38px;
+    height: 38px;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__structure-items .item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__structure-items .item-content__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-mobile-info__structure-items .item-content__discription {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1D1D1D;
+  }
+}
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11580,14 +11695,6 @@ main.main.overflow-map {
   flex-direction: column;
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-gallery__more .more-img {
-  /* @media screen and (max-width: 1024px){
-    img {
-      width: 100%;
-      height: 100%;
-      min-height: 100%;
-      min-width: 100%;
-    }
-  } */
   height: calc(50% - 11px);
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-gallery__more .more-img__open {
@@ -11617,65 +11724,6 @@ main.main.overflow-map {
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
-}
-.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile {
-  padding: 0 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 38px 0;
-}
-.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__item {
-  width: calc(33.333% - 10px);
-  height: 67px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-  border-radius: 6px;
-  color: #1D1D1D;
-}
-.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__item .item-icon {
-  margin-bottom: 6px;
-}
-.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__item .item-icon.email {
-  margin-bottom: 10px;
-}
-.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__item .item-icon.phone {
-  margin-bottom: 6px;
-}
-.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__item .item-text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-}
-@media screen and (min-width: 1024px) {
-  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile {
-    display: none;
-  }
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-discription {
   display: -webkit-box;
@@ -11814,6 +11862,7 @@ main.main.overflow-map {
   border-radius: 6px;
   margin-bottom: 24px;
   padding: 16px;
+  padding-bottom: 20px;
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
@@ -11856,27 +11905,37 @@ main.main.overflow-map {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 0;
-  gap: 18px;
+  gap: 12px;
 }
 @media screen and (min-width: 1024px) {
   .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items {
     margin-top: 28px;
+    gap: 18px;
   }
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  gap: 12px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .item-title {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11885,13 +11944,41 @@ main.main.overflow-map {
   align-items: flex-end;
   white-space: nowrap;
 }
+@media screen and (min-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .item-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .item-dashed {
-  width: 100%;
-  opacity: 0.15;
-  border-bottom: 1px dashed #1D1D1D;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .item-dashed {
+    display: block;
+    width: 100%;
+    opacity: 0.15;
+    border-bottom: 1px dashed #1D1D1D;
+  }
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .item-count {
   white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0C314C;
+}
+.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .underline {
+  display: block;
+  width: calc(100% + 16px);
+  height: 1px;
+  opacity: 0.15;
+  background: #1D1D1D;
+}
+@media screen and (min-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-information__items .underline {
+    display: none;
+  }
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-resident {
   display: -webkit-box;
@@ -11994,20 +12081,41 @@ main.main.overflow-map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 28px;
   padding-top: 0;
 }
+@media screen and (min-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-resident__item .item-contacts__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-resident__item .item-contacts__content .underline {
-  height: 100%;
-  width: 1px;
   background: #1d1d1d;
   opacity: 0.15;
-  margin-left: 60px;
-  margin-right: 38px;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-resident__item .item-contacts__content .underline {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 1px;
+    background: #1d1d1d;
+    opacity: 0.15;
+    margin-left: 60px;
+    margin-right: 38px;
+  }
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-resident__item .item-contacts__content .content-left {
   display: -webkit-box;
@@ -12072,6 +12180,7 @@ main.main.overflow-map {
   font-size: 14px;
   line-height: 18px;
   color: #1D1D1D;
+  margin-bottom: 0;
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-resident__item .item-contacts__content .content-right .item-subtitle {
   font-weight: 500;
@@ -12089,9 +12198,10 @@ main.main.overflow-map {
   flex-direction: column;
   background: #FFFFFF;
   border-radius: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 84px;
   width: 100%;
   padding: 16px;
+  padding-bottom: 37px;
 }
 @media screen and (min-width: 1024px) {
   .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-additionally {
@@ -12101,7 +12211,7 @@ main.main.overflow-map {
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-additionally__title {
   font-weight: 800;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-weight: 800;
   font-size: 20px;
   line-height: 25px;
@@ -12136,7 +12246,11 @@ main.main.overflow-map {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 16px;
-  margin-top: 28px;
+}
+@media screen and (min-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-additionally__items {
+    margin-top: 28px;
+  }
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-additionally__items .item {
   display: -webkit-box;
@@ -12148,8 +12262,13 @@ main.main.overflow-map {
   flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  width: calc(50% - 8px);
+  width: 100%;
   gap: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-additionally__items .item {
+    width: calc(50% - 8px);
+  }
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-additionally__items .item-text {
   font-weight: 500;
@@ -12162,6 +12281,35 @@ main.main.overflow-map {
   -ms-flex-align: center;
   align-items: center;
   color: #1D1D1D;
+}
+.map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile {
+    display: block;
+    background: #FFFFFF;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__container {
+    padding: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 12px;
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__button-main {
+    padding: 14px;
+    width: calc(100% - 60px);
+  }
+  .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-feedback-mobile__button-call {
+    padding: 12px;
+    border: 1px solid #30A5E2;
+    border-radius: 6px;
+  }
 }
 
 @media screen and (min-width: 1180px) {

@@ -653,6 +653,92 @@ main.main.overflow-map {
                     background: linear-gradient(249.91deg, #0BCAD7 -12.95%, #1ABEBF 48.01%, #0FE7DA 102.71%);
                   }
                 }
+                &-mobile-info {
+                  display: none;
+                }
+                @media screen and (max-width: 1024px) {
+                  &-mobile-info {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 16px;
+                    &__location {
+                      display: flex;
+                      flex-direction: row;
+                      gap: 9px;
+                      margin: 17.5px 0;
+                      align-items: center;
+                    }
+                    &__cost {
+                      color: #1D1D1D;
+                      .cost {
+                        &-number {
+                          font-weight: 800;
+                          font-size: 24px;
+                          line-height: 31px;
+                        }
+                        &-text {
+                          font-weight: 500;
+                          font-size: 14px;
+                          line-height: 18px;
+                          opacity: 0.7;
+                        }
+                      }
+                    }
+                    &__structure-items {
+                      display: flex;
+                      flex-direction: row;
+                      flex-wrap: wrap;
+                      margin-top: 34px;
+                      margin-bottom: 77px;
+                      justify-content: space-between;
+                      position: relative;
+                      .underline {
+                        background: #1d1d1d;
+                        width: 100%;
+                        height: 1px;
+                        opacity: .15;
+                        margin: 20px 0;
+                        &.absolute {
+                          position: absolute;
+                          top: 0;
+                          left: 50%;
+                          width: 1px;
+                          height: 100%;
+                          margin: 0;
+                        }
+                      }
+                      .item {
+                        width: calc(50% - 17px);
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        &-icon {
+                          width: 38px;
+                          height: 38px;
+                        }
+                        gap: 8px;
+                        &-content {
+                          display: flex;
+                          flex-direction: column;
+                          gap: 4px;
+                          &__title {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #000000;
+                          }
+                          &__discription {
+                            font-weight: 800;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #1D1D1D;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  
+                }
                 &-header {
                   display: flex;
                   flex-direction: column-reverse;
@@ -768,23 +854,11 @@ main.main.overflow-map {
                     padding: 0;
                   }
                   &__main {
-                    // width: 100%;
-                    // min-width: 100%;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    // @media screen and (min-width: 1024px) {
                       width: 67.2%;
                       min-width: 0;
-                    // }
-                    // @media screen and (max-width: 1024px){
-                    //   img {
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     min-height: 100%;
-                    //     min-width: 100%;
-                    //   }
-                    // }
                   }
                   &__more {
                     display: flex;
@@ -792,33 +866,9 @@ main.main.overflow-map {
                     width: 30.5%;
                     flex-direction: column;
                     .more-img {
-                      // height: 100%;
-                      // min-height: 100%;
-                      // min-width: 100%;
-                      /* @media screen and (max-width: 1024px){
-                        img {
-                          width: 100%;
-                          height: 100%;
-                          min-height: 100%;
-                          min-width: 100%;
-                        }
-                      } */
-                      // @media screen and (min-width: 1024px) {
                         height: calc(50% - 11px);
-                      // }
                       &__open {
                         position: relative;
-                        // @media screen and (max-width: 1024px){
-                        //   height: 100%;
-                        //   min-height: 100%;
-                        //   min-width: 100%;
-                        //   img {
-                        //     width: 100%;
-                        //     height: 100%;
-                        //     min-height: 100%;
-                        //     min-width: 100%;
-                        //   }
-                        // }
                         &__overlay {
                           position: absolute;
                           top: 0;
@@ -839,46 +889,6 @@ main.main.overflow-map {
                         }
                       }
                     }
-                  }
-                }
-                &-feedback-mobile {
-                  padding: 0 16px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-between;
-                  align-items: center;
-                  margin: 38px 0;
-                  &__item {
-                    width: calc(33.333% - 10px);
-                    height: 67px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    background: #FFFFFF;
-                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-                    border-radius: 6px;
-                    color: #1D1D1D;
-                    .item {
-                      &-icon {
-                        margin-bottom: 6px;
-                        &.email {
-                          margin-bottom: 10px;
-                        }
-                        &.phone {
-                          margin-bottom: 6px;
-                        }
-                      }
-                      &-text {
-                        font-weight: 500;
-                        font-size: 12px;
-                        line-height: 15px;
-                      }
-                    }
-                  }
-                  @media screen and (min-width: 1024px) {
-                    display: none;
                   }
                 }
                 &-discription {
@@ -984,6 +994,7 @@ main.main.overflow-map {
                   border-radius: 6px;
                   margin-bottom: 24px;  
                   padding: 16px;
+                  padding-bottom: 20px;
                   width: 100%;
                   @media screen and (min-width: 1024px) {
                     // width: 67.2%;
@@ -1015,32 +1026,58 @@ main.main.overflow-map {
                     display: flex;
                     flex-direction: column;
                     margin-top: 0;
-                    gap: 18px;
+                    gap: 12px;
                     @media screen and (min-width: 1024px) {
                       margin-top: 28px;
+                      gap: 18px;
                     }
                     .item {
                       display: flex;
-                      flex-direction: row;
-                      gap: 12px;
+                      flex-direction: column;
+                      gap: 4px;
+                      @media screen and (min-width: 1024px) {
+                        flex-direction: row;
+                        gap: 12px;
+                      }
                       &-title {
                         font-weight: 300;
-                        font-size: 16px;
-                        line-height: 20px;
+                        font-size: 14px;
+                        line-height: 18px;
                         display: flex;
                         align-items: flex-end;
                         white-space: nowrap;
+                        @media screen and (min-width: 1024px) {
+                          font-size: 16px;
+                          line-height: 20px;
+                        }
                       }
                       &-dashed {
-                        width: 100%;
-                        opacity: 0.15;
-                        border-bottom: 1px dashed #1D1D1D;
+                        display: none;
+                        @media screen and (min-width: 1024px) {
+                          display: block;
+                          width: 100%;
+                          opacity: 0.15;
+                          border-bottom: 1px dashed #1D1D1D;
+                        }
                       }
                       &-count {
                         white-space: nowrap;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #0C314C;
                       }
                     }
-                    
+                    .underline {
+                      display: block;
+                      width: calc(100% + 16px);
+                      height: 1px;
+                      opacity: .15;
+                      background: #1D1D1D;
+                      @media screen and (min-width: 1024px) {
+                        display: none;
+                      }
+                    }
                   }
                 }
                 &-resident {
@@ -1118,16 +1155,30 @@ main.main.overflow-map {
                         }
                         &__content {
                           display: flex;
-                          flex-direction: row;
+                          flex-direction: column;
                           padding: 28px;
                           padding-top: 0;
+                          @media screen and (min-width: 1024px) {
+                            flex-direction: row;
+                          }
                           .underline {
-                            height: 100%;
-                            width: 1px;
                             background: #1d1d1d;
                             opacity: .15;
-                            margin-left: 60px;
-                            margin-right: 38px;
+                            width: 100%;
+                            height: 1px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            display: block;
+                            @media screen and (min-width: 1024px) {
+                              margin-top: 0px;
+                              margin-bottom: 0px;
+                              height: 100%;
+                              width: 1px;
+                              background: #1d1d1d;
+                              opacity: .15;
+                              margin-left: 60px;
+                              margin-right: 38px;
+                            }
                           }
                           .content {
                             &-left {
@@ -1174,6 +1225,7 @@ main.main.overflow-map {
                                   font-size: 14px;
                                   line-height: 18px;
                                   color: #1D1D1D;
+                                  margin-bottom: 0;
                                 }
                                 &-subtitle {
                                   font-weight: 500;
@@ -1194,9 +1246,10 @@ main.main.overflow-map {
                   flex-direction: column;
                   background: #FFFFFF;
                   border-radius: 6px;
-                  margin-bottom: 16px;
+                  margin-bottom: 84px;
                   width: 100%;
                   padding: 16px;
+                  padding-bottom: 37px;
                   @media screen and (min-width: 1024px) {
                     // width: 67.2%;
                     padding: 38px;
@@ -1204,7 +1257,7 @@ main.main.overflow-map {
                   }                
                   &__title {
                     font-weight: 800;   
-                    margin-bottom: 16px;
+                    margin-bottom: 20px;
                     font-weight: 800;
                     font-size: 20px;
                     line-height: 25px;
@@ -1230,13 +1283,18 @@ main.main.overflow-map {
                     flex-direction: row;
                     flex-wrap: wrap;
                     gap: 16px;
-                    margin-top: 28px;
+                    @media screen and (min-width: 1024px) {
+                      margin-top: 28px;
+                    }
                     .item {
                       display: flex;
                       flex-direction: row;
                       flex-wrap: nowrap;
-                      width: calc(50% - 8px);
+                      width: 100%;
                       gap: 10px;
+                      @media screen and (min-width: 1024px) {
+                        width: calc(50% - 8px);
+                      }
                       &-icon {
                         
                       }
@@ -1248,6 +1306,28 @@ main.main.overflow-map {
                         align-items: center;
                         color: #1D1D1D;
                       }
+                    }
+                  }
+                }
+                &-feedback-mobile {
+                  display: none;
+                  @media screen and (max-width: 1024px) {
+                    display: block;
+                    background: #FFFFFF;
+                    &__container {
+                      padding: 12px;
+                      display: flex;
+                      flex-direction: row;
+                      gap: 12px;
+                    }
+                    &__button-main {
+                      padding: 14px;
+                      width: calc(100% - 60px);
+                    }
+                    &__button-call {
+                      padding: 12px;
+                      border: 1px solid #30A5E2;
+                      border-radius: 6px;
                     }
                   }
                 }
