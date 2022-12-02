@@ -44,9 +44,11 @@
         lastDiff.y = lastDiff.y*2
         console.log(lastDiff)
         image.style.transform = "scale(" + scale + ") " + "translate(" + lastDiff.x/scale + "px," + lastDiff.y/scale + "px)";
-        document.querySelector(".content-orenburg__button").classList.add("active");
+        var orenburgButton = document.querySelector(".content-orenburg__button");
+        var orskButton = document.querySelector(".content-orsk__button");
+        orenburgButton !== null ? orenburgButton.classList.add("active") : orskButton !== null ? orskButton.classList.add("active") : ""
         setTimeout(() => {
-        document.querySelector(".content-orenburg__button").classList.add("hidden");
+            orenburgButton !== null ? orenburgButton.classList.add("hidden") : orskButton !== null ? orskButton.classList.add("hidden") : ""
         }, 500);
         }
         
