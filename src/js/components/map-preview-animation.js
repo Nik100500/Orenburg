@@ -3,7 +3,7 @@
     map = document.getElementById('map-preview');
     if (map !== null) {
       setTimeout(() => {
-        map.setAttribute("viewBox", "6000 3600 3000 1000");
+        map.setAttribute("viewBox", "6725 3750 1900 900");
       }, 5000);
     } else {
     }

@@ -8,3 +8,6 @@ import './components/tab-bar.js';
 import './components/bottom-sheet.js';
 import './components/preview-calculator.js';
 import './components/map-preview-animation.js';
+import './components/draggable-map.js';
+import './components/select-item-map.js';
+import './components/sidebar-map.js';

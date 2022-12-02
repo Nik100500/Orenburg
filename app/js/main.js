@@ -27,7 +27,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_preview_calculator_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_preview_calculator_js__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_map_preview_animation_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/map-preview-animation.js */ "./src/js/components/map-preview-animation.js");
 /* harmony import */ var _components_map_preview_animation_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_map_preview_animation_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_draggable_map_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/draggable-map.js */ "./src/js/components/draggable-map.js");
+/* harmony import */ var _components_draggable_map_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_draggable_map_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_select_item_map_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/select-item-map.js */ "./src/js/components/select-item-map.js");
+/* harmony import */ var _components_select_item_map_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_select_item_map_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/sidebar-map.js */ "./src/js/components/sidebar-map.js");
+/* harmony import */ var _components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11__);
 // import './components/modal.js';
+
+
+
 
 
 
@@ -325,6 +334,111 @@ for (i = 0; i < sh.length; i++) {
 
 /***/ }),
 
+/***/ "./src/js/components/draggable-map.js":
+/*!********************************************!*\
+  !*** ./src/js/components/draggable-map.js ***!
+  \********************************************/
+/***/ (() => {
+
+var image = document.getElementsByClassName('my-img')[0];
+if (image !== undefined) {
+  var imgCntnrs = document.getElementsByClassName('img-cntnr'),
+    dragImgMouseStart = {},
+    dragImgTouchStart = {},
+    lastDiff = {
+      x: 0,
+      y: 0
+    },
+    initialPos = image.getBoundingClientRect(),
+    //  currentPos = {x: -initialPos.width/2, y:0};
+    currentPos = {
+      x: 0,
+      y: 0
+    };
+  scale = 1;
+
+  /* document.addEventListener("DOMContentLoaded", () => {
+      scale = 1920 / window.innerWidth
+  }); */
+
+  function mousedownDragImg(e) {
+    e.preventDefault();
+    dragImgMouseStart.x = e.clientX;
+    dragImgMouseStart.y = e.clientY;
+    currentPos.x += lastDiff.x;
+    currentPos.y += lastDiff.y;
+    lastDiff = {
+      x: 0,
+      y: 0
+    };
+    window.addEventListener('mousemove', mousemoveDragImg);
+    window.addEventListener('mouseup', mouseupDragImg);
+  }
+  function touchstartDragImg(e) {
+    dragImgTouchStart.x = e.changedTouches[0].clientX;
+    dragImgTouchStart.y = e.changedTouches[0].clientY;
+    currentPos.x += lastDiff.x;
+    currentPos.y += lastDiff.y;
+    lastDiff = {
+      x: 0,
+      y: 0
+    };
+    window.addEventListener('touchmove', touchmoveDragImg);
+    window.addEventListener('touchend', touchendDragImg);
+    document.body.classList.add('overflow');
+  }
+  function changeScale() {
+    // scale == 2 ? scale = 1 : scale = 2;
+    scale = scale * 2;
+    lastDiff.x = lastDiff.x * 2;
+    lastDiff.y = lastDiff.y * 2;
+    console.log(lastDiff);
+    image.style.transform = "scale(" + scale + ") " + "translate(" + lastDiff.x / scale + "px," + lastDiff.y / scale + "px)";
+    document.querySelector(".content-orenburg__button").classList.add("active");
+    setTimeout(() => {
+      document.querySelector(".content-orenburg__button").classList.add("hidden");
+    }, 500);
+  }
+  document.getElementById("scale-map").addEventListener('click', changeScale);
+  function mousemoveDragImg(e) {
+    e.preventDefault();
+    lastDiff.x = e.clientX - dragImgMouseStart.x;
+    lastDiff.y = e.clientY - dragImgMouseStart.y;
+    requestAnimationFrame(function () {
+      image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x) / scale + "px," + (currentPos.y + lastDiff.y) / scale + "px)";
+    });
+  }
+  function touchmoveDragImg(e) {
+    lastDiff.x = e.changedTouches[0].clientX - dragImgTouchStart.x;
+    lastDiff.y = e.changedTouches[0].clientY - dragImgTouchStart.y;
+    requestAnimationFrame(function () {
+      image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x) / scale + "px," + (currentPos.y + lastDiff.y) / scale + "px)";
+    });
+  }
+  function changeStartPosition() {
+    lastDiff.x = lastDiff.x;
+    lastDiff.y = lastDiff.y + (1080 - window.innerHeight);
+    console.log(lastDiff);
+    scale = 1920 / window.innerWidth;
+    image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x) / scale + "px," + (currentPos.y + lastDiff.y) / scale + "px)";
+  }
+  function mouseupDragImg(e) {
+    e.preventDefault();
+    window.removeEventListener('mousemove', mousemoveDragImg);
+    window.removeEventListener('mouseup', mouseupDragImg);
+  }
+  function touchendDragImg() {
+    window.removeEventListener('touchmove', touchmoveDragImg);
+    window.removeEventListener('touchend', touchendDragImg);
+    document.body.classList.remove('overflow');
+  }
+  image.addEventListener('mousedown', mousedownDragImg);
+  image.addEventListener('touchstart', touchstartDragImg);
+  document.onload = changeStartPosition();
+}
+
+/***/ }),
+
 /***/ "./src/js/components/filter.js":
 /*!*************************************!*\
   !*** ./src/js/components/filter.js ***!
@@ -597,7 +711,7 @@ class RollCounterRange {
 map = document.getElementById('map-preview');
 if (map !== null) {
   setTimeout(() => {
-    map.setAttribute("viewBox", "6000 3600 3000 1000");
+    map.setAttribute("viewBox", "6725 3750 1900 900");
   }, 5000);
 } else {}
 /* console.clear();
@@ -645,10 +759,85 @@ const colorArray = ["#94c356", "#46a4cc", "#a63e4b"];
 /***/ (() => {
 
 var exporterCheckbox = document.getElementById('exporter');
-var exporterInput = document.getElementById('exporter-input');
-exporterCheckbox !== null ? exporterCheckbox.addEventListener('click', function () {
-  exporterCheckbox.checked ? exporterInput.classList.add('active') : exporterInput.classList.remove('active');
-}) : '';
+if (exporterCheckbox !== null) {
+  var exporterInput = document.getElementById('exporter-input'),
+    calculatorButton = document.getElementById('calculator-button'),
+    resultsRF = document.getElementById('results-rf'),
+    resultsOEZ = document.getElementById('results-oez'),
+    input1 = document.getElementById('range1'),
+    input2 = document.getElementById('range2'),
+    input3 = document.getElementById('range3'),
+    input4 = document.getElementById('range4'),
+    input5 = document.getElementById('range5'),
+    RF = 0,
+    OEZ = 0;
+  exporterCheckbox.addEventListener('click', () => {
+    exporterCheckbox.checked ? (exporterInput.classList.add('active'), formMath()) : exporterInput.classList.remove('active');
+  });
+  function input1Math() {
+    console.log(RF);
+    console.log(OEZ);
+    RF = RF + 49 * input1.value * 0.2;
+    OEZ = OEZ + (5 * input1.value * 0.02 + 5 * input1.value * 0.07 + 39 * input1.value * 0.155);
+    console.log(input1.value);
+    console.log(RF);
+    console.log(OEZ);
+  }
+  function input2Math() {
+    RF = RF + input2.value * 0.022 * 49;
+    OEZ = OEZ + input2.value * 0.022 * 39;
+    console.log(input2.value);
+    console.log(RF);
+    console.log(OEZ);
+  }
+  function input3Math() {
+    RF = RF;
+    OEZ = OEZ;
+    console.log(input3.value);
+    console.log(RF);
+    console.log(OEZ);
+  }
+  function input4Math() {
+    RF = RF + input4.value * 0.015 * 49;
+    OEZ = OEZ + input4.value * 0.015 * 39;
+    console.log(input4.value);
+    console.log(RF);
+    console.log(OEZ);
+  }
+  function input5Math() {
+    if (exporterCheckbox.checked) {
+      RF = RF + input5.value * 0.2;
+      OEZ = OEZ;
+      console.log(input5.value);
+      console.log(RF);
+      console.log(OEZ);
+    }
+  }
+  function formMath() {
+    RF = 0;
+    OEZ = 0;
+    input1Math();
+    input2Math();
+    input3Math();
+    input4Math();
+    input5Math();
+    RF = Math.round(RF);
+    OEZ = Math.round(OEZ);
+    resultsRF.querySelector('.rf-count').innerHTML = RF;
+    resultsOEZ.querySelector('.oez-count').innerHTML = OEZ;
+    resultsRF.querySelector('.rf-graph').style.height = RF / 50 + "px";
+    resultsOEZ.querySelector('.oez-graph').style.height = OEZ / 50 + "px";
+    // resultsOEZ.innerHTML = OEZ
+  }
+
+  document.onload = formMath();
+  calculatorButton.addEventListener('click', () => formMath());
+  input1.addEventListener('change', () => formMath());
+  input2.addEventListener('change', () => formMath());
+  input3.addEventListener('change', () => formMath());
+  input4.addEventListener('change', () => formMath());
+  input5.addEventListener('change', () => formMath());
+}
 
 /***/ }),
 
@@ -771,6 +960,64 @@ document.addEventListener('click', e => {
 
 /***/ }),
 
+/***/ "./src/js/components/select-item-map.js":
+/*!**********************************************!*\
+  !*** ./src/js/components/select-item-map.js ***!
+  \**********************************************/
+/***/ (() => {
+
+var itemsMap = document.querySelectorAll('.my-img__point');
+var itemsList = document.querySelectorAll('.item__point');
+var orenburgItems = document.querySelector('.content-orenburg__items');
+function activeItem(itemActive) {
+  itemsMap.forEach(item => {
+    item.classList.remove('active');
+    item.dataset.pointFilter == itemActive.dataset.pointFilter ? item.classList.add('active') : '';
+  });
+  itemsList.forEach(item => {
+    item.classList.remove('active');
+    item.dataset.pointFilter == itemActive.dataset.pointFilter ? (item.classList.add('active'), orenburgItems.className.indexOf('hidden') == -1 ? item.scrollIntoView({
+      behavior: 'smooth'
+    }) : '') : '';
+  });
+  itemActive.classList.add('active');
+}
+itemsMap.forEach(item => {
+  item.addEventListener('click', function () {
+    activeItem(item);
+  });
+});
+itemsList.forEach(item => {
+  item.addEventListener('click', function () {
+    activeItem(item);
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/components/sidebar-map.js":
+/*!******************************************!*\
+  !*** ./src/js/components/sidebar-map.js ***!
+  \******************************************/
+/***/ (() => {
+
+var orenburgItems = document.querySelector('.content-orenburg__items');
+if (orenburgItems !== null) {
+  var orenburgItemsButton = document.querySelector('.content-orenburg__items-button');
+  var orenburgItemsOverlay = document.querySelector('.content-orenburg__items-overlay');
+  function hideOrenburgItems() {
+    orenburgItems.classList.toggle('hidden');
+    orenburgItemsOverlay.classList.toggle('hidden');
+    setTimeout(() => {
+      orenburgItemsOverlay.classList.toggle('animation-hidden');
+    }, 250);
+  }
+  orenburgItemsButton.addEventListener('click', hideOrenburgItems);
+  orenburgItemsOverlay.addEventListener('click', hideOrenburgItems);
+}
+
+/***/ }),
+
 /***/ "./src/js/components/tab-bar.js":
 /*!**************************************!*\
   !*** ./src/js/components/tab-bar.js ***!
@@ -793,7 +1040,7 @@ function handleIndicator(el) {
 
 items.forEach((item, index) => {
   item.addEventListener('click', e => {
-    handleIndicator(e.target);
+    handleIndicator(item);
   });
   item.classList.contains('is-active') && handleIndicator(item);
 });

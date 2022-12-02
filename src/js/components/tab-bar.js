@@ -17,6 +17,6 @@ function handleIndicator(el) {
 
 
 items.forEach((item, index) => {
-  item.addEventListener('click', e => {handleIndicator(e.target);});
+  item.addEventListener('click', e => {handleIndicator(item);});
   item.classList.contains('is-active') && handleIndicator(item);
 });

@@ -24,10 +24,13 @@
     align-items: center;
     border-radius: 6px;
     cursor: pointer;
+    transition: all .25s;
     &:hover {
+      transition: all .25s;
       background: rgba(12, 49, 76, .03);
       color: #0C314C;
       .dropdown__filter-selected.lang {
+        transition: all .25s;
         background: rgba(12, 49, 76, .03);
         color: #0C314C;
 
@@ -83,10 +86,10 @@
     &.lang {
       width: 58px;
       font-weight: 500;
-      background: #F3F6F8;
-      @media screen and (min-width: 950px){
+      // background: #F3F6F8;
+      // @media screen and (min-width: 950px){
         background: #FFFFFF;
-      }
+      // }
         .text {
           display: none;
           @media screen and (min-width: 950px) {
