@@ -8,9 +8,9 @@
           @media screen and (min-width: 640px) {
             padding: 0 24px;
           }
-          height: 100vh;
+          height: auto;
           @media screen and (min-width: 640px) {
-            height: 100vh;
+            height: auto;
             min-height: 1100px;
           }
           @media screen and (min-width: 950px) {
@@ -18,7 +18,7 @@
             min-height: 1548px;
           }
           &__container {
-            padding: 38px 0 62px 0;
+            padding: 38px 0 120px 0;
             @media screen and (min-width: 640px) {
               padding: 90px 0 120px 0;
             }
@@ -113,8 +113,8 @@
               &-title {
                 opacity: 0.2;
                 font-weight: 800;
-                letter-spacing: 0.26em;
                 text-transform: uppercase;
+                letter-spacing: 0.2em;
                 color: #FFFFFF;
                 margin-bottom: 48px;
                 font-size: 28px;
@@ -126,6 +126,7 @@
                 @media screen and (min-width: 950px){
                   font-size: 50px;
                   line-height: 64px;
+                  letter-spacing: 0.26em;
                 }
                 @media screen and (min-width: 1350px){
                   font-size: 72px;
@@ -150,7 +151,10 @@
                 width: 100%;
                 max-width: 1072px;
                 color: #FFFFFF;
-                margin-top: 90px;
+                margin-top: 32px;
+                @media screen and (min-width: 640px){
+                  margin-top: 90px;
+                }
                 .swiffy-slider {
                   @media (max-width: 640px) {
                     .slider-nav {
@@ -159,6 +163,11 @@
                   }
                   .slider-nav {
                     background: rgba($color: #FFFFFF, $alpha: 0.3);
+                  }
+                  .slider-indicators {
+                    @media screen and (max-width: 640px) {
+                      margin-bottom: -64px;
+                    }
                   }
                   .slider-indicators.archSlide > * {
                       background: #FFFFFF;
@@ -192,7 +201,9 @@
                               color: #FFFFFF;
                               opacity: 0.7;
                               margin-bottom: 46px;
-                              margin-left: -65px;
+                              @media screen and (min-width: 950px) {
+                                margin-left: -65px;
+                              }
                             }
                             &__discription {
                               color: #FFFFFF;
@@ -286,7 +297,7 @@
             padding: 0 24px;
           }
           &__container {
-            padding: 60px 0 100px;
+            padding: 75px 0 120px;
             @media screen and (min-width: 640px) {
               padding: 90px 0 160px;
             }
@@ -379,6 +390,11 @@
                   @media (max-width: 640px) {
                     .slider-nav {
                       display: none;
+                    }
+                  }
+                  .slider-indicators {
+                    @media screen and (max-width: 640px) {
+                      margin-bottom: -64px;
                     }
                   }
                   .slider-container {
@@ -1058,7 +1074,7 @@
             padding: 0 24px;
           }
           &__container {
-            padding: 0px 0 160px;
+            padding: 0px;
             @media screen and (min-width: 640px) {
               padding: 40px 0 180px;
             }
@@ -1111,7 +1127,10 @@
           }
           &__list {
             position: relative;
-            height: 1100px;
+            height: 820px;
+            @media screen and (min-width: 640px) {
+              height: 1100px;
+            }
             .list {
               &-title {
                 opacity: 0.2;
@@ -1158,11 +1177,11 @@
                     }
                   }
                   &-indicators {
-                    margin-bottom: 130px;
-                    @media (max-width: 640px) {
+                    margin-bottom: -80px;
+                    @media (min-width: 640px) {
                       margin-bottom: 20px;
                     }
-                    @media (max-width: 950px) {
+                    @media (min-width: 950px) {
                       margin-bottom: 100px;
                     }
                     &.number {
@@ -1189,10 +1208,7 @@
                   }
                   &-container {
                     &__item {
-                      height: 900px;
-                      @media screen and (min-width: 480px) {
-                        height: 800px;
-                      }
+                      height: auto;
                       @media screen and (min-width: 640px) {
                         height: 1100px;
                       }

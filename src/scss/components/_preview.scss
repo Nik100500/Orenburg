@@ -386,6 +386,9 @@
                   flex-wrap: wrap;
                   gap: 12px;
                   order: 2;
+                  @media screen and (max-width: 640px) {
+                    max-width: 360px;
+                  }
                   @media screen and (min-width: 950px) {
                     order: 1;
                   }
@@ -424,7 +427,7 @@
                 height: 72px;
                 width: 72px;
                 margin-left: auto;
-                @media screen and (min-width: 640px) {
+                @media screen and (min-width: 950px) {
                   margin: 0;
                 }
               }
@@ -830,14 +833,17 @@
               justify-content: center;
               align-items: center;
               position: relative;
-              width: calc(100% - 450px);
+              width: 100%;
               @media screen and (min-width: 950px) {
+                width: calc(100% - 450px);
               }
               .results {
                 &-icon {
                   opacity: 0.6;
                   filter: blur(4px);
-                  margin-left: 180px;
+                  @media screen and (min-width: 950px) {
+                    margin-left: 180px;
+                  }
                 }
                 
                 &-data {
@@ -887,17 +893,26 @@
                         display: flex;
                         justify-content: flex-start;
                         &-width {
-                          width: 228px;
-                          margin-left: 100px;
+                          width: 96px;
+                          margin-left: calc(50% - 100px);
+                          @media screen and (min-width: 950px){
+                            margin-left: 100px;
+                          }
+                          @media screen and (min-width: 950px) {
+                            width: 228px;
+                          }
                         }
                       }
                       &-graph {
                         width: 100%;
-                        max-width: 228px;
+                        max-width: 96px;
+                        @media screen and (min-width: 950px) {
+                          max-width: 228px;
+                        }
                         height: 200px;
                         background: linear-gradient(180deg, rgba(237, 8, 7, 0) 0%, #ED0807 100%);
                         transition: all .25s;
-                        border-width: 0px 4px 4px 4px;
+                        border-width: 0px 2px 4px 2px;
                         border-style: solid;
                         border-color: #ED0807;
                         border-radius: 0px 0px 6px 6px;
@@ -934,19 +949,31 @@
                       &-container {
                         width: 100%;
                         display: flex;
-                        justify-content: center;
+                        justify-content: flex-end;
+                        @media screen and (min-width: 950px) {
+                          justify-content: center;
+                        }
                         &-width {
-                          margin-left: 180px;
-                          width: 228px;
+                          width: 96px;
+                          margin-right: calc(50% - 100px);
+                          margin-left: 0;
+                          @media screen and (min-width: 950px) {
+                            width: 228px;
+                            margin-right: 0;
+                            margin-left: 180px;
+                          }
                         }
                       }
                       &-graph {
                         width: 100%;
-                        max-width: 228px;
+                        max-width: 96px;
+                        @media screen and (min-width: 950px) {
+                          max-width: 228px;
+                        }
                         height: 200px;
                         background: linear-gradient(180deg, #22D9C3 0%, rgba(34, 217, 195, 0) 100%);
                         transition: all .25s;
-                        border-width: 4px 4px 0px 4px;
+                        border-width: 4px 2px 0px 2px;
                         border-style: solid;
                         border-color: #22D9C3;
                         border-radius: 6px 6px 0px 0px;
