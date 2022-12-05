@@ -11,3 +11,5 @@ import './components/map-preview-animation.js';
 import './components/draggable-map.js';
 import './components/select-item-map.js';
 import './components/sidebar-map.js';
+import './components/swiffy-slider.js';
+import './components/custom-alert.js';

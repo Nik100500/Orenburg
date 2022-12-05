@@ -33,7 +33,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_select_item_map_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_select_item_map_js__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/sidebar-map.js */ "./src/js/components/sidebar-map.js");
 /* harmony import */ var _components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/swiffy-slider.js */ "./src/js/components/swiffy-slider.js");
+/* harmony import */ var _components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/custom-alert.js */ "./src/js/components/custom-alert.js");
+/* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_custom_alert_js__WEBPACK_IMPORTED_MODULE_13__);
 // import './components/modal.js';
+
+
 
 
 
@@ -57,15 +63,14 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/mobile-check */ "./src/js/functions/mobile-check.js");
-/* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 // Данный файл - лишь собрание подключений готовых компонентов.
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
 // Определение операционной системы на мобильных
-
-console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)());
+// import { mobileCheck } from "./functions/mobile-check";
+// console.log(mobileCheck())
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
@@ -93,7 +98,7 @@ console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)
 
 // Реализация модального окна
 
-const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]();
+const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]();
 
 // Реализация табов
 // import GraphTabs from 'graph-tabs';
@@ -113,11 +118,11 @@ const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]();
 
 // Подключение свайпера
 
-swiper__WEBPACK_IMPORTED_MODULE_2__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_2__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_2__.Pagination]);
+swiper__WEBPACK_IMPORTED_MODULE_1__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_1__.Pagination]);
 /* const swiper = new Swiper(el, {
   slidesPerView: 'auto',
 }); */
-const swiper = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"]('.swiper', {
+const swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"]('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -331,6 +336,67 @@ for (i = 0; i < sh.length; i++) {
     window.addEventListener("touchend", onDragEnd);
   });
 }
+
+/***/ }),
+
+/***/ "./src/js/components/custom-alert.js":
+/*!*******************************************!*\
+  !*** ./src/js/components/custom-alert.js ***!
+  \*******************************************/
+/***/ (() => {
+
+
+/* function CustomAlert(){
+  this.alert = function(message,title){
+    document.body.innerHTML = document.body.innerHTML + '<div id="dialogoverlay"></div><div id="dialogbox" class="slit-in-vertical"><div><div id="dialogboxhead"></div><div id="dialogboxbody"></div><div id="dialogboxfoot"></div></div></div>';
+
+    let dialogoverlay = document.getElementById('dialogoverlay');
+    let dialogbox = document.getElementById('dialogbox');
+    
+    let winH = window.innerHeight;
+    dialogoverlay.style.height = winH+"px";
+    
+    dialogbox.style.top = "100px";
+
+    dialogoverlay.style.display = "block";
+    dialogbox.style.display = "block";
+    
+    document.getElementById('dialogboxhead').style.display = 'block';
+
+    if(typeof title === 'undefined') {
+      document.getElementById('dialogboxhead').style.display = 'none';
+    } else {
+      document.getElementById('dialogboxhead').innerHTML = '<i class="fa fa-exclamation-circle" aria-hidden="true"></i> '+ title;
+    }
+    document.getElementById('dialogboxbody').innerHTML = message;
+    document.getElementById('dialogboxfoot').innerHTML = '<button class="pure-material-button-contained active" onclick="customAlert.ok()">OK</button>';
+  }
+  
+  this.ok = function(){
+    document.getElementById('dialogbox').style.display = "none";
+    document.getElementById('dialogoverlay').style.display = "none";
+  }
+}
+
+
+var customAlert = new CustomAlert();
+var container = document.querySelector(".content-auth__container"),
+ submitButton = document.querySelector(".content-auth__submit-button"),
+         step = 1,
+        timer = 0;
+function changeStep() {
+  step == 1 ? (container.classList.add("submit-sms"), step = 2) : (container.classList.remove("submit-sms"), step = 1)
+}
+function submitSMS() {
+  step == 1 ? changeStep() : changeStep()
+  if (timer == 0) {
+    timer = 60
+    submitButton.classList.add("disabled")
+  } else {
+    customAlert.alert('This is a custom alert with heading.','Heads Up!')
+  }
+}
+submitButton.addEventListener("click", ()=> submitSMS()) */
 
 /***/ }),
 
@@ -873,92 +939,91 @@ for (i = 0; i < res.length; i++) {
 
 // Change option selected
 
-const label = document.querySelector('.dropdown__filter-selected.company');
 const options = Array.from(document.querySelectorAll('.dropdown__select-option.company'));
 
 // Change option value
-
-options.forEach(option => {
-  option.addEventListener('click', () => {
-    label.textContent = option.textContent;
+if (options.length) {
+  const label = document.querySelector('.dropdown__filter-selected.company');
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      label.textContent = option.textContent;
+    });
   });
-});
 
-// Close dropdown onclick outside
+  // Close dropdown onclick outside
 
-document.addEventListener('click', e => {
-  const toggle = document.querySelector('.dropdown__switch.company');
-  const element = e.target;
-  if (element == toggle) return;
-  const isDropdownChild = element.closest('.dropdown__filter.company');
-  const dropdownItem = document.querySelector('.dropdown.company');
-  // dropdownItem.classList.toggle("active")	
+  document.addEventListener('click', e => {
+    const toggle = document.querySelector('.dropdown__switch.company');
+    const element = e.target;
+    if (element == toggle) return;
+    const isDropdownChild = element.closest('.dropdown__filter.company');
+    const dropdownItem = document.querySelector('.dropdown.company');
+    // dropdownItem.classList.toggle("active")	
 
-  if (!isDropdownChild) {
-    toggle.checked = false;
-    dropdownItem.classList.remove("active");
-  } else dropdownItem.classList.toggle("active");
-});
+    if (!isDropdownChild) {
+      toggle.checked = false;
+      dropdownItem.classList.remove("active");
+    } else dropdownItem.classList.toggle("active");
+  });
+}
 
 //lang selector
 
-const labelLang = document.querySelector('.dropdown__filter-selected.lang');
 const optionsLang = Array.from(document.querySelectorAll('.dropdown__select-option.lang'));
-optionsLang.forEach(option => {
-  option.addEventListener('click', () => {
-    labelLang.textContent = option.textContent;
+if (optionsLang.length) {
+  const labelLang = document.querySelector('.dropdown__filter-selected.lang');
+  optionsLang.forEach(option => {
+    option.addEventListener('click', () => {
+      labelLang.textContent = option.textContent;
+    });
   });
-});
-document.addEventListener('click', e => {
-  const toggle = document.querySelector('.dropdown__switch.lang');
-  const element = e.target;
-  if (element == toggle) return;
-  const isDropdownChild = element.closest('.dropdown__filter.lang');
-
-  /* if (!isDropdownChild) {
-  	toggle.checked = false
-  } */
-});
+  document.addEventListener('click', e => {
+    const toggle = document.querySelector('.dropdown__switch.lang');
+    const element = e.target;
+    if (element == toggle) return;
+    const isDropdownChild = element.closest('.dropdown__filter.lang');
+  });
+}
 
 // Platforms selector
 
-const labelPlatforms = document.querySelector('.dropdown__filter-selected.platforms');
 const optionsPlatforms = Array.from(document.querySelectorAll('.dropdown__select-option.platforms'));
-optionsPlatforms.forEach(option => {
-  option.addEventListener('click', () => {
-    labelPlatforms.textContent = option.textContent;
+if (optionsPlatforms.length) {
+  const labelPlatforms = document.querySelector('.dropdown__filter-selected.platforms');
+  optionsPlatforms.forEach(option => {
+    option.addEventListener('click', () => {
+      labelPlatforms.textContent = option.textContent;
+    });
   });
-});
-document.addEventListener('click', e => {
-  const toggle = document.querySelector('.dropdown__switch.platforms');
-  const element = e.target;
-  if (element == toggle) return;
-  const isDropdownChild = element.closest('.dropdown__filter.platforms');
-
-  /* if (!isDropdownChild) {
-  	toggle.checked = false
-  } */
-});
+  document.addEventListener('click', e => {
+    const toggle = document.querySelector('.dropdown__switch.platforms');
+    const element = e.target;
+    if (element == toggle) return;
+    const isDropdownChild = element.closest('.dropdown__filter.platforms');
+  });
+}
 
 // Statuses selector
 
-const labelStatuses = document.querySelector('.dropdown__filter-selected.statuses');
 const optionsStatuses = Array.from(document.querySelectorAll('.dropdown__select-option.statuses'));
-optionsStatuses.forEach(option => {
-  option.addEventListener('click', () => {
-    labelStatuses.textContent = option.textContent;
+if (optionsPlatforms.length) {
+  const labelStatuses = document.querySelector('.dropdown__filter-selected.statuses');
+  optionsStatuses.forEach(option => {
+    option.addEventListener('click', () => {
+      labelStatuses.textContent = option.textContent;
+    });
   });
-});
-document.addEventListener('click', e => {
-  const toggle = document.querySelector('.dropdown__switch.statuses');
-  const element = e.target;
-  if (element == toggle) return;
-  const isDropdownChild = element.closest('.dropdown__filter.statuses');
+  document.addEventListener('click', e => {
+    const toggle = document.querySelector('.dropdown__switch.statuses');
+    const element = e.target;
+    if (element == toggle) return;
+    const isDropdownChild = element.closest('.dropdown__filter.statuses');
 
-  /* if (!isDropdownChild) {
-  	toggle.checked = false
-  } */
-});
+    /* if (!isDropdownChild) {
+    	toggle.checked = false
+    } */
+  });
+}
 
 /***/ }),
 
@@ -1035,6 +1100,177 @@ if (orenburgItems !== null) {
 
 /***/ }),
 
+/***/ "./src/js/components/swiffy-slider.js":
+/*!********************************************!*\
+  !*** ./src/js/components/swiffy-slider.js ***!
+  \********************************************/
+/***/ (() => {
+
+// function SwiffySlider() {
+
+const swiffyslider = {
+  version: "1.6.0",
+  init() {
+    let e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.body;
+    for (let t of e.querySelectorAll(".swiffy-slider")) this.initSlider(t);
+  },
+  initSlider(e) {
+    for (let t of e.querySelectorAll(".slider-nav")) {
+      let i = t.classList.contains("slider-nav-next");
+      t.addEventListener("click", () => this.slide(e, i), {
+        passive: !0
+      });
+    }
+    for (let t of e.querySelectorAll(".slider-indicators")) t.addEventListener("click", () => this.slideToByIndicator()), this.onSlideEnd(e, () => this.handleIndicators(e), 60);
+    if (e.classList.contains("slider-nav-autoplay")) {
+      const t = e.getAttribute("data-slider-nav-autoplay-interval") ? e.getAttribute("data-slider-nav-autoplay-interval") : 2500;
+      this.autoPlay(e, t, e.classList.contains("slider-nav-autopause"));
+    }
+    if (["slider-nav-autohide", "slider-nav-animation"].some(t => e.classList.contains(t))) {
+      const t = e.getAttribute("data-slider-nav-animation-threshold") ? e.getAttribute("data-slider-nav-animation-threshold") : .3;
+      this.setVisibleSlides(e, t);
+    }
+  },
+  setVisibleSlides(e) {
+    let t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : .3;
+    let i = new IntersectionObserver(t => {
+      t.forEach(e => {
+        e.isIntersecting ? e.target.classList.add("slide-visible") : e.target.classList.remove("slide-visible");
+      }), e.querySelector(".slider-container>*:first-child").classList.contains("slide-visible") ? e.classList.add("slider-item-first-visible") : e.classList.remove("slider-item-first-visible"), e.querySelector(".slider-container>*:last-child").classList.contains("slide-visible") ? e.classList.add("slider-item-last-visible") : e.classList.remove("slider-item-last-visible");
+    }, {
+      root: e.querySelector(".slider-container"),
+      threshold: t
+    });
+    for (let t of e.querySelectorAll(".slider-container>*")) i.observe(t);
+  },
+  slide(e) {
+    let t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : !0;
+    const i = e.querySelector(".slider-container"),
+      s = e.classList.contains("slider-nav-page"),
+      l = e.classList.contains("slider-nav-noloop"),
+      r = e.classList.contains("slider-nav-nodelay"),
+      o = i.children,
+      n = parseInt(window.getComputedStyle(i).columnGap),
+      a = o[0].offsetWidth + n;
+    let d = t ? i.scrollLeft + a : i.scrollLeft - a;
+    s && (d = t ? i.scrollLeft + i.offsetWidth : i.scrollLeft - i.offsetWidth), i.scrollLeft < 1 && !t && !l && (d = i.scrollWidth - i.offsetWidth), i.scrollLeft >= i.scrollWidth - i.offsetWidth && t && !l && (d = 0), i.scroll({
+      left: d,
+      behavior: r ? "auto" : "smooth"
+    });
+  },
+  slideToByIndicator() {
+    const e = window.event.target,
+      t = Array.from(e.parentElement.children).indexOf(e),
+      i = e.parentElement.children.length,
+      s = e.closest(".swiffy-slider"),
+      l = s.querySelector(".slider-container").children.length / i * t;
+    this.slideTo(s, l);
+  },
+  slideTo(e, t) {
+    const i = e.querySelector(".slider-container"),
+      s = parseInt(window.getComputedStyle(i).columnGap),
+      l = i.children[0].offsetWidth + s,
+      r = e.classList.contains("slider-nav-nodelay");
+    i.scroll({
+      left: l * t,
+      behavior: r ? "auto" : "smooth"
+    });
+  },
+  onSlideEnd(e, t) {
+    let i = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 125;
+    let s;
+    e.querySelector(".slider-container").addEventListener("scroll", function () {
+      window.clearTimeout(s), s = setTimeout(t, i);
+    }, {
+      capture: !1,
+      passive: !0
+    });
+  },
+  autoPlay(e, t, i) {
+    t = t < 750 ? 750 : t;
+    let s = setInterval(() => this.slide(e), t);
+    const l = () => this.autoPlay(e, t, i);
+    return i && (["mouseover", "touchstart"].forEach(function (t) {
+      e.addEventListener(t, function () {
+        window.clearTimeout(s);
+      }, {
+        once: !0,
+        passive: !0
+      });
+    }), ["mouseout", "touchend"].forEach(function (t) {
+      e.addEventListener(t, function () {
+        l();
+      }, {
+        once: !0,
+        passive: !0
+      });
+    })), s;
+  },
+  handleIndicators(e) {
+    if (!e) return;
+    const t = e.querySelector(".slider-container"),
+      i = t.scrollWidth - t.offsetWidth,
+      s = t.scrollLeft / i;
+    for (let t of e.querySelectorAll(".slider-indicators")) {
+      let e = t.children,
+        i = Math.abs(Math.round((e.length - 1) * s));
+      for (let t of e) t.classList.remove("active");
+      e[i].classList.add("active");
+    }
+  }
+};
+window.swiffyslider = swiffyslider, document.currentScript.hasAttribute("data-noinit") || (document.currentScript.hasAttribute("defer") ? swiffyslider.init() : document.onreadystatechange = () => {
+  "interactive" === document.readyState && swiffyslider.init();
+});
+const swiffysliderextensions = {
+  version: "1.6.0",
+  draggingtimer: null,
+  init() {
+    let e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.body;
+    for (const s of e.querySelectorAll(".swiffy-slider")) this.initSlider(s);
+  },
+  initSlider(e) {
+    e.classList.contains("slider-nav-mousedrag") && e.addEventListener("mousedown", s => this.handleMouseDrag(s, e), {
+      passive: !0
+    });
+  },
+  handleMouseDrag(e, s) {
+    if (e.srcElement.classList.contains("slider-nav") || e.srcElement.parentElement.classList.contains("slider-indicators")) return;
+    const t = s.querySelector(".slider-container");
+    s.classList.contains("dragging") && clearTimeout(this.draggingtimer), t.style.cursor = "grabbing", s.classList.add("dragging");
+    const i = t.scrollLeft,
+      n = e.clientX,
+      r = t.children[0].offsetWidth + parseInt(window.getComputedStyle(t).columnGap),
+      o = r * (t.children.length - 1),
+      l = t.scrollLeft;
+    let d = l;
+    const a = e => {
+      const s = e.clientX - n,
+        a = i - 1.8 * s;
+      a > 0 && a <= o && (t.scrollLeft = a, s < 0 ? d = o <= l ? l : t.scrollLeft + (r + 1.8 * s) : l > 0 && (d = t.scrollLeft - (r - 1.8 * s)));
+    };
+    t.addEventListener("mousemove", a, {
+      passive: !0
+    }), document.addEventListener("mouseup", () => {
+      t.removeEventListener("mousemove", a), t.style.cursor = null, d < 0 && (d = 0), t.scroll({
+        left: d,
+        behavior: "smooth"
+      }), this.draggingtimer = setTimeout(() => {
+        s.classList.remove("dragging");
+      }, 550);
+    }, {
+      once: !0,
+      passive: !0
+    });
+  }
+};
+window.swiffyslider.extensions = swiffysliderextensions, document.currentScript.hasAttribute("data-noinit") || window.addEventListener("load", () => {
+  swiffyslider.extensions.init();
+});
+//   }
+
+/***/ }),
+
 /***/ "./src/js/components/tab-bar.js":
 /*!**************************************!*\
   !*** ./src/js/components/tab-bar.js ***!
@@ -1061,34 +1297,6 @@ items.forEach((item, index) => {
   });
   item.classList.contains('is-active') && handleIndicator(item);
 });
-
-/***/ }),
-
-/***/ "./src/js/functions/mobile-check.js":
-/*!******************************************!*\
-  !*** ./src/js/functions/mobile-check.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "mobileCheck": () => (/* binding */ mobileCheck)
-/* harmony export */ });
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
-
-const mobileCheck = () => {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  if (/android/i.test(userAgent)) {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.classList.add('page--android');
-    return "Android";
-  }
-  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.classList.add('page--ios');
-    return "iOS";
-  }
-  return "unknown";
-};
 
 /***/ }),
 
