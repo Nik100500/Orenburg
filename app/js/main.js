@@ -456,8 +456,8 @@ if (image !== undefined) {
   function changeScale() {
     // scale == 2 ? scale = 1 : scale = 2;
     scale = scale * 2;
-    lastDiff.x = lastDiff.x * 2;
-    lastDiff.y = lastDiff.y * 2;
+    lastDiff.x = lastDiff.x;
+    lastDiff.y = lastDiff.y;
     console.log(lastDiff);
     image.style.transform = "scale(" + scale + ") " + "translate(" + lastDiff.x / scale + "px," + lastDiff.y / scale + "px)";
     var orenburgButton = document.querySelector(".content-orenburg__button");
@@ -484,9 +484,8 @@ if (image !== undefined) {
     });
   }
   function changeStartPosition() {
-    lastDiff.x = lastDiff.x;
-    lastDiff.y = lastDiff.y + (1080 - window.innerHeight);
-    console.log(lastDiff);
+    // lastDiff.x = lastDiff.x;
+    // lastDiff.y = lastDiff.y + (1080 - window.innerHeight);
     scale = 1920 / window.innerWidth;
     image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x) / scale + "px," + (currentPos.y + lastDiff.y) / scale + "px)";
   }
