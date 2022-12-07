@@ -11373,11 +11373,139 @@ main.main.overflow-map {
   width: 7.4vw;
   height: 3.075vw;
 }
-.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.position-14 {
-  right: 0;
-  top: 0;
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure {
   width: 1px;
   height: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  z-index: 3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.active {
+  width: 16.5104166vw;
+  z-index: 4;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.active .infrastructure-item {
+  width: 16.5104166vw;
+  height: 9.6354166vw;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-radius: 1.05vw;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.active .infrastructure-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1.05vw;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.active .infrastructure-item__content .content-title {
+  font-weight: 800;
+  font-size: 0.83333vw;
+  color: #0C314C;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.active .infrastructure-item__content .content-discription {
+  font-weight: 500;
+  font-size: 0.72916vw;
+  line-height: 1vw;
+  color: #0C314C;
+  opacity: 0.7;
+  margin-top: 0.6vw;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.active .infrastructure-item__icon {
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+  width: 2vw;
+  height: 2vw;
+  border-width: 0;
+  outline: none;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure .infrastructure-item {
+  width: 2.8125vw;
+  height: 2.8125vw;
+  border-radius: 3.125vw;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure .infrastructure-item__icon {
+  background-color: #EABD00;
+  border: 0.2vw solid #FFFFFF;
+  width: 2.8125vw;
+  height: 2.8125vw;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure .infrastructure-item__content {
+  display: none;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.position-0 {
+  position: absolute;
+  right: 42.5vw;
+  top: 20vw;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.position-1 {
+  position: absolute;
+  right: 41.75vw;
+  top: 6.8vw;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.position-2 {
+  position: absolute;
+  right: 47.75vw;
+  top: 12.8vw;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.position-3 {
+  position: absolute;
+  right: 47.75vw;
+  top: 9.8vw;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.position-4 {
+  position: absolute;
+  right: 47.75vw;
+  top: 6.8vw;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.position-5 {
+  position: absolute;
+  right: 68.75vw;
+  top: 34.8vw;
 }
 .map-orenburg__main__content .content-orenburg .img-cntnr img {
   position: absolute;
@@ -11498,6 +11626,9 @@ main.main.overflow-map {
   transition: all 0.5s;
   cursor: pointer;
 }
+.map-orenburg__main__content .content-orenburg__items .item:last-child .item-content {
+  padding-bottom: 24px;
+}
 @media screen and (min-width: 950px) {
   .map-orenburg__main__content .content-orenburg__items .item:hover .item-content__image {
     opacity: 1;
@@ -11510,7 +11641,8 @@ main.main.overflow-map {
   }
 }
 .map-orenburg__main__content .content-orenburg__items .item-content {
-  margin: 24px 16px;
+  padding: 24px 16px;
+  padding-bottom: 0;
 }
 .map-orenburg__main__content .content-orenburg__items .item-content__image {
   margin-bottom: 10px;
@@ -13298,9 +13430,15 @@ main.main.overflow-map {
   -ms-flex-pack: end;
   justify-content: flex-end;
   z-index: 3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.active {
   width: 16.5104166vw;
+  z-index: 4;
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.active .infrastructure-item {
   width: 16.5104166vw;

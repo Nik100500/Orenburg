@@ -223,15 +223,110 @@ main.main.overflow-map {
                   height: 3.075vw;
                 }
               }
+              
               &__infrastructure {
-                &.position-14 {
-                  right: 0;
-                  top: 0;
-                  width: 1px;
-                  height: 1px;
+                width: 1px;
+                height: 1px;
+                display: flex;
+                justify-content: flex-end;
+                z-index: 3;
+                user-select: none;
+                outline: none;
+                &.active {
+                  width: 16.5104166vw;
+                  z-index: 4;
                   .infrastructure-item {
-
+                    width: 16.5104166vw;
+                    height: 9.6354166vw;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-direction: row;
+                    border-radius: 1.05vw;
+                    &__content {
+                      display: flex;
+                      flex-direction: column;
+                      padding: 1.05vw;
+                      .content {
+                        &-title {
+                          font-weight: 800;
+                          font-size: .83333vw;
+                          color: #0C314C;
+                        }
+                        &-discription {
+                          font-weight: 500;
+                          font-size: .72916vw;
+                          line-height: 1vw;
+                          color: #0C314C;
+                          opacity: .7;
+                          margin-top: .6vw;
+                        }
+                      }
+                    }
+                    &__icon {
+                      position: absolute;
+                      top: .5vw;
+                      right: .5vw;
+                      width: 2vw;
+                      height: 2vw;
+                      border-width: 0;
+                      outline: none;
+                    }
                   }
+                }
+                .infrastructure-item {
+                  width: 2.8125vw;
+                  height: 2.8125vw;
+                  border-radius: 3.125vw;
+                  background-color: #FFFFFF;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: relative;
+                  &__icon {
+                    background-color: #EABD00;
+                    border: .2vw solid #FFFFFF;
+                    width: 2.8125vw;
+                    height: 2.8125vw;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    outline: none;
+                  }
+                  &__content {
+                    display: none;
+                  }
+                }
+                &.position-0 {
+                  position: absolute;
+                  right: 42.5vw;
+                  top: 20vw;
+                }
+                &.position-1 {
+                  position: absolute;
+                  right: 41.75vw;
+                  top: 6.8vw;
+                }
+                &.position-2 {
+                  position: absolute;
+                  right: 47.75vw;
+                  top: 12.8vw;
+                }
+                &.position-3 {
+                  position: absolute;
+                  right: 47.75vw;
+                  top: 9.8vw;
+                }
+                &.position-4 {
+                  position: absolute;
+                  right: 47.75vw;
+                  top: 6.8vw;
+                }
+                &.position-5 {
+                  position: absolute;
+                  right: 68.75vw;
+                  top: 34.8vw;
                 }
               }
             }
@@ -338,6 +433,11 @@ main.main.overflow-map {
             .item {
               transition: all .5s;
               cursor: pointer;
+              &:last-child {
+                .item-content {
+                  padding-bottom: 24px;
+                }
+              }
               &:hover {
                 @media screen and (min-width: 950px) {
                   .item-content {
@@ -356,7 +456,8 @@ main.main.overflow-map {
                 }
               }
               &-content {
-                margin: 24px 16px;
+                padding: 24px 16px;
+                padding-bottom: 0;
                 &__image {
                   margin-bottom: 10px;
                   height: 230px;

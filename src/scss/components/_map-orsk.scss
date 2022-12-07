@@ -346,8 +346,11 @@ main.main.overflow-map {
                 display: flex;
                 justify-content: flex-end;
                 z-index: 3;
+                user-select: none;
+                outline: none;
                 &.active {
                   width: 16.5104166vw;
+                  z-index: 4;
                   .infrastructure-item {
                     width: 16.5104166vw;
                     height: 9.6354166vw;
