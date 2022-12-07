@@ -12925,6 +12925,21 @@ main.main.overflow-map {
 .map-orsk__main__content .content-orsk .img-cntnr {
   position: relative;
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.map-orsk__main__content .content-orsk .img-cntnr img {
+  /* position: absolute; */
+  left: 0;
+  /* transform: translateX(-50%); */
+  top: 0;
+  margin: auto;
+  cursor: -webkit-grab;
+  width: 100vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr {
+  position: relative;
+  width: 100vw;
   height: 100%;
   overflow: hidden;
 }
@@ -13077,43 +13092,43 @@ main.main.overflow-map {
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point.position-7 {
   right: 27.6vw;
-  top: -10.95vw;
+  top: 9.05vw;
   width: 5.20833vw;
   height: 4.4270833vw;
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point.position-6 {
   right: 33.1vw;
-  top: -14.15vw;
+  top: 5.75vw;
   width: 5.729166vw;
   height: 4.4270833vw;
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point.position-5 {
   right: 9.8vw;
-  top: -3.8vw;
+  top: 16.2vw;
   width: 17.17948718vw;
   height: 6.04166vw;
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point.position-4 {
   right: 36.6vw;
-  top: -7.5vw;
+  top: 12.5vw;
   width: 11.145833vw;
   height: 4.4270833vw;
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point.position-3 {
   right: 21.3vw;
-  top: 3vw;
+  top: 23vw;
   width: 18.0729166vw;
   height: 6.71875vw;
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point.position-2 {
   right: 31.7vw;
-  top: 10.1vw;
+  top: 30.1vw;
   width: 18.229166vw;
   height: 4.4270833vw;
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point.position-1 {
   right: 47.8vw;
-  top: -2.5vw;
+  top: 17.5vw;
   background: transparent;
   border: 0;
   /* width: 2.605vw;
@@ -13283,7 +13298,7 @@ main.main.overflow-map {
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point.position-0 {
   right: 50.9vw;
-  top: 3vw;
+  top: 23vw;
   width: 5.208333vw;
   height: 3.59375vw;
   z-index: 3;
@@ -13292,16 +13307,10 @@ main.main.overflow-map {
   position: absolute;
   left: 0;
   /* transform: translateX(-50%); */
-  top: -20vw;
+  top: 0;
   margin: auto;
   cursor: -webkit-grab;
   width: 100vw;
-}
-@media screen and (min-width: 950px) {
-  .map-orsk__main__content .content-orsk .img-cntnr img {
-    width: 100vw;
-    height: auto;
-  }
 }
 .map-orsk__main__content .content-orsk__items {
   position: absolute;
@@ -13402,6 +13411,9 @@ main.main.overflow-map {
   transition: all 0.5s;
   cursor: pointer;
 }
+.map-orsk__main__content .content-orsk__items .item:last-child .item-content {
+  padding: 24px 16px;
+}
 @media screen and (min-width: 950px) {
   .map-orsk__main__content .content-orsk__items .item:hover .item-content__image {
     opacity: 1;
@@ -13414,7 +13426,8 @@ main.main.overflow-map {
   }
 }
 .map-orsk__main__content .content-orsk__items .item-content {
-  margin: 24px 16px;
+  padding: 24px 16px;
+  padding-bottom: 0;
 }
 .map-orsk__main__content .content-orsk__items .item-content__image {
   margin-bottom: 10px;

@@ -7,8 +7,10 @@
                  lastDiff = {x: 0, y: 0},
                initialPos = image.getBoundingClientRect(),
           //  currentPos = {x: -initialPos.width/2, y:0};
-               currentPos = {x: 0, y:0};
-                    scale = 1
+               currentPos = {x: 0, y:0},
+                    scale = 1,
+                 plusWidth = 0,
+                 imgHeight = 1080
         
         
         /* document.addEventListener("DOMContentLoaded", () => {
@@ -37,22 +39,21 @@
         document.body.classList.add('overflow');
         }
         
-        function changeScale() {
-        // scale == 2 ? scale = 1 : scale = 2;
-        scale = scale*2;
-        lastDiff.x = lastDiff.x
-        lastDiff.y = lastDiff.y
-        console.log(lastDiff)
-        image.style.transform = "scale(" + scale + ") " + "translate(" + lastDiff.x/scale + "px," + lastDiff.y/scale + "px)";
-        var orenburgButton = document.querySelector(".content-orenburg__button");
-        var orskButton = document.querySelector(".content-orsk__button");
-        orenburgButton !== null ? orenburgButton.classList.add("active") : orskButton !== null ? orskButton.classList.add("active") : ""
-        setTimeout(() => {
-            orenburgButton !== null ? orenburgButton.classList.add("hidden") : orskButton !== null ? orskButton.classList.add("hidden") : ""
-        }, 500);
-        }
+        // function changeScale() {
+        // // scale == 2 ? scale = 1 : scale = 2;
+        // scale = scale*2;
+        // lastDiff.x = lastDiff.x
+        // lastDiff.y = lastDiff.y
+        // image.style.transform = "scale(" + scale + ") " + "translate(" + lastDiff.x/scale + "px," + lastDiff.y/scale + "px)";
+        // var orenburgButton = document.querySelector(".content-orenburg__button");
+        // var orskButton = document.querySelector(".content-orsk__button");
+        // orenburgButton !== null ? orenburgButton.classList.add("active") : orskButton !== null ? orskButton.classList.add("active") : ""
+        // setTimeout(() => {
+        //     orenburgButton !== null ? orenburgButton.classList.add("hidden") : orskButton !== null ? orskButton.classList.add("hidden") : ""
+        // }, 500);
+        // }
         
-        document.getElementById("scale-map").addEventListener('click', changeScale)
+        // document.getElementById("scale-map").addEventListener('click', changeScale)
         
         function mousemoveDragImg(e) {
         e.preventDefault();
@@ -63,11 +64,16 @@
         });
         }
         function touchmoveDragImg(e) {
-        lastDiff.x = e.changedTouches[0].clientX - dragImgTouchStart.x;
-        lastDiff.y = e.changedTouches[0].clientY - dragImgTouchStart.y;
-        requestAnimationFrame(function(){
-        image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x)/scale + "px," + (currentPos.y + lastDiff.y)/scale + "px)";
-        });
+        if ((currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x)) < (1920 - window.innerWidth)/2 + plusWidth && (currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x)) > (-1920 + window.innerWidth)/2) {
+            lastDiff.x = e.changedTouches[0].clientX - dragImgTouchStart.x;
+        }
+        if ((currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y)) < 0 && (currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y)) > (-imgHeight + window.innerHeight)) {
+            lastDiff.y = e.changedTouches[0].clientY - dragImgTouchStart.y;
+        }
+        
+            requestAnimationFrame(function(){
+            image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x)/scale + "px," + (currentPos.y + lastDiff.y)/scale + "px)";
+            });
         }
         
         function changeStartPosition() {
@@ -75,6 +81,7 @@
             // lastDiff.y = lastDiff.y + (1080 - window.innerHeight);
             scale = 1920 / window.innerWidth
             image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x)/scale + "px," + (currentPos.y + lastDiff.y)/scale + "px)";
+            window.innerWidth > 950 ? plusWidth = 400 : ''
         }
         
         function mouseupDragImg(e) {
