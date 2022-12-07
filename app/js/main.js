@@ -423,7 +423,9 @@ if (image !== undefined) {
     },
     scale = 1,
     plusWidth = 0,
-    imgHeight = 1080;
+    imgHeight = 1080,
+    windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+    windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
   /* document.addEventListener("DOMContentLoaded", () => {
       scale = 1920 / window.innerWidth
@@ -481,10 +483,10 @@ if (image !== undefined) {
     });
   }
   function touchmoveDragImg(e) {
-    if (currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x) < (1920 - window.innerWidth) / 2 + plusWidth && currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x) > (-1920 + window.innerWidth) / 2) {
+    if (currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x) < (1920 - windowWidth) / 2 + plusWidth && currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x) > (-1920 + windowWidth) / 2) {
       lastDiff.x = e.changedTouches[0].clientX - dragImgTouchStart.x;
     }
-    if (currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y) < 0 && currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y) > -imgHeight + window.innerHeight) {
+    if (currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y) < 0 && currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y) > -imgHeight + windowHeight) {
       lastDiff.y = e.changedTouches[0].clientY - dragImgTouchStart.y;
     }
     requestAnimationFrame(function () {
@@ -494,9 +496,9 @@ if (image !== undefined) {
   function changeStartPosition() {
     // lastDiff.x = lastDiff.x;
     // lastDiff.y = lastDiff.y + (1080 - window.innerHeight);
-    scale = 1920 / window.innerWidth;
+    scale = 1920 / windowWidth;
     image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x) / scale + "px," + (currentPos.y + lastDiff.y) / scale + "px)";
-    window.innerWidth > 950 ? plusWidth = 400 : '';
+    windowWidth > 950 ? plusWidth = 400 : '';
   }
   function mouseupDragImg(e) {
     e.preventDefault();
