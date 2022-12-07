@@ -416,7 +416,6 @@ if (image !== undefined) {
       y: 0
     },
     initialPos = image.getBoundingClientRect(),
-    //  currentPos = {x: -initialPos.width/2, y:0};
     currentPos = {
       x: 0,
       y: 0
@@ -426,11 +425,6 @@ if (image !== undefined) {
     imgHeight = 1080,
     windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
     windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
-  /* document.addEventListener("DOMContentLoaded", () => {
-      scale = 1920 / window.innerWidth
-  }); */
-
   function mousedownDragImg(e) {
     e.preventDefault();
     dragImgMouseStart.x = e.clientX;
@@ -494,8 +488,6 @@ if (image !== undefined) {
     });
   }
   function changeStartPosition() {
-    // lastDiff.x = lastDiff.x;
-    // lastDiff.y = lastDiff.y + (1080 - window.innerHeight);
     scale = 1920 / windowWidth;
     image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x) / scale + "px," + (currentPos.y + lastDiff.y) / scale + "px)";
     windowWidth > 950 ? plusWidth = 400 : '';
@@ -1023,10 +1015,11 @@ if (optionsPlatforms.length) {
   \**********************************************/
 /***/ (() => {
 
-var itemsMap = document.querySelectorAll('.my-img__point');
-var itemsList = document.querySelectorAll('.item__point');
-var orenburgItems = document.querySelector('.content-orenburg__items');
-var orskItems = document.querySelector('.content-orsk__items');
+var orenburgItems = document.querySelector('.content-orenburg__items'),
+  itemsMap = document.querySelectorAll('.my-img__point'),
+  itemsList = document.querySelectorAll('.item__point'),
+  orskItems = document.querySelector('.content-orsk__items'),
+  windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 function activeItem(itemActive, mapItems) {
   console.log(mapItems);
   itemsMap.forEach(item => {
@@ -1035,9 +1028,9 @@ function activeItem(itemActive, mapItems) {
   });
   itemsList.forEach(item => {
     item.classList.remove('active');
-    item.dataset.pointFilter == itemActive.dataset.pointFilter ? (item.classList.add('active'), mapItems.className.indexOf('hidden') == -1 ? item.scrollIntoView({
+    item.dataset.pointFilter == itemActive.dataset.pointFilter ? (item.classList.add('active'), mapItems.className.indexOf('hidden') == -1 ? windowWidth > 640 ? item.scrollIntoView({
       behavior: 'smooth'
-    }) : '') : '';
+    }) : '' : '') : '';
   });
   itemActive.classList.add('active');
 }

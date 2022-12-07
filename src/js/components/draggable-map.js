@@ -6,18 +6,12 @@
         dragImgTouchStart = {},
                  lastDiff = {x: 0, y: 0},
                initialPos = image.getBoundingClientRect(),
-          //  currentPos = {x: -initialPos.width/2, y:0};
                currentPos = {x: 0, y:0},
                     scale = 1,
-                 plusWidth = 0,
-                 imgHeight = 1080,
-                 windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-                 windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-        
-        
-        /* document.addEventListener("DOMContentLoaded", () => {
-            scale = 1920 / window.innerWidth
-        }); */
+                plusWidth = 0,
+                imgHeight = 1080,
+              windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+             windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
         
         function mousedownDragImg(e) {
         e.preventDefault();
@@ -79,8 +73,6 @@
         }
         
         function changeStartPosition() {
-            // lastDiff.x = lastDiff.x;
-            // lastDiff.y = lastDiff.y + (1080 - window.innerHeight);
             scale = 1920 / windowWidth
             image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x)/scale + "px," + (currentPos.y + lastDiff.y)/scale + "px)";
             windowWidth > 950 ? plusWidth = 400 : ''
