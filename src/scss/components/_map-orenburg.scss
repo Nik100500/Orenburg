@@ -223,6 +223,17 @@ main.main.overflow-map {
                   height: 3.075vw;
                 }
               }
+              &__infrastructure {
+                &.position-14 {
+                  right: 0;
+                  top: 0;
+                  width: 1px;
+                  height: 1px;
+                  .infrastructure-item {
+
+                  }
+                }
+              }
             }
             /* .test {
               position: absolute;

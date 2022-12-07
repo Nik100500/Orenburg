@@ -31,13 +31,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_draggable_map_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_draggable_map_js__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _components_select_item_map_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/select-item-map.js */ "./src/js/components/select-item-map.js");
 /* harmony import */ var _components_select_item_map_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_select_item_map_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/sidebar-map.js */ "./src/js/components/sidebar-map.js");
-/* harmony import */ var _components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/swiffy-slider.js */ "./src/js/components/swiffy-slider.js");
-/* harmony import */ var _components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/custom-alert.js */ "./src/js/components/custom-alert.js");
-/* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_custom_alert_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _components_select_infrastructure_map_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/select-infrastructure-map.js */ "./src/js/components/select-infrastructure-map.js");
+/* harmony import */ var _components_select_infrastructure_map_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_select_infrastructure_map_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/sidebar-map.js */ "./src/js/components/sidebar-map.js");
+/* harmony import */ var _components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_sidebar_map_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/swiffy-slider.js */ "./src/js/components/swiffy-slider.js");
+/* harmony import */ var _components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/custom-alert.js */ "./src/js/components/custom-alert.js");
+/* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_components_custom_alert_js__WEBPACK_IMPORTED_MODULE_14__);
 // import './components/modal.js';
+
 
 
 
@@ -470,8 +473,16 @@ if (image !== undefined) {
 
   function mousemoveDragImg(e) {
     e.preventDefault();
-    lastDiff.x = e.clientX - dragImgMouseStart.x;
-    lastDiff.y = e.clientY - dragImgMouseStart.y;
+    // lastDiff.x = e.clientX - dragImgMouseStart.x;
+    // lastDiff.y = e.clientY - dragImgMouseStart.y;
+
+    if (currentPos.x + (e.clientX - dragImgMouseStart.x) < (1920 - windowWidth) / 2 + plusWidth && currentPos.x + (e.clientX - dragImgMouseStart.x) > (-1920 + windowWidth) / 2) {
+      lastDiff.x = e.clientX - dragImgMouseStart.x;
+      console.log(windowWidth);
+    }
+    if (currentPos.y + (e.clientY - dragImgMouseStart.y) < 0 && currentPos.y + (e.clientY - dragImgMouseStart.y) > -imgHeight + windowHeight) {
+      lastDiff.y = e.clientY - dragImgMouseStart.y;
+    }
     requestAnimationFrame(function () {
       image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x) / scale + "px," + (currentPos.y + lastDiff.y) / scale + "px)";
     });
@@ -479,6 +490,7 @@ if (image !== undefined) {
   function touchmoveDragImg(e) {
     if (currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x) < (1920 - windowWidth) / 2 + plusWidth && currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x) > (-1920 + windowWidth) / 2) {
       lastDiff.x = e.changedTouches[0].clientX - dragImgTouchStart.x;
+      console.log(windowWidth);
     }
     if (currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y) < 0 && currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y) > -imgHeight + windowHeight) {
       lastDiff.y = e.changedTouches[0].clientY - dragImgTouchStart.y;
@@ -1006,6 +1018,27 @@ if (optionsPlatforms.length) {
     } */
   });
 }
+
+/***/ }),
+
+/***/ "./src/js/components/select-infrastructure-map.js":
+/*!********************************************************!*\
+  !*** ./src/js/components/select-infrastructure-map.js ***!
+  \********************************************************/
+/***/ (() => {
+
+var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidthm,
+  itemsMap = document.querySelectorAll('.my-img__infrastructure');
+function activeItem(itemActive) {
+  itemsMap.forEach(item => {
+    item.className.indexOf('active') !== -1 ? item.dataset.infrastructureFilter == itemActive.dataset.infrastructureFilter ? item.classList.toggle('active') : item.classList.remove('active') : item.dataset.infrastructureFilter == itemActive.dataset.infrastructureFilter ? item.classList.toggle('active') : item.classList.remove('active');
+  });
+}
+itemsMap !== null ? itemsMap.forEach(item => {
+  item.querySelector(".infrastructure-item__icon").addEventListener('click', function () {
+    activeItem(item);
+  });
+}) : "";
 
 /***/ }),
 

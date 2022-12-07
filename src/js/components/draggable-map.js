@@ -53,8 +53,16 @@
         
         function mousemoveDragImg(e) {
         e.preventDefault();
-        lastDiff.x = e.clientX - dragImgMouseStart.x;
-        lastDiff.y = e.clientY - dragImgMouseStart.y;
+        // lastDiff.x = e.clientX - dragImgMouseStart.x;
+        // lastDiff.y = e.clientY - dragImgMouseStart.y;
+        
+        if ((currentPos.x + (e.clientX - dragImgMouseStart.x)) < (1920 - windowWidth)/2 + plusWidth && (currentPos.x + (e.clientX - dragImgMouseStart.x)) > (-1920 + windowWidth)/2) {
+            lastDiff.x = e.clientX - dragImgMouseStart.x;
+            console.log(windowWidth)
+        }
+        if ((currentPos.y + (e.clientY - dragImgMouseStart.y)) < 0 && (currentPos.y + (e.clientY - dragImgMouseStart.y)) > (-imgHeight + windowHeight)) {
+            lastDiff.y = e.clientY - dragImgMouseStart.y;
+        }
         requestAnimationFrame(function(){
         image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x)/scale + "px," + (currentPos.y + lastDiff.y)/scale + "px)";
         });
@@ -62,6 +70,7 @@
         function touchmoveDragImg(e) {
         if ((currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x)) < (1920 - windowWidth)/2 + plusWidth && (currentPos.x + (e.changedTouches[0].clientX - dragImgTouchStart.x)) > (-1920 + windowWidth)/2) {
             lastDiff.x = e.changedTouches[0].clientX - dragImgTouchStart.x;
+            console.log(windowWidth)
         }
         if ((currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y)) < 0 && (currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y)) > (-imgHeight + windowHeight)) {
             lastDiff.y = e.changedTouches[0].clientY - dragImgTouchStart.y;

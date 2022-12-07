@@ -25,7 +25,7 @@ main.main.overflow-map {
           .img-cntnr {
             position: relative;
             width: 100vw;
-            height: 100vh;
+            height: 100%;
             overflow: hidden;
           }
 
@@ -37,12 +37,6 @@ main.main.overflow-map {
             margin: auto;
             cursor: -webkit-grab;
             width: 100vw;
-          }
-          .img-cntnr {
-            position: relative;
-            width: 100vw;
-            height: 100%;
-            overflow: hidden;
           }
 
           .img-cntnr {
@@ -346,28 +340,108 @@ main.main.overflow-map {
                   z-index: 3;
                 }
               }
+              &__infrastructure {
+                width: 1px;
+                height: 1px;
+                display: flex;
+                justify-content: flex-end;
+                z-index: 3;
+                &.active {
+                  width: 16.5104166vw;
+                  .infrastructure-item {
+                    width: 16.5104166vw;
+                    height: 9.6354166vw;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-direction: row;
+                    border-radius: 1.05vw;
+                    &__content {
+                      display: flex;
+                      flex-direction: column;
+                      padding: 1.05vw;
+                      .content {
+                        &-title {
+                          font-weight: 800;
+                          font-size: .83333vw;
+                          color: #0C314C;
+                        }
+                        &-discription {
+                          font-weight: 500;
+                          font-size: .72916vw;
+                          line-height: 1vw;
+                          color: #0C314C;
+                          opacity: .7;
+                          margin-top: .6vw;
+                        }
+                      }
+                    }
+                    &__icon {
+                      position: absolute;
+                      top: .5vw;
+                      right: .5vw;
+                      width: 2vw;
+                      height: 2vw;
+                      border-width: 0;
+                    }
+                  }
+                }
+                .infrastructure-item {
+                  width: 2.8125vw;
+                  height: 2.8125vw;
+                  border-radius: 3.125vw;
+                  background-color: #FFFFFF;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: relative;
+                  &__icon {
+                    background-color: #EABD00;
+                    border: .2vw solid #FFFFFF;
+                    width: 2.8125vw;
+                    height: 2.8125vw;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                  }
+                  &__content {
+                    display: none;
+                  }
+                }
+                &.position-0 {
+                  position: absolute;
+                  right: 12.5vw;
+                  top: 10vw;
+                }
+                &.position-1 {
+                  position: absolute;
+                  right: 18.75vw;
+                  top: 6.25vw;
+                }
+                &.position-2 {
+                  position: absolute;
+                  right: 43.75vw;
+                  top: 6.25vw;
+                }
+                &.position-3 {
+                  position: absolute;
+                  right: 66.666vw;
+                  top: 19.79166vw;
+                }
+                &.position-4 {
+                  position: absolute;
+                  right: 83.3333vw;
+                  top: 46.875vw;
+                }
+              }
             }
-            /* .test {
-              position: absolute;
-              right: 16.5vw;
-              top: 18vw;
-              z-index: 2;
-              width: max-content;
-              height: 30px;
-              color: #000000;
-              background: #FFFFFF;
-              background-size: cover;
-              border-radius: 50%;
-              cursor: pointer;
-            } */
             img {
               position: absolute;
               left: 0;
-              /* transform: translateX(-50%); */
               top: 0;
               margin: auto;
               cursor: -webkit-grab;
-              // height: 100vh;
               width: 100vw;
             }
           }
@@ -413,7 +487,6 @@ main.main.overflow-map {
             top: 0;
             width: 100%;
             height: 100%;
-            // max-width: 400px;
             background: #FFFFFF;
             z-index: 3;
             box-shadow: 4px -13px 16px rgba(0, 0, 0, 0.12);

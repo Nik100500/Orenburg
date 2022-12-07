@@ -11373,6 +11373,12 @@ main.main.overflow-map {
   width: 7.4vw;
   height: 3.075vw;
 }
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure.position-14 {
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+}
 .map-orenburg__main__content .content-orenburg .img-cntnr img {
   position: absolute;
   left: 0;
@@ -12925,7 +12931,7 @@ main.main.overflow-map {
 .map-orsk__main__content .content-orsk .img-cntnr {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 .map-orsk__main__content .content-orsk .img-cntnr img {
@@ -12936,27 +12942,6 @@ main.main.overflow-map {
   margin: auto;
   cursor: -webkit-grab;
   width: 100vw;
-}
-.map-orsk__main__content .content-orsk .img-cntnr {
-  position: relative;
-  width: 100vw;
-  height: 100%;
-  overflow: hidden;
-}
-.map-orsk__main__content .content-orsk .img-cntnr {
-  /* .test {
-    position: absolute;
-    right: 16.5vw;
-    top: 18vw;
-    z-index: 2;
-    width: max-content;
-    height: 30px;
-    color: #000000;
-    background: #FFFFFF;
-    background-size: cover;
-    border-radius: 50%;
-    cursor: pointer;
-  } */
 }
 .map-orsk__main__content .content-orsk .img-cntnr .my-img__point {
   position: absolute;
@@ -13303,10 +13288,130 @@ main.main.overflow-map {
   height: 3.59375vw;
   z-index: 3;
 }
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure {
+  width: 1px;
+  height: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  z-index: 3;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.active {
+  width: 16.5104166vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.active .infrastructure-item {
+  width: 16.5104166vw;
+  height: 9.6354166vw;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-radius: 1.05vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.active .infrastructure-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1.05vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.active .infrastructure-item__content .content-title {
+  font-weight: 800;
+  font-size: 0.83333vw;
+  color: #0C314C;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.active .infrastructure-item__content .content-discription {
+  font-weight: 500;
+  font-size: 0.72916vw;
+  line-height: 1vw;
+  color: #0C314C;
+  opacity: 0.7;
+  margin-top: 0.6vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.active .infrastructure-item__icon {
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+  width: 2vw;
+  height: 2vw;
+  border-width: 0;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure .infrastructure-item {
+  width: 2.8125vw;
+  height: 2.8125vw;
+  border-radius: 3.125vw;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure .infrastructure-item__icon {
+  background-color: #EABD00;
+  border: 0.2vw solid #FFFFFF;
+  width: 2.8125vw;
+  height: 2.8125vw;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure .infrastructure-item__content {
+  display: none;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.position-0 {
+  position: absolute;
+  right: 12.5vw;
+  top: 10vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.position-1 {
+  position: absolute;
+  right: 18.75vw;
+  top: 6.25vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.position-2 {
+  position: absolute;
+  right: 43.75vw;
+  top: 6.25vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.position-3 {
+  position: absolute;
+  right: 66.666vw;
+  top: 19.79166vw;
+}
+.map-orsk__main__content .content-orsk .img-cntnr .my-img__infrastructure.position-4 {
+  position: absolute;
+  right: 83.3333vw;
+  top: 46.875vw;
+}
 .map-orsk__main__content .content-orsk .img-cntnr img {
   position: absolute;
   left: 0;
-  /* transform: translateX(-50%); */
   top: 0;
   margin: auto;
   cursor: -webkit-grab;
