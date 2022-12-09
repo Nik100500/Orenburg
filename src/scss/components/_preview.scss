@@ -345,11 +345,12 @@
             box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
             backdrop-filter: blur(5px);
             padding: 16px 20px 20px 20px;
-            margin-bottom: 80px;
+            margin-bottom: 28px;
             border-radius: 14px;
             @media screen and (min-width: 640px) {
             }
             @media screen and (min-width: 950px) {
+              margin-bottom: 80px;
               flex-direction: row;
               align-items: center;
               border-radius: 20px;
@@ -601,6 +602,16 @@
               gap: 80px;
 
             }
+            .list-items {
+              height: 180px;
+              overflow: hidden;
+              &-container {
+                transition: all .5s;
+              }
+            }
+            .step-item-preview.item {
+              height: 180px;
+            }
             &-mobile__items {
               display: flex;
               flex-direction: column;
@@ -661,6 +672,9 @@
                   white-space: nowrap;
                   width: max-content;
                   cursor: pointer;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
                   &.active {
                     background: rgba(12, 49, 76, .1);
                   }

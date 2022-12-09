@@ -39,7 +39,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_swiffy_slider_js__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/custom-alert.js */ "./src/js/components/custom-alert.js");
 /* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_components_custom_alert_js__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _components_tree_steps_preview_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/tree-steps-preview.js */ "./src/js/components/tree-steps-preview.js");
+/* harmony import */ var _components_tree_steps_preview_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_components_tree_steps_preview_js__WEBPACK_IMPORTED_MODULE_15__);
 // import './components/modal.js';
+
 
 
 
@@ -856,25 +859,26 @@ if (exporterCheckbox !== null) {
     exporterCheckbox.checked ? (exporterInput.classList.add('active'), formMath()) : (exporterInput.classList.remove('active'), formMath());
   });
   function input1Math() {
-    RF = RF + 49 * input1.value * 0.2;
-    OEZ = OEZ + (5 * input1.value * 0.02 + 5 * input1.value * 0.07 + 39 * input1.value * 0.155);
-    console.log(input1.value);
+    RF = RF + 10 * input1.value * 0.2;
+    OEZ = OEZ + (5 * input1.value * 0.02 + 5 * input1.value * 0.07);
   }
   function input2Math() {
-    RF = RF + input2.value * 0.022 * 49;
-    OEZ = OEZ + input2.value * 0.022 * 39;
+    RF = RF + input2.value * 0.022 * 10;
+    OEZ = OEZ;
+    // OEZ = OEZ + (input2.value * 0.022 * 39)
   }
+
   function input3Math() {
     RF = RF;
     OEZ = OEZ;
   }
   function input4Math() {
-    RF = RF + input4.value * 0.015 * 49;
-    OEZ = OEZ + input4.value * 0.015 * 39;
+    RF = RF + input4.value * 0.075 * 10;
+    OEZ = OEZ;
   }
   function input5Math() {
     if (exporterCheckbox.checked) {
-      RF = RF + input5.value * 0.2;
+      RF = RF + input5.value * 0.2 * 10;
       OEZ = OEZ;
     }
   }
@@ -890,8 +894,8 @@ if (exporterCheckbox !== null) {
     OEZ = Math.round(OEZ);
     resultsRF.querySelector('.rf-count').innerHTML = RF;
     resultsOEZ.querySelector('.oez-count').innerHTML = OEZ;
-    resultsRF.querySelector('.rf-graph').style.height = RF / 50 + "px";
-    resultsOEZ.querySelector('.oez-graph').style.height = OEZ / 50 + "px";
+    resultsRF.querySelector('.rf-graph').style.height = RF / 8 + "px";
+    resultsOEZ.querySelector('.oez-graph').style.height = OEZ / 3 + "px";
   }
   document.onload = formMath();
   input1.addEventListener('change', () => formMath());
@@ -1312,6 +1316,54 @@ items.forEach((item, index) => {
   });
   item.classList.contains('is-active') && handleIndicator(item);
 });
+
+/***/ }),
+
+/***/ "./src/js/components/tree-steps-preview.js":
+/*!*************************************************!*\
+  !*** ./src/js/components/tree-steps-preview.js ***!
+  \*************************************************/
+/***/ (() => {
+
+var listItemsPreview = document.querySelector('.list-items-container');
+if (listItemsPreview !== null) {
+  var stepButtonsPreview = document.querySelectorAll('.step-button-preview');
+  // stepButtonsPreview.forEach(function (item) {
+  //   item.addEventListener('click', function (e) {
+  //     e.preventDefault();
+  //   })
+  // })
+  // function listMath(i) {
+  //   var index = i
+  //   console.log(index);
+  //   listItemsPreview.style.transform = "translateY(" + -165*(i-1) + "px)"
+  // }
+  // for (var i = 0; i < stepButtonsPreview.length; i++) {
+  //   stepButtonsPreview[i].addEventListener('click', ()=> listMath(i));
+  // }
+  // stepButtonsPreview.forEach(function (item) {
+  //     var index = 0
+  //     item.addEventListener('click', () => listMath(index))
+  //     index = index + 1
+  // })
+
+  function activeItem(itemActive) {
+    stepButtonsPreview.forEach(item => {
+      console.log(itemActive.dataset.stepFilter);
+      item.classList.remove('active');
+      item.dataset.stepFilter == itemActive.dataset.stepFilter ? (item.classList.add('active'), listItemsPreview.style.transform = "translateY(" + -180 * itemActive.dataset.stepFilter + "px)") : '';
+    });
+    itemActive.classList.add('active');
+  }
+  // itemsMap !== null ? itemsMap.forEach(item => {
+  //   item.addEventListener('click', function () { activeItem(item) })
+  // }) : ""
+  stepButtonsPreview !== null ? stepButtonsPreview.forEach(item => {
+    item.addEventListener('click', function () {
+      activeItem(item);
+    });
+  }) : "";
+}
 
 /***/ }),
 

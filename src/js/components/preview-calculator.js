@@ -15,25 +15,25 @@ if (exporterCheckbox !== null) {
     exporterCheckbox.checked ? (exporterInput.classList.add('active'), formMath()) : (exporterInput.classList.remove('active'), formMath())
   })
   function input1Math() {
-    RF = RF + (49 * input1.value * 0.2)     
-    OEZ = OEZ + (5 * input1.value * 0.02 + 5 * input1.value * 0.07 + 39 * input1.value * 0.155)
-    console.log(input1.value)
+    RF = RF + (10 * input1.value * 0.2)
+    OEZ = OEZ + (5 * input1.value * 0.02 + 5 * input1.value * 0.07)
   }
   function input2Math() {
-    RF = RF + (input2.value * 0.022 * 49)     
-    OEZ = OEZ + (input2.value * 0.022 * 39)
+    RF = RF + (input2.value * 0.022 * 10)
+    OEZ = OEZ
+    // OEZ = OEZ + (input2.value * 0.022 * 39)
   }
   function input3Math() {
-    RF = RF     
+    RF = RF
     OEZ = OEZ
   }
   function input4Math() {
-    RF = RF + (input4.value * 0.015 * 49)
-    OEZ = OEZ + (input4.value * 0.015 * 39)
+    RF = RF + (input4.value * 0.075 * 10)
+    OEZ = OEZ
   }
   function input5Math() {
     if (exporterCheckbox.checked) {
-      RF = RF + (input5.value * 0.2)
+      RF = RF + (input5.value * 0.2 * 10)
       OEZ = OEZ
     }
   }
@@ -49,8 +49,8 @@ if (exporterCheckbox !== null) {
     OEZ = Math.round(OEZ)
     resultsRF.querySelector('.rf-count').innerHTML = RF
     resultsOEZ.querySelector('.oez-count').innerHTML = OEZ
-    resultsRF.querySelector('.rf-graph').style.height = RF/50+"px"
-    resultsOEZ.querySelector('.oez-graph').style.height = OEZ/50+"px"
+    resultsRF.querySelector('.rf-graph').style.height = RF/8+"px"
+    resultsOEZ.querySelector('.oez-graph').style.height = OEZ/3+"px"
   }
   document.onload = formMath()
   input1.addEventListener('change', ()=> formMath())

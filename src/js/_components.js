@@ -14,3 +14,4 @@ import './components/select-infrastructure-map.js';
 import './components/sidebar-map.js';
 import './components/swiffy-slider.js';
 import './components/custom-alert.js';
+import './components/tree-steps-preview.js';

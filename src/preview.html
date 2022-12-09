@@ -303,30 +303,32 @@
                   </div>
                   <div class="content-steps__list">
                     <div class="list-buttons">
-                      <div class="step-button-preview button active">Подача заявки</div>
-                      <div class="step-button-preview button">Рассмотрение</div>
-                      <div class="step-button-preview button">Подписание</div>
+                      <div data-step-filter="0" class="step-button-preview button active">Подача заявки</div>
+                      <div data-step-filter="1" class="step-button-preview button">Рассмотрение</div>
+                      <div data-step-filter="2" class="step-button-preview button">Подписание</div>
                     </div>
                     <div class="list-items">
-                      <div class="step-item-preview item">
-                        <div class="item-title">1 день</div>
-                        <div class="item-discription">Подача заявки и пакета документов в Комитет по промышленной политике, инновациям и торговле</div>
-                        <div class="item-button">
-                          <div class="main-button">В личный кабинет</div>
+                      <div class="list-items-container">
+                        <div data-step-filter="0" class="step-item-preview item">
+                          <div class="item-title">7 дней</div>
+                          <div class="item-discription">Подача заявки и пакета документов в Комитет по промышленной политике, инновациям и торговле</div>
+                          <a href="/" class="item-button">
+                            <div class="main-button">В личный кабинет</div>
+                          </a>
                         </div>
-                      </div>
-                      <div class="step-item-preview item">
-                        <div class="item-title">1 день</div>
-                        <div class="item-discription">Подача заявки и пакета документов в Комитет по промышленной политике, инновациям и торговле</div>
-                        <div class="item-button">
-                          <div class="main-button">В личный кабинет</div>
+                        <div data-step-filter="1" class="step-item-preview item">
+                          <div class="item-title">14 дней</div>
+                          <div class="item-discription">Заявка рассматривается в экспертном советет ОЭЗ и Наблюдательном совете ОЭЗ</div>
+                          <a href="/" class="item-button">
+                            <div class="main-button">В личный кабинет</div>
+                          </a>
                         </div>
-                      </div>
-                      <div class="step-item-preview item">
-                        <div class="item-title">1 день</div>
-                        <div class="item-discription">Подача заявки и пакета документов в Комитет по промышленной политике, инновациям и торговле</div>
-                        <div class="item-button">
-                          <div class="main-button">В личный кабинет</div>
+                        <div data-step-filter="2" class="step-item-preview item">
+                          <div class="item-title">5 дней</div>
+                          <div class="item-discription">Подписание соглашения об осуществлении деятельности</div>
+                          <a href="/" class="item-button">
+                            <div class="main-button">В личный кабинет</div>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -362,7 +364,7 @@
                         <label class="input-title" for="range1">Прибыль организации
                           <div class="input-currency">млн. руб.</div>
                         </label>
-                        <input id="range1" name="range1" type="range" min="0" max="999" value="150">
+                        <input id="range1" name="range1" type="range" min="0" max="500" value="50">
                       </div>
                       <div class="input">
                         <label class="input-title" for="range2">Стоимость имущества
@@ -380,7 +382,7 @@
                         <label class="input-title" for="range4">Кадастровая стоимость участка
                           <div class="input-currency">млн. руб.</div>
                         </label>
-                        <input id="range4" name="range4" type="range" min="0" max="500" value="400">
+                        <input id="range4" name="range4" type="range" min="0" max="500" value="40">
                       </div>
                       <div class="input-switcher">
                         <label class="toggle">

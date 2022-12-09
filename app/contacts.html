@@ -318,27 +318,27 @@
                       <div class="form-discription">
                         Опишите свой вопрос или проблемы и мы обязательно поможем во всем разобраться.
                       </div>
-                      <form>
+                      <form id="form-contacts-0" action="">
                         <div class="form-inputs">
                           <div class="form-input">
                             <div class="form-input__text">Ваше имя</div>
-                            <input type="text" placeholder="Введите имя">
+                            <input required="required" type="text" placeholder="Введите имя">
                           </div>
                           <div class="form-input">
                             <div class="form-input__text">Электронная почта</div>
-                            <input type="text" placeholder="Введите почту">
+                            <input required="required" name="email" type="email" placeholder="Введите почту">
                           </div>
                         </div>
                         <div class="form-input">
                           <div class="form-input__text">Тема вопроса</div>
-                          <input type="text" placeholder="Введите тему">
+                          <input required="required" type="text" placeholder="Введите тему">
                         </div>
                         <div class="form-input">
                           <div class="form-input__text">Ваш вопрос</div>
                           <!-- <input type="text" placeholder="Введите вопрос"> -->
-                          <textarea placeholder="Введите вопрос"></textarea>
+                          <textarea required="required" placeholder="Введите вопрос"></textarea>
                         </div>
-                        <div class="main-button">Отправить</div>
+                        <button type="submit" class="main-button">Отправить</button>
                       </form>
                     </div>
                   </div>
