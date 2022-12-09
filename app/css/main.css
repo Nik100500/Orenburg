@@ -11527,6 +11527,14 @@ main.main.overflow-map {
   align-items: center;
   cursor: pointer;
   outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure .infrastructure-item__icon img {
+  position: relative;
+  width: 80%;
+  height: 80%;
 }
 .map-orenburg__main__content .content-orenburg .img-cntnr .my-img__infrastructure .infrastructure-item__content {
   display: none;
