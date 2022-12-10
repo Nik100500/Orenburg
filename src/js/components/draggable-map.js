@@ -12,7 +12,6 @@
                 imgHeight = 1080,
               windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
              windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-        
         function mousedownDragImg(e) {
         e.preventDefault();
         dragImgMouseStart.x = e.clientX;

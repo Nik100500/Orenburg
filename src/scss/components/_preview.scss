@@ -40,16 +40,17 @@
     top: 48px;
     left: unset;
     right: unset;
-    width: 100%;
-    max-width: 1172px;
     height: calc(150vh - 88px);
     color: #FFFFFF;
     // backdrop-filter: blur(1px);
     display: block;
     z-index: 111;
+    width: 90vw;
     
     @media screen and (min-width: 640px) {
       top: 60px;
+      width: 100%;
+      max-width: 1172px;
     }
     @media screen and (min-width: 950px) {
       top: 90px;
