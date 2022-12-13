@@ -46,7 +46,7 @@
     display: block;
     z-index: 111;
     width: 90vw;
-    
+
     @media screen and (min-width: 640px) {
       top: 60px;
       width: 100%;
@@ -74,7 +74,7 @@
     .header {
       &-orenburg {
         .icon {
-          
+
         }
         .text {
           margin-top: 6px;
@@ -232,7 +232,7 @@
             .header {
               &-orenburg {
                 .icon {
-                  
+
                 }
                 .text {
                   margin-top: 6px;
@@ -318,7 +318,7 @@
               width: 100%;
               animation: all 10s;
               animation-delay: 1.15s;
-              // transform: scale(13) translate(8.85%, 18%); 
+              // transform: scale(13) translate(8.85%, 18%);
               // transform: translate(0.85%, 18%);
               z-index: 0;
               // transform: scale(1) translate(0%, 0%);
@@ -331,12 +331,47 @@
           margin: 0 auto;
           padding: 0 16px;
           margin-bottom: 80px;
+          position: relative;
           @media screen and (min-width: 640px) {
             padding: 0 24px;
           }
           @media screen and (min-width: 950px) {
             padding: 0;
             margin-bottom: 111px;
+          }
+          &__video {
+            display: none;
+            @media screen and (min-width: 950px) {
+              position: absolute;
+              top: -140px;
+              right: -100px;
+              width: 363px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              background: rgba(#FFFFFF, 0.4);
+              border-radius: 58px;
+              .video {
+                &-text {
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 25px;
+                  color: #FFFFFF;
+                  padding-left: 54px;
+                }
+                &-icon {
+                  background: #ED0807;
+                  border-radius: 58px;
+                  height: 90px;
+                  width: 90px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+              }
+
+            }
           }
           .card.first {
             display: flex;
@@ -488,7 +523,7 @@
                   gap: 16px;
                   @media screen and (min-width: 640px) {
                     gap: 38px;
-                    
+
                   }
                   .item {
                     display: flex;
@@ -527,7 +562,7 @@
         &-steps {
           background: #FFFFFF;
           padding: 100px 0 140px;
-          display: flex;    
+          display: flex;
           backdrop-filter: blur(38px);
           flex-direction: column;
           z-index: 22;
@@ -813,7 +848,7 @@
                   font-size: 16px;
                   line-height: 25px;
                   color: #FFFFFF;
-                  
+
                   opacity: 0.5;
                 }
               }
@@ -860,7 +895,7 @@
                     margin-left: 180px;
                   }
                 }
-                
+
                 &-data {
                   position: absolute;
                   top: 0;
@@ -1015,7 +1050,7 @@
             }
             .range input[type=range],
             .range input[type=range]::-webkit-slider-thumb {
-              -webkit-appearance: none; 
+              -webkit-appearance: none;
               appearance: none;
               transition: all .25s;
             }
@@ -1142,7 +1177,7 @@
                 width: 39px;
                 justify-content: flex-end;
                 .range__counter-sr {
-                
+
                 }
               }
             }
@@ -1469,7 +1504,7 @@
   animation: animation-opacity-0-1 .25s linear forwards;
   animation-delay: 4.75s;
   &__background {
-    
+
   }
   &__border {
     stroke-dasharray: 1;

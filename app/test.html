@@ -17,7 +17,7 @@
 </head>
 
 <body class="page__body">
-  
+
   <div class="site-container">
     <header class="header">
   <div class="header__content">
@@ -197,14 +197,13 @@
           </label>
         </div>
 
-        <a href="/" class="item-account">
-          <div class="text">Личный кабинет</div>
-          <div class="icon">
+        <div class="item-account">
+          <div class="text">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.0016 2.3999C10.7285 2.3999 9.50762 2.90562 8.60745 3.80579C7.70728 4.70596 7.20156 5.92686 7.20156 7.1999C7.20156 8.47294 7.70728 9.69384 8.60745 10.594C9.50762 11.4942 10.7285 11.9999 12.0016 11.9999C13.2746 11.9999 14.4955 11.4942 15.3957 10.594C16.2959 9.69384 16.8016 8.47294 16.8016 7.1999C16.8016 5.92686 16.2959 4.70596 15.3957 3.80579C14.4955 2.90562 13.2746 2.3999 12.0016 2.3999ZM6.01236 13.1999C5.69633 13.1986 5.38315 13.2598 5.09079 13.3798C4.79843 13.4998 4.53265 13.6764 4.30867 13.8994C4.0847 14.1223 3.90694 14.3873 3.7856 14.6791C3.66426 14.971 3.60172 15.2839 3.60156 15.5999C3.60156 17.6291 4.60116 19.1591 6.16356 20.1563C7.70196 21.1367 9.77556 21.5999 12.0016 21.5999C14.2276 21.5999 16.3012 21.1367 17.8396 20.1563C19.402 19.1603 20.4016 17.6279 20.4016 15.5999C20.4016 14.9634 20.1487 14.3529 19.6986 13.9028C19.2485 13.4528 18.6381 13.1999 18.0016 13.1999H6.01236Z" fill="white"/>
             </svg>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -212,19 +211,13 @@
 
     <main class="main">
       <div class="main-container">
-  
-        <div class="residents">
-          <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
-            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
-            <div class="graph-modal__content">
-              Модальное окно
-            </div>
-          </div>
+
+        <div class="contacts">
           <div 
-  class="residents__banner"
-  style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 35.08%, rgba(0, 0, 0, 0) 100%), url('/img/residents/banner.jpg');"
+  class="contacts__banner"
+  style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 35.08%, rgba(0, 0, 0, 0) 100%), url('/img/map/banner.png');"
 >
-  <div class="residents__banner__container">
+  <div class="contacts__banner__container">
     <div class="banner__content">
       <div class="content-breadcrumbs">
         <a class="breadcrumbs-item disabled hover" href="/">
@@ -232,20 +225,20 @@
             <path d="M7.5495 0.531887C8.3874 -0.174693 9.6126 -0.174693 10.4505 0.531897L17.2005 6.224C17.7074 6.65152 18 7.2809 18 7.94406V17.7468C18 18.7133 17.2165 19.4968 16.25 19.4968H12.75C11.7835 19.4968 11 18.7133 11 17.7468V12.2468C11 12.1088 10.8881 11.9968 10.75 11.9968H7.25C7.1119 11.9968 6.99999 12.1088 6.99999 12.2468V17.7468C6.99999 18.7133 6.2165 19.4968 5.25 19.4968H1.75C0.7835 19.4968 0 18.7133 0 17.7468V7.94406C0 7.2809 0.29255 6.65152 0.79952 6.224L7.5495 0.531887Z" fill="white"/>
           </svg>
         </a>
-        <!-- <div class="breadcrumbs-item disabled">
+        <div class="breadcrumbs-item disabled">
           <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.27982 1.04798C0.452671 0.88351 0.683756 0.794408 0.922279 0.800259C1.1608 0.806109 1.38724 0.906434 1.55182 1.07918L7.55302 7.37918C7.71258 7.54656 7.80159 7.76893 7.80159 8.00018C7.80159 8.23143 7.71258 8.4538 7.55302 8.62118L1.55302 14.9212C1.47155 15.0068 1.374 15.0756 1.26596 15.1235C1.15791 15.1715 1.04148 15.1977 0.923307 15.2006C0.805135 15.2036 0.687538 15.1832 0.577232 15.1407C0.466925 15.0983 0.366069 15.0345 0.280421 14.953C0.194773 14.8715 0.12601 14.774 0.0780594 14.6659C0.0301088 14.5579 0.0039094 14.4414 0.0009565 14.3233C-0.0019964 14.2051 0.0183554 14.0875 0.0608497 13.9772C0.103344 13.8669 0.167148 13.766 0.24862 13.6804L5.65942 7.99958L0.24742 2.31878C0.0831059 2.14577 -0.00578345 1.9146 0.00029217 1.67607C0.00636779 1.43755 0.106911 1.2112 0.27982 1.04678V1.04798Z" fill="white"/>
           </svg>
         </div>
         <a class="breadcrumbs-item disabled hover" href="/">
           Управляющая компания
-        </a> -->
+        </a>
         <div class="breadcrumbs-item">
           <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.27982 1.04798C0.452671 0.88351 0.683756 0.794408 0.922279 0.800259C1.1608 0.806109 1.38724 0.906434 1.55182 1.07918L7.55302 7.37918C7.71258 7.54656 7.80159 7.76893 7.80159 8.00018C7.80159 8.23143 7.71258 8.4538 7.55302 8.62118L1.55302 14.9212C1.47155 15.0068 1.374 15.0756 1.26596 15.1235C1.15791 15.1715 1.04148 15.1977 0.923307 15.2006C0.805135 15.2036 0.687538 15.1832 0.577232 15.1407C0.466925 15.0983 0.366069 15.0345 0.280421 14.953C0.194773 14.8715 0.12601 14.774 0.0780594 14.6659C0.0301088 14.5579 0.0039094 14.4414 0.0009565 14.3233C-0.0019964 14.2051 0.0183554 14.0875 0.0608497 13.9772C0.103344 13.8669 0.167148 13.766 0.24862 13.6804L5.65942 7.99958L0.24742 2.31878C0.0831059 2.14577 -0.00578345 1.9146 0.00029217 1.67607C0.00636779 1.43755 0.106911 1.2112 0.27982 1.04678V1.04798Z" fill="white"/>
           </svg>
         </div>
-        <div class="breadcrumbs-item">Резиденты</div>
+        <div class="breadcrumbs-item">Контакты</div>
         <a href="/" class="breadcrumbs-item mobile">
           <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.17719 17.1076C8.97553 17.2994 8.70593 17.4034 8.42766 17.3966C8.14938 17.3897 7.8852 17.2727 7.69319 17.0712L0.690391 9.72115C0.504237 9.52588 0.400391 9.26644 0.400391 8.99665C0.400391 8.72686 0.504237 8.46743 0.690391 8.27215L7.69179 0.922151C7.78581 0.818246 7.89968 0.734212 8.02669 0.675001C8.15369 0.61579 8.29127 0.5826 8.4313 0.577387C8.57133 0.572174 8.71099 0.595044 8.84205 0.644648C8.9731 0.694253 9.09291 0.769588 9.19439 0.866215C9.29588 0.962843 9.377 1.07881 9.43297 1.20727C9.48894 1.33574 9.51863 1.47411 9.52028 1.61423C9.52194 1.75435 9.49554 1.89339 9.44263 2.02314C9.38971 2.1529 9.31136 2.27075 9.21219 2.36975L2.90099 8.99735L9.21219 15.6236C9.40425 15.825 9.50845 16.0945 9.50189 16.3728C9.49533 16.6511 9.37854 16.9154 9.17719 17.1076Z" fill="white"/>
@@ -253,549 +246,99 @@
         </a>
       </div>
       <div class="content-main">
-        <div class="main-title">Резиденты</div>
-        <!-- <div class="main-filters btn-reset modal-btn modal-3" data-graph-path="filters">
-          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.49966 10.75C8.27575 10.7498 9.02989 11.0076 9.6435 11.4827C10.2571 11.9579 10.6954 12.6236 10.8894 13.375H20.6247C20.8433 13.3746 21.0542 13.4561 21.2158 13.6034C21.3774 13.7507 21.4779 13.9532 21.4977 14.1709C21.5175 14.3887 21.455 14.606 21.3225 14.78C21.1901 14.9539 20.9973 15.072 20.7822 15.111L20.6247 15.125L10.8894 15.1268C10.696 15.8788 10.258 16.5453 9.64437 17.0211C9.0307 17.497 8.27621 17.7552 7.49966 17.7552C6.72311 17.7552 5.96862 17.497 5.35495 17.0211C4.74128 16.5453 4.30328 15.8788 4.10991 15.1268L1.37466 15.125C1.156 15.1254 0.945122 15.0439 0.783539 14.8966C0.621957 14.7493 0.521384 14.5468 0.501628 14.3291C0.481871 14.1113 0.544362 13.894 0.676794 13.72C0.809226 13.5461 1.002 13.428 1.21716 13.389L1.37466 13.375H4.10991C4.30393 12.6236 4.74221 11.9579 5.35582 11.4827C5.96943 11.0076 6.72357 10.7498 7.49966 10.75ZM7.49966 12.5C7.03553 12.5 6.59041 12.6844 6.26222 13.0126C5.93404 13.3408 5.74966 13.7859 5.74966 14.25C5.74966 14.7141 5.93404 15.1592 6.26222 15.4874C6.59041 15.8156 7.03553 16 7.49966 16C7.96379 16 8.40891 15.8156 8.7371 15.4874C9.06529 15.1592 9.24966 14.7141 9.24966 14.25C9.24966 13.7859 9.06529 13.3408 8.7371 13.0126C8.40891 12.6844 7.96379 12.5 7.49966 12.5ZM14.4997 0.25C15.2757 0.249803 16.0299 0.507558 16.6435 0.982735C17.2571 1.45791 17.6954 2.12356 17.8894 2.875H20.6247C20.8433 2.8746 21.0542 2.95608 21.2158 3.10339C21.3774 3.2507 21.4779 3.45318 21.4977 3.67094C21.5175 3.8887 21.455 4.10597 21.3225 4.27996C21.1901 4.45394 20.9973 4.57204 20.7822 4.611L20.6247 4.625L17.8894 4.62675C17.696 5.37884 17.258 6.04526 16.6444 6.5211C16.0307 6.99695 15.2762 7.2552 14.4997 7.2552C13.7231 7.2552 12.9686 6.99695 12.3549 6.5211C11.7413 6.04526 11.3033 5.37884 11.1099 4.62675L1.37466 4.625C1.156 4.6254 0.945122 4.54392 0.783539 4.39661C0.621957 4.2493 0.521384 4.04682 0.501628 3.82906C0.481871 3.6113 0.544362 3.39403 0.676794 3.22005C0.809226 3.04606 1.002 2.92796 1.21716 2.889L1.37466 2.875H11.1099C11.3039 2.12356 11.7422 1.45791 12.3558 0.982735C12.9694 0.507558 13.7236 0.249803 14.4997 0.25ZM14.4997 2C14.0355 2 13.5904 2.18438 13.2622 2.51256C12.934 2.84075 12.7497 3.28587 12.7497 3.75C12.7497 4.21413 12.934 4.65925 13.2622 4.98744C13.5904 5.31563 14.0355 5.5 14.4997 5.5C14.9638 5.5 15.4089 5.31563 15.7371 4.98744C16.0653 4.65925 16.2497 4.21413 16.2497 3.75C16.2497 3.28587 16.0653 2.84075 15.7371 2.51256C15.4089 2.18438 14.9638 2 14.4997 2Z" fill="white"/>
-          </svg>
-        </div> -->
-        <div class="main-filters open-sheet" active-color="#ED0807">
-          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.49966 10.75C8.27575 10.7498 9.02989 11.0076 9.6435 11.4827C10.2571 11.9579 10.6954 12.6236 10.8894 13.375H20.6247C20.8433 13.3746 21.0542 13.4561 21.2158 13.6034C21.3774 13.7507 21.4779 13.9532 21.4977 14.1709C21.5175 14.3887 21.455 14.606 21.3225 14.78C21.1901 14.9539 20.9973 15.072 20.7822 15.111L20.6247 15.125L10.8894 15.1268C10.696 15.8788 10.258 16.5453 9.64437 17.0211C9.0307 17.497 8.27621 17.7552 7.49966 17.7552C6.72311 17.7552 5.96862 17.497 5.35495 17.0211C4.74128 16.5453 4.30328 15.8788 4.10991 15.1268L1.37466 15.125C1.156 15.1254 0.945122 15.0439 0.783539 14.8966C0.621957 14.7493 0.521384 14.5468 0.501628 14.3291C0.481871 14.1113 0.544362 13.894 0.676794 13.72C0.809226 13.5461 1.002 13.428 1.21716 13.389L1.37466 13.375H4.10991C4.30393 12.6236 4.74221 11.9579 5.35582 11.4827C5.96943 11.0076 6.72357 10.7498 7.49966 10.75ZM7.49966 12.5C7.03553 12.5 6.59041 12.6844 6.26222 13.0126C5.93404 13.3408 5.74966 13.7859 5.74966 14.25C5.74966 14.7141 5.93404 15.1592 6.26222 15.4874C6.59041 15.8156 7.03553 16 7.49966 16C7.96379 16 8.40891 15.8156 8.7371 15.4874C9.06529 15.1592 9.24966 14.7141 9.24966 14.25C9.24966 13.7859 9.06529 13.3408 8.7371 13.0126C8.40891 12.6844 7.96379 12.5 7.49966 12.5ZM14.4997 0.25C15.2757 0.249803 16.0299 0.507558 16.6435 0.982735C17.2571 1.45791 17.6954 2.12356 17.8894 2.875H20.6247C20.8433 2.8746 21.0542 2.95608 21.2158 3.10339C21.3774 3.2507 21.4779 3.45318 21.4977 3.67094C21.5175 3.8887 21.455 4.10597 21.3225 4.27996C21.1901 4.45394 20.9973 4.57204 20.7822 4.611L20.6247 4.625L17.8894 4.62675C17.696 5.37884 17.258 6.04526 16.6444 6.5211C16.0307 6.99695 15.2762 7.2552 14.4997 7.2552C13.7231 7.2552 12.9686 6.99695 12.3549 6.5211C11.7413 6.04526 11.3033 5.37884 11.1099 4.62675L1.37466 4.625C1.156 4.6254 0.945122 4.54392 0.783539 4.39661C0.621957 4.2493 0.521384 4.04682 0.501628 3.82906C0.481871 3.6113 0.544362 3.39403 0.676794 3.22005C0.809226 3.04606 1.002 2.92796 1.21716 2.889L1.37466 2.875H11.1099C11.3039 2.12356 11.7422 1.45791 12.3558 0.982735C12.9694 0.507558 13.7236 0.249803 14.4997 0.25ZM14.4997 2C14.0355 2 13.5904 2.18438 13.2622 2.51256C12.934 2.84075 12.7497 3.28587 12.7497 3.75C12.7497 4.21413 12.934 4.65925 13.2622 4.98744C13.5904 5.31563 14.0355 5.5 14.4997 5.5C14.9638 5.5 15.4089 5.31563 15.7371 4.98744C16.0653 4.65925 16.2497 4.21413 16.2497 3.75C16.2497 3.28587 16.0653 2.84075 15.7371 2.51256C15.4089 2.18438 14.9638 2 14.4997 2Z" fill="white"/>
-          </svg>
-        </div>
-        <div id="sheet" class="sheet column items-center justify-end" aria-hidden="true">
-          <div class="overlay"></div>
-          <div class="contents column">
-            <header class="controls">
-              <div class="draggable-area">
-                <div class="draggable-thumb"></div>
-              </div>
-              <div class="close-sheet">&times;</div>
-            </header>
-            <main class="body fill column">
-              <div class="sheet">
-                <div class="graph-modal__content">
-                  <div class="content-title">Фильтры</div>
-                  <div class="content-filter">
-                    <div class="filter-title">Площадки</div>                    
-                    <div class="filter-item">
-                      <div class="filter-item__container filter" data-filter="all">
-                        <input class="filter-item__checkbox" type="radio" id="choicePlatform1" name="platform" value="all">
-                        <label class="filter-item__text" for="choicePlatform1">Все площадки</label>
-                      </div>
-                    </div>
-                    <div class="filter-item">
-                      <div class="filter-item__container filter" data-filter="orsk">
-                        <input class="filter-item__checkbox" type="radio" id="choicePlatform2" name="platform" value="orsk">
-                        <label class="filter-item__text" for="choicePlatform2">Орск</label>
-                      </div>
-                    </div>
-                    <div class="filter-item">
-                      <div class="filter-item__container filter" data-filter="orenburg">
-                        <input class="filter-item__checkbox" type="radio" id="choicePlatform3" name="platform" value="orenburg">
-                        <label class="filter-item__text" for="choicePlatform3">Оренбург</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="content-filter">
-                    <div class="filter-title">Статусы</div>
-                    <div class="filter-item">
-                      <div class="filter-item__container filter2" data-filter2="all">
-                        <input class="filter-item__checkbox" type="radio" id="choiceStatus1" name="status" value="all">
-                        <label class="filter-item__text" for="choiceStatus1">Все статусы</label>
-                      </div>
-                    </div>
-                    <div class="filter-item">
-                      <div class="filter-item__container filter2" data-filter2="project">
-                        <input class="filter-item__checkbox" type="radio" id="choiceStatus2" name="status" value="project">
-                        <label class="filter-item__text" for="choiceStatus2">Проект</label>
-                      </div>
-                    </div>
-                    <div class="filter-item">
-                      <div class="filter-item__container filter2" data-filter2="build">
-                        <input class="filter-item__checkbox" type="radio" id="choiceStatus3" name="status" value="build">
-                        <label class="filter-item__text" for="choiceStatus3">Строится</label>
-                      </div>
-                    </div>
-                    <div class="filter-item">
-                      <div class="filter-item__container filter2" data-filter2="valid">
-                        <input class="filter-item__checkbox" type="radio" id="choiceStatus4" name="status" value="valid">
-                        <label class="filter-item__text" for="choiceStatus4">Действует</label>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
-        </div>
-        <!-- <div class="main-discription">Наша миссия – помогать бизнесу <br/> в ОЭЗ «Оренбуржье» устойчиво развиваться</div> -->
+        <div class="main-title">Контакты</div>
+        <div class="main-discription">Вопрос? Проблема? Свяжитесь с нами и мы поможем</div>
       </div>
     </div>
   </div>
-  
 </div>
-          <div class="residents__tabbar"></div>
-          <div class="residents__main">
-            <div class="residents__main__content">
-              <div class="content-filters">
-                <div class="dropdown platforms">
-                  <input type="checkbox" class="dropdown__switch platforms" id="filter-switch-platforms" hidden />
-                  <label for="filter-switch-platforms" class="dropdown__options-filter">
-                    <ul class="dropdown__filter platforms filters" role="listbox" tabindex="-1">
-                      <li class="dropdown__filter-selected platforms" aria-selected="true">
-                        Все площадки  
-                      </li>
-                      <li>
-                        <ul class="dropdown__select platforms">
-                          <li data-filter="all" class="dropdown__select-option platforms filter">
-                            Все площадки
-                          </li>
-                          <li data-filter="orsk" class="dropdown__select-option platforms filter">
-                            Орск
-                          </li>
-                          <li data-filter="orenburg" class="dropdown__select-option platforms filter">
-                            Оренбург
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>			
-                  </label>
+          <div class="contacts__main">
+            <div class="contacts__main__content">
+              <div class="content-info">
+                <div class="content-info__title">Офис ОЭЗ «Оренбуржье»</div>
+                <div class="content-info__address">460000, Оренбург, ул. Советская, 27</div>
+                <div class="underline"></div>
+                <div class="content-info__phone">
+                  <div class="text">Телефон:</div>
+                  <a href="tel:83532442455" class="href">8 3532 44 24 55</a>
                 </div>
-                <div class="dropdown statuses">
-                  <input type="checkbox" class="dropdown__switch statuses" id="filter-switch-statuses" hidden />
-                  <label for="filter-switch-statuses" class="dropdown__options-filter">
-                    <ul class="dropdown__filter statuses filters" role="listbox" tabindex="-1">
-                      <li class="dropdown__filter-selected statuses" aria-selected="true">
-                        Все статусы  
-                      </li>
-                      <li>
-                        <ul class="dropdown__select statuses">
-                          <li data-filter2="all" class="dropdown__select-option statuses filter2">
-                            Все статусы
-                          </li>
-                          <li data-filter2="project" class="dropdown__select-option statuses filter2">
-                            Проект
-                          </li>
-                          <li data-filter2="build" class="dropdown__select-option statuses filter2">
-                            Строится
-                          </li>
-                          <li data-filter2="valid" class="dropdown__select-option statuses filter2">
-                            Действует
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>			
-                  </label>
+                <div class="content-info__email">
+                  <div class="text">Электронная почта:</div>
+                  <a href="mailto:sezoren@orbinvest.ru" class="href">sezoren@orbinvest.ru</a>
+                </div>
+                <div class="content-info__yandex-map">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af1a9dbd5e330a139b38cb199124f88ab2263322df9b1b9590d20d22f33d796bd&amp;source=constructor" frameborder="0"></iframe>
                 </div>
               </div>
-              <div class="content-cards projects">
-                <div data-graph-path="second" data-filter="orsk" data-filter2="valid" class="btn-reset modal-btn modal-2 card project">
-                  <div class="card__img"
-                  style="background-image: url('/img/residents/cards/1.jpg');"
-                  >
-                  </div>
-                  <div class="card__type">Действует</div>
-                  <div class="card__content">
-                    <div class="card__content-location">
-                      <div class="location-icon">
-                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7.5 6C7.5 5.60218 7.34196 5.22064 7.06066 4.93934C6.77936 4.65804 6.39782 4.5 6 4.5C5.60218 4.5 5.22064 4.65804 4.93934 4.93934C4.65804 5.22064 4.5 5.60218 4.5 6C4.5 6.39782 4.65804 6.77936 4.93934 7.06066C5.22064 7.34196 5.60218 7.5 6 7.5C6.39782 7.5 6.77936 7.34196 7.06066 7.06066C7.34196 6.77936 7.5 6.39782 7.5 6V6ZM12 6C12 8.874 8.903 12.016 7.159 13.558C6.84011 13.8428 6.42754 14.0002 6 14.0002C5.57246 14.0002 5.15989 13.8428 4.841 13.558C3.097 12.016 0 8.874 0 6C-1.17411e-08 5.21207 0.155195 4.43185 0.456723 3.7039C0.758251 2.97595 1.20021 2.31451 1.75736 1.75736C2.31451 1.20021 2.97595 0.758251 3.7039 0.456723C4.43185 0.155195 5.21207 0 6 0C6.78793 0 7.56815 0.155195 8.2961 0.456723C9.02405 0.758251 9.68549 1.20021 10.2426 1.75736C10.7998 2.31451 11.2417 2.97595 11.5433 3.7039C11.8448 4.43185 12 5.21207 12 6V6ZM11 6C11 4.67392 10.4732 3.40215 9.53553 2.46447C8.59785 1.52678 7.32608 1 6 1C4.67392 1 3.40215 1.52678 2.46447 2.46447C1.52678 3.40215 1 4.67392 1 6C1 7.108 1.615 8.395 2.57 9.683C3.504 10.941 4.657 12.06 5.503 12.809C5.63912 12.9324 5.81628 13.0007 6 13.0007C6.18372 13.0007 6.36088 12.9324 6.497 12.809C7.343 12.06 8.497 10.942 9.43 9.683C10.385 8.395 11 7.108 11 6Z" fill="#1D1D1D"/>
-                        </svg>
+              <div class="content-contacts">
+                <div class="content-contacts__container">
+                  <div class="content-contacts__data">
+                    <div class="item">
+                      <div class="item-title">
+                        Департамент по взаимодействию с резидентами
                       </div>
-                      <div class="location-title">Орск</div>
+                      <a class="item-phone" href="tel:+73532325054">
+                        +7 (353) 232 50 54
+                      </a>
+                      <a class="item-email" href="mailto:ta@orbinvest.ru">
+                        ta@orbinvest.ru
+                      </a>
                     </div>
-                    <div class="card__content-type">
-                      Машиностроение
-                    </div>
-                    <div class="card__content-name">
-                      Kastamonu Integrated Wood Industry
-                    </div>
-                  </div>
-                </div>
-                <div class="card project" data-filter="orsk" data-filter2="build">
-                  <div class="card__img"
-                  style="background-image: url('/img/residents/cards/2.jpg');"
-                  >
-                  </div>
-                  <div class="card__type">Строится</div>
-                  <div class="card__content">
-                    <div class="card__content-location">
-                      <div class="location-icon">
-                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7.5 6C7.5 5.60218 7.34196 5.22064 7.06066 4.93934C6.77936 4.65804 6.39782 4.5 6 4.5C5.60218 4.5 5.22064 4.65804 4.93934 4.93934C4.65804 5.22064 4.5 5.60218 4.5 6C4.5 6.39782 4.65804 6.77936 4.93934 7.06066C5.22064 7.34196 5.60218 7.5 6 7.5C6.39782 7.5 6.77936 7.34196 7.06066 7.06066C7.34196 6.77936 7.5 6.39782 7.5 6V6ZM12 6C12 8.874 8.903 12.016 7.159 13.558C6.84011 13.8428 6.42754 14.0002 6 14.0002C5.57246 14.0002 5.15989 13.8428 4.841 13.558C3.097 12.016 0 8.874 0 6C-1.17411e-08 5.21207 0.155195 4.43185 0.456723 3.7039C0.758251 2.97595 1.20021 2.31451 1.75736 1.75736C2.31451 1.20021 2.97595 0.758251 3.7039 0.456723C4.43185 0.155195 5.21207 0 6 0C6.78793 0 7.56815 0.155195 8.2961 0.456723C9.02405 0.758251 9.68549 1.20021 10.2426 1.75736C10.7998 2.31451 11.2417 2.97595 11.5433 3.7039C11.8448 4.43185 12 5.21207 12 6V6ZM11 6C11 4.67392 10.4732 3.40215 9.53553 2.46447C8.59785 1.52678 7.32608 1 6 1C4.67392 1 3.40215 1.52678 2.46447 2.46447C1.52678 3.40215 1 4.67392 1 6C1 7.108 1.615 8.395 2.57 9.683C3.504 10.941 4.657 12.06 5.503 12.809C5.63912 12.9324 5.81628 13.0007 6 13.0007C6.18372 13.0007 6.36088 12.9324 6.497 12.809C7.343 12.06 8.497 10.942 9.43 9.683C10.385 8.395 11 7.108 11 6Z" fill="#1D1D1D"/>
-                        </svg>
+                    <div class="underline"></div>
+                    <div class="item">
+                      <div class="item-title">
+                        Административный департамен
                       </div>
-                      <div class="location-title">Орск</div>
+                      <a class="item-phone" href="tel:+73532442455">
+                        +7 (353) 244 24 55
+                      </a>
+                      <a class="item-email" href="mailto:au@orbinvest.ru">
+                        au@orbinvest.ru
+                      </a>
                     </div>
-                    <div class="card__content-type">
-                      Машиностроение
-                    </div>
-                    <div class="card__content-name">
-                      Kastamonu Integrated Wood Industry
-                    </div>
-                  </div>
-                </div>
-                <div class="card project" data-filter="orenburg" data-filter2="project">
-                  <div class="card__img"
-                  style="background-image: url('/img/residents/cards/3.jpg');"
-                  >
-                  </div>
-                  <div class="card__type">Проект</div>
-                  <div class="card__content">
-                    <div class="card__content-location">
-                      <div class="location-icon">
-                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7.5 6C7.5 5.60218 7.34196 5.22064 7.06066 4.93934C6.77936 4.65804 6.39782 4.5 6 4.5C5.60218 4.5 5.22064 4.65804 4.93934 4.93934C4.65804 5.22064 4.5 5.60218 4.5 6C4.5 6.39782 4.65804 6.77936 4.93934 7.06066C5.22064 7.34196 5.60218 7.5 6 7.5C6.39782 7.5 6.77936 7.34196 7.06066 7.06066C7.34196 6.77936 7.5 6.39782 7.5 6V6ZM12 6C12 8.874 8.903 12.016 7.159 13.558C6.84011 13.8428 6.42754 14.0002 6 14.0002C5.57246 14.0002 5.15989 13.8428 4.841 13.558C3.097 12.016 0 8.874 0 6C-1.17411e-08 5.21207 0.155195 4.43185 0.456723 3.7039C0.758251 2.97595 1.20021 2.31451 1.75736 1.75736C2.31451 1.20021 2.97595 0.758251 3.7039 0.456723C4.43185 0.155195 5.21207 0 6 0C6.78793 0 7.56815 0.155195 8.2961 0.456723C9.02405 0.758251 9.68549 1.20021 10.2426 1.75736C10.7998 2.31451 11.2417 2.97595 11.5433 3.7039C11.8448 4.43185 12 5.21207 12 6V6ZM11 6C11 4.67392 10.4732 3.40215 9.53553 2.46447C8.59785 1.52678 7.32608 1 6 1C4.67392 1 3.40215 1.52678 2.46447 2.46447C1.52678 3.40215 1 4.67392 1 6C1 7.108 1.615 8.395 2.57 9.683C3.504 10.941 4.657 12.06 5.503 12.809C5.63912 12.9324 5.81628 13.0007 6 13.0007C6.18372 13.0007 6.36088 12.9324 6.497 12.809C7.343 12.06 8.497 10.942 9.43 9.683C10.385 8.395 11 7.108 11 6Z" fill="#1D1D1D"/>
-                        </svg>
+                    <div class="underline"></div>
+                    <div class="item">
+                      <div class="item-title">
+                        Пресс-служба
                       </div>
-                      <div class="location-title">Оренбург</div>
-                    </div>
-                    <div class="card__content-type">
-                      Машиностроение
-                    </div>
-                    <div class="card__content-name">
-                      Kastamonu Integrated Wood Industry
-                    </div>
-                  </div>
-                </div>
-                <div class="card project" data-filter="orsk" data-filter2="project">
-                  <div class="card__img"
-                  style="background-image: url('/img/residents/cards/4.jpg');"
-                  >
-                  </div>
-                  <div class="card__type">Проект</div>
-                  <div class="card__content">
-                    <div class="card__content-location">
-                      <div class="location-icon">
-                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7.5 6C7.5 5.60218 7.34196 5.22064 7.06066 4.93934C6.77936 4.65804 6.39782 4.5 6 4.5C5.60218 4.5 5.22064 4.65804 4.93934 4.93934C4.65804 5.22064 4.5 5.60218 4.5 6C4.5 6.39782 4.65804 6.77936 4.93934 7.06066C5.22064 7.34196 5.60218 7.5 6 7.5C6.39782 7.5 6.77936 7.34196 7.06066 7.06066C7.34196 6.77936 7.5 6.39782 7.5 6V6ZM12 6C12 8.874 8.903 12.016 7.159 13.558C6.84011 13.8428 6.42754 14.0002 6 14.0002C5.57246 14.0002 5.15989 13.8428 4.841 13.558C3.097 12.016 0 8.874 0 6C-1.17411e-08 5.21207 0.155195 4.43185 0.456723 3.7039C0.758251 2.97595 1.20021 2.31451 1.75736 1.75736C2.31451 1.20021 2.97595 0.758251 3.7039 0.456723C4.43185 0.155195 5.21207 0 6 0C6.78793 0 7.56815 0.155195 8.2961 0.456723C9.02405 0.758251 9.68549 1.20021 10.2426 1.75736C10.7998 2.31451 11.2417 2.97595 11.5433 3.7039C11.8448 4.43185 12 5.21207 12 6V6ZM11 6C11 4.67392 10.4732 3.40215 9.53553 2.46447C8.59785 1.52678 7.32608 1 6 1C4.67392 1 3.40215 1.52678 2.46447 2.46447C1.52678 3.40215 1 4.67392 1 6C1 7.108 1.615 8.395 2.57 9.683C3.504 10.941 4.657 12.06 5.503 12.809C5.63912 12.9324 5.81628 13.0007 6 13.0007C6.18372 13.0007 6.36088 12.9324 6.497 12.809C7.343 12.06 8.497 10.942 9.43 9.683C10.385 8.395 11 7.108 11 6Z" fill="#1D1D1D"/>
-                        </svg>
-                      </div>
-                      <div class="location-title">Орск</div>
-                    </div>
-                    <div class="card__content-type">
-                      Машиностроение
-                    </div>
-                    <div class="card__content-name">
-                      Kastamonu Integrated Wood Industry
+                      <a class="item-phone" href="tel:+79877884049">
+                        +7 (987) 788 40 49
+                      </a>
+                      <a class="item-email" href="mailto:ivandugan93@gmail.com">
+                        ivandugan93@gmail.com
+                      </a>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="content-modals">
-                <div class="graph-modal">
-                  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="second">
-                    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно">
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.897158 1.05416L0.970158 0.970158C1.09715 0.84314 1.2655 0.765912 1.44461 0.752515C1.62372 0.739119 1.80169 0.790444 1.94616 0.897158L2.03016 0.970158L7.00016 5.93916L11.9702 0.969158C12.0973 0.84229 12.2657 0.765246 12.4448 0.752034C12.6239 0.738821 12.8018 0.790316 12.9462 0.897158L13.0302 0.970158C13.1572 1.09715 13.2344 1.2655 13.2478 1.44461C13.2612 1.62372 13.2099 1.80169 13.1032 1.94616L13.0302 2.03016L8.06116 7.00016L13.0312 11.9702C13.158 12.0973 13.2351 12.2657 13.2483 12.4448C13.2615 12.6239 13.21 12.8018 13.1032 12.9462L13.0302 13.0302C12.9032 13.1572 12.7348 13.2344 12.5557 13.2478C12.3766 13.2612 12.1986 13.2099 12.0542 13.1032L11.9702 13.0302L7.00016 8.06116L2.03016 13.0312C1.90304 13.158 1.73463 13.2351 1.55552 13.2483C1.37641 13.2615 1.19851 13.21 1.05416 13.1032L0.970158 13.0302C0.84314 12.9032 0.765912 12.7348 0.752515 12.5557C0.739119 12.3766 0.790444 12.1986 0.897158 12.0542L0.970158 11.9702L5.93916 7.00016L0.969158 2.03016C0.84229 1.90304 0.765246 1.73463 0.752034 1.55552C0.738821 1.37641 0.790316 1.19851 0.897158 1.05416L0.970158 0.970158L0.897158 1.05416Z" fill="white"/>
-                      </svg>
-                    </button>
-                    <div class="graph-modal__content">
-                      <div class="content-status valid">Действует</div>
-                    
-                      <div class="content-header">
-                        <div class="content-header__text">
-                          <div class="text-title">Kastamonu Integrated Wood Industry</div>
-                          <div class="text-discription">Производство средств антикоррозионной защиты, клейких лент, промышленных клеев, абразивных материалов, стеклянных микросфер</div>
-                        </div>
-                        <div class="content-header__logo">
-                          <img src="/img/residents/cards/modals/kastamonu/kastamonu-logo.png" alt="">
-                        </div>
+                  <div class="content-contacts__form">
+                    <div class="form">
+                      <div class="form-title">
+                        Осталось вопросы?
                       </div>
-                      <div class="swiffy-slider slider-item-reveal residents-gallery slider-nav-arrow slider-nav-sm slider-nav-autoplay slider-nav-autopause slider-indicators-square slider-indicators-sm slider-nav-mousedrag" data-slider-nav-autoplay-interval="4500">
-                        <ul class="slider-container">
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <img src="/img/residents/cards/slider-main.jpg" alt="">
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <img src="/img/residents/cards/slider-main.jpg" alt="">
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <img src="/img/residents/cards/slider-main.jpg" alt="">
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <img src="/img/residents/cards/slider-main.jpg" alt="">
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <img src="/img/residents/cards/slider-main.jpg" alt="">
-                            </div>
-                          </li>
-                          <li class="slider-container__item">
-                            <div class="item">
-                              <img src="/img/residents/cards/slider-main.jpg" alt="">
-                            </div>
-                          </li>
-                        </ul>
-                      
-                        <button type="button" class="slider-nav">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.7232 18.9494C14.5503 19.1138 14.3192 19.2029 14.0807 19.1971C13.8422 19.1912 13.6157 19.0909 13.4512 18.9182L7.44877 12.6182C7.28921 12.4508 7.2002 12.2284 7.2002 11.9972C7.2002 11.7659 7.28921 11.5435 7.44877 11.3762L13.45 5.07616C13.5306 4.9871 13.6282 4.91507 13.737 4.86432C13.8459 4.81357 13.9638 4.78512 14.0838 4.78065C14.2039 4.77618 14.3236 4.79579 14.4359 4.8383C14.5482 4.88082 14.6509 4.9454 14.7379 5.02822C14.8249 5.11104 14.8944 5.21044 14.9424 5.32055C14.9904 5.43067 15.0158 5.54927 15.0172 5.66938C15.0187 5.78948 14.996 5.90865 14.9507 6.01987C14.9053 6.13109 14.8382 6.23211 14.7532 6.31696L9.34357 11.9978L14.7532 17.6774C14.9178 17.8501 15.0071 18.0811 15.0015 18.3196C14.9959 18.5581 14.8957 18.7846 14.7232 18.9494V18.9494Z" fill="#FFFFFF"/>
-                          </svg>
-                        </button>
-                        <button type="button" class="slider-nav slider-nav-next">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.27683 18.9494C9.44968 19.1138 9.68077 19.2029 9.91929 19.1971C10.1578 19.1912 10.3843 19.0909 10.5488 18.9182L16.5512 12.6182C16.7108 12.4508 16.7998 12.2284 16.7998 11.9972C16.7998 11.7659 16.7108 11.5435 16.5512 11.3762L10.55 5.07616C10.4694 4.9871 10.3718 4.91507 10.263 4.86432C10.1541 4.81357 10.0362 4.78512 9.91617 4.78065C9.79614 4.77618 9.67643 4.79579 9.5641 4.8383C9.45176 4.88082 9.34908 4.9454 9.26209 5.02822C9.1751 5.11104 9.10557 5.21044 9.0576 5.32055C9.00962 5.43067 8.98417 5.54927 8.98275 5.66938C8.98133 5.78948 9.00396 5.90865 9.04932 6.01987C9.09467 6.13109 9.16183 6.23211 9.24683 6.31696L14.6564 11.9978L9.24683 17.6774C9.08221 17.8501 8.9929 18.0811 8.99852 18.3196C9.00415 18.5581 9.10425 18.7846 9.27683 18.9494V18.9494Z" fill="#FFFFFF"/>
-                          </svg>
-                        </button>
-                      
-                        <div class="slider-indicators archSlide">
-                          <button class="active" style="background: url('/img/residents/cards/slider-mini.jpg')">
-                          </button>
-                          <button class="" style="background: url('/img/residents/cards/slider-mini.jpg')">
-                          </button>
-                          <button class="" style="background: url('/img/residents/cards/slider-mini.jpg')">
-                          </button>
-                          <button class="" style="background: url('/img/residents/cards/slider-mini.jpg')">
-                          </button>
-                          <button class="" style="background: url('/img/residents/cards/slider-mini.jpg')">
-                          </button>
-                          <button class="" style="background: url('/img/residents/cards/slider-mini.jpg')">
-                          </button>
-                        </div>
+                      <div class="form-discription">
+                        Опишите свой вопрос или проблемы и мы обязательно поможем во всем разобраться.
                       </div>
-
-
-                      <div class="content-feedback-mobile">
-                        <a href="tel:+1234567890" class="content-feedback-mobile__item">
-                          <div class="item-icon phone">
-                            <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.05695 1.41844L4.22395 1.06668C5.54645 0.668038 6.95949 1.31227 7.52579 2.5721L8.42749 4.57782C8.91019 5.65165 8.65579 6.91366 7.79479 7.71661L6.30049 9.1101C6.25679 9.1508 6.22909 9.2058 6.22249 9.2652C6.17819 9.6623 6.44739 10.4357 7.06759 11.51C7.51869 12.2913 7.92689 12.8391 8.27439 13.1473C8.51649 13.362 8.64979 13.4084 8.70659 13.3915L10.7169 12.7769C11.8425 12.4328 13.0623 12.8431 13.751 13.7976L15.0317 15.5726C15.8378 16.6898 15.6929 18.2311 14.6926 19.1784L13.8062 20.0178C12.8498 20.9236 11.4882 21.2611 10.2195 20.907C7.46539 20.1383 4.99609 17.8141 2.78421 13.9831C0.569259 10.1467 -0.207931 6.84222 0.508519 4.07043C0.836389 2.80195 1.80252 1.79656 3.05695 1.41844ZM3.48985 2.85461C2.73719 3.08148 2.15751 3.68472 1.96079 4.44581C1.35814 6.77732 2.047 9.7062 4.08325 13.2331C6.11679 16.7552 8.30569 18.8155 10.6228 19.4622C11.384 19.6747 12.2009 19.4722 12.7748 18.9287L13.6611 18.0893C14.1158 17.6587 14.1817 16.9581 13.8153 16.4503L12.5346 14.6753C12.2215 14.2415 11.6671 14.0549 11.1554 14.2114L9.14009 14.8275C7.97039 15.1762 6.90869 14.2347 5.7686 12.26C5.00029 10.9293 4.6422 9.9006 4.73177 9.0987C4.77817 8.68322 4.97174 8.29812 5.27746 8.01303L6.77179 6.61958C7.16319 6.2546 7.27879 5.68096 7.05939 5.19286L6.15769 3.18714C5.90026 2.61449 5.25798 2.32165 4.65685 2.50285L3.48985 2.85461Z" fill="url(#paint0_linear_1518_49)"/>
-                              <defs>
-                              <linearGradient id="paint0_linear_1518_49" x1="13.8502" y1="3.79393" x2="12.5877" y2="20.5176" gradientUnits="userSpaceOnUse">
-                              <stop stop-color="#002136"/>
-                              <stop offset="1" stop-color="#110036"/>
-                              </linearGradient>
-                              </defs>
-                            </svg>
+                      <form id="form-contacts-0" action="">
+                        <div class="form-inputs">
+                          <div class="form-input">
+                            <div class="form-input__text">Ваше имя</div>
+                            <input required="required" type="text" placeholder="Введите имя">
                           </div>
-                          <div class="item-text">Позвонить</div>
-                        </a>
-                        <a href="mailto:example@mail.ru" class="content-feedback-mobile__item">
-                          <div class="item-icon email">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M3.25 0H16.75C18.483 0 19.8992 1.35645 19.9949 3.06558L20 3.25V12.75C20 14.483 18.6435 15.8992 16.9344 15.9949L16.75 16H3.25C1.51697 16 0.10075 14.6435 0.00514007 12.9344L0 12.75V3.25C0 1.51697 1.35645 0.10075 3.06558 0.00513983L3.25 0H16.75H3.25ZM18.5 5.373L10.3493 9.6637C10.1619 9.7623 9.9431 9.7764 9.7468 9.706L9.6507 9.6637L1.5 5.374V12.75C1.5 13.6682 2.20711 14.4212 3.10647 14.4942L3.25 14.5H16.75C17.6682 14.5 18.4212 13.7929 18.4942 12.8935L18.5 12.75V5.373ZM16.75 1.5H3.25C2.33183 1.5 1.57881 2.20711 1.5058 3.10647L1.5 3.25V3.679L10 8.1525L18.5 3.678V3.25C18.5 2.33183 17.7929 1.57881 16.8935 1.5058L16.75 1.5Z" fill="url(#paint0_linear_1518_2154)"/>
-                              <defs>
-                              <linearGradient id="paint0_linear_1518_2154" x1="17.776" y1="2.26491" x2="17.1616" y2="15.6277" gradientUnits="userSpaceOnUse">
-                              <stop stop-color="#002136"/>
-                              <stop offset="1" stop-color="#110036"/>
-                              </linearGradient>
-                              </defs>
-                            </svg>
-                          </div>
-                          <div class="item-text">Написать</div>
-                        </a>
-                        <a target="_blank" href="https://www.google.ru/" class="content-feedback-mobile__item">
-                          <div class="item-icon">
-                            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M10.9996 0.998047C16.5233 0.998047 21.0011 5.47589 21.0011 10.9996C21.0011 16.5233 16.5233 21.0011 10.9996 21.0011C5.47589 21.0011 0.998047 16.5233 0.998047 10.9996C0.998047 5.47589 5.47589 0.998047 10.9996 0.998047ZM13.9385 15.4993H8.06069C8.71273 17.9135 9.84611 19.5011 10.9996 19.5011C12.1531 19.5011 13.2864 17.9135 13.9385 15.4993ZM6.50791 15.4999L3.78542 15.4998C4.74376 17.0328 6.17721 18.2384 7.87959 18.9104C7.35731 18.0906 6.92632 17.0643 6.60932 15.8949L6.50791 15.4999ZM18.2138 15.4998L15.4913 15.4999C15.1675 16.8337 14.6999 17.9995 14.1185 18.9104C15.7155 18.2804 17.0752 17.1814 18.0286 15.7833L18.2138 15.4998ZM6.09302 8.99895H2.73541L2.73066 9.0162C2.57857 9.6525 2.49805 10.3166 2.49805 10.9996C2.49805 12.0558 2.69063 13.0669 3.04261 13.9999L6.21577 13.9995C6.07347 13.0504 5.99805 12.0422 5.99805 10.9996C5.99805 10.3156 6.03051 9.6464 6.09302 8.99895ZM14.3965 8.99901H7.60267C7.53465 9.6393 7.49804 10.309 7.49804 10.9996C7.49804 12.0591 7.58419 13.0694 7.73778 13.9997H14.2614C14.415 13.0694 14.5011 12.0591 14.5011 10.9996C14.5011 10.309 14.4645 9.6393 14.3965 8.99901ZM19.2642 8.99811L15.9062 8.99897C15.9687 9.6464 16.0011 10.3156 16.0011 10.9996C16.0011 12.0422 15.9257 13.0504 15.7834 13.9995L18.9566 13.9999C19.3085 13.0669 19.5011 12.0558 19.5011 10.9996C19.5011 10.3102 19.4191 9.64 19.2642 8.99811ZM7.88065 3.08875L7.85774 3.09747C5.81043 3.91218 4.15441 5.49949 3.24974 7.49935L6.29786 7.49972C6.61122 5.74693 7.15806 4.221 7.88065 3.08875ZM10.9996 2.49805L10.8839 2.50335C9.61851 2.6191 8.39602 4.62107 7.82831 7.4993H14.1709C13.6047 4.62914 12.3875 2.63033 11.1259 2.50436L10.9996 2.49805ZM14.1196 3.08881L14.2264 3.2629C14.8956 4.37537 15.4038 5.83525 15.7013 7.49972L18.7494 7.49935C17.8848 5.58795 16.3338 4.05341 14.4108 3.21008L14.1196 3.08881Z" fill="url(#paint0_linear_1518_2242)"/>
-                              <defs>
-                              <linearGradient id="paint0_linear_1518_2242" x1="18.7768" y1="3.82962" x2="17.8177" y2="20.5158" gradientUnits="userSpaceOnUse">
-                              <stop stop-color="#002136"/>
-                              <stop offset="1" stop-color="#110036"/>
-                              </linearGradient>
-                              </defs>
-                            </svg>
-                          </div>
-                          <div class="item-text">Сайт</div>
-                        </a>
-                      </div>
-                      <div class="content-flex-row">
-                        <div class="content-flex-col left">
-                          <div class="content-discription">
-                            <div class="content-discription__title">Описание</div>
-                            <div class="underline"></div>
-                            <div class="content-discription__text">
-                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            </div>
-                          </div>
-                          <div class="content-management">
-                            <div class="content-management__title">Руководство</div>
-                            <div class="underline"></div>
-                            <div class="content-management__items">
-                              <div class="item">
-                                <div class="item-img">
-                                  <img src="/img/residents/cards/modals/kastamonu/kastamonu-management-1.jpg" alt="">
-                                </div>
-                                <div class="item-text">
-                                  <div class="text-title">Гарбузов</div>
-                                  <div class="text-subtitle">Денис Олегович</div>
-                                  <div class="text-status">Директор</div>
-                                  <div class="text-discription">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.”</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content-news">
-                            <div class="content-news__title">Свежие новости</div>
-                            <div class="content-news__items">
-                              <div class="item">
-                                <div class="item-img">
-                                  <img src="/img/residents/cards/modals/kastamonu/kastamonu-news-1.jpg" alt="">
-                                </div>
-                                <div class="item-content">
-                                  <div class="item-content__date">
-                                    3 сентября<span class="hidden-1024px">, понедельник</span>
-                                  </div>
-                                  <div class="item-content__name">
-                                    В оренбургском МФЦ появится сектор пользовательского сопровождения
-                                  </div>
-                                  <div class="item-content__discription">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque... 
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="item">
-                                <div class="item-img">
-                                  <img src="/img/residents/cards/modals/kastamonu/kastamonu-news-2.jpg" alt="">
-                                </div>
-                                <div class="item-content">
-                                  <div class="item-content__date">
-                                    3 сентября<span class="hidden-1024px">, понедельник</span>
-                                  </div>
-                                  <div class="item-content__name">
-                                    В оренбургском МФЦ появится сектор пользовательского сопровождения
-                                  </div>
-                                  <div class="item-content__discription">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque... 
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content-jobs">
-                            <div class="content-jobs__title">Вакансии</div>
-                            <div class="content-jobs__items">
-                              <div class="item">
-                                <div class="item-title">Специалист по ТБ</div>
-                                <div class="item-company">ООО Kastamonu</div>
-                                <div class="item-location">
-                                  <div class="item-location__icon">
-                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7.5 6C7.5 5.60218 7.34196 5.22064 7.06066 4.93934C6.77936 4.65804 6.39782 4.5 6 4.5C5.60218 4.5 5.22064 4.65804 4.93934 4.93934C4.65804 5.22064 4.5 5.60218 4.5 6C4.5 6.39782 4.65804 6.77936 4.93934 7.06066C5.22064 7.34196 5.60218 7.5 6 7.5C6.39782 7.5 6.77936 7.34196 7.06066 7.06066C7.34196 6.77936 7.5 6.39782 7.5 6ZM12 6C12 8.874 8.903 12.016 7.159 13.558C6.84011 13.8428 6.42754 14.0002 6 14.0002C5.57246 14.0002 5.15989 13.8428 4.841 13.558C3.097 12.016 0 8.874 0 6C-1.17411e-08 5.21207 0.155195 4.43185 0.456723 3.7039C0.758251 2.97595 1.20021 2.31451 1.75736 1.75736C2.31451 1.20021 2.97595 0.758251 3.7039 0.456723C4.43185 0.155195 5.21207 0 6 0C6.78793 0 7.56815 0.155195 8.2961 0.456723C9.02405 0.758251 9.68549 1.20021 10.2426 1.75736C10.7998 2.31451 11.2417 2.97595 11.5433 3.7039C11.8448 4.43185 12 5.21207 12 6ZM11 6C11 4.67392 10.4732 3.40215 9.53553 2.46447C8.59785 1.52678 7.32608 1 6 1C4.67392 1 3.40215 1.52678 2.46447 2.46447C1.52678 3.40215 1 4.67392 1 6C1 7.108 1.615 8.395 2.57 9.683C3.504 10.941 4.657 12.06 5.503 12.809C5.63912 12.9324 5.81628 13.0007 6 13.0007C6.18372 13.0007 6.36088 12.9324 6.497 12.809C7.343 12.06 8.497 10.942 9.43 9.683C10.385 8.395 11 7.108 11 6Z" fill="#1D1D1D"/>
-                                    </svg>
-                                  </div>
-                                  <div class="item-location__text">Орск</div>
-                                  
-                                </div>
-                                <div class="item-discription">
-                                  Общение с клиентами по тедефону. Выезд на показ объекта. Заключение сделок. Грамотная устная речь без дефектов. Опрятный внешний вид. Позитивное отношение к жизни. Желание работать и приносить пользу людям.
-                                </div>
-                                <form id="form-resume-0" class="panel" action="">
-                                  <div class="panel-content">
-                                    <textarea 
-                                      class="panel-content__input"
-                                      placeholder="Сопроводительное письмо"
-                                      required="required"
-                                      name="text"
-                                    ></textarea>
-                                    <div class="form-group file-area">
-                                      <input type="file" name="images" required="required" multiple="multiple"/>
-                                      <div class="file-dummy">
-                                        <div class="success">Файл успешно добавлен</div>
-                                        <div class="default">
-                                          <div class="resume-text">Прикрепить резюме</div>
-                                          <div class="resume-icon">
-                                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M1.28622 16.25H13.0362C13.262 16.2501 13.479 16.3375 13.6418 16.4938C13.8047 16.6502 13.9008 16.8634 13.9101 17.089C13.9194 17.3145 13.8411 17.535 13.6917 17.7042C13.5423 17.8734 13.3332 17.9783 13.1082 17.997L13.0362 18H1.28622C1.06051 17.9998 0.84361 17.9123 0.680854 17.7559C0.518097 17.5995 0.422072 17.3863 0.412842 17.1608C0.403612 16.9353 0.48189 16.7149 0.631323 16.5457C0.780755 16.3766 0.989779 16.2717 1.21472 16.253L1.28622 16.25H13.0362H1.28622ZM6.96472 0.128L7.03622 0.125C7.25582 0.125008 7.46738 0.207585 7.62892 0.35634C7.79045 0.505094 7.89015 0.70915 7.90822 0.928L7.91122 1V11.6665L10.3077 9.2705C10.4718 9.1064 10.6944 9.0142 10.9265 9.0142C11.1585 9.0142 11.3811 9.1064 11.5452 9.2705C11.7093 9.4346 11.8015 9.65717 11.8015 9.88925C11.8015 10.1213 11.7093 10.3439 11.5452 10.508L7.65622 14.397C7.57497 14.4783 7.47851 14.5427 7.37234 14.5867C7.26617 14.6307 7.15238 14.6533 7.03747 14.6533C6.92256 14.6533 6.80877 14.6307 6.7026 14.5867C6.59644 14.5427 6.49997 14.4783 6.41872 14.397L2.52972 10.508C2.36562 10.3439 2.27343 10.1213 2.27343 9.88925C2.27343 9.65717 2.36562 9.4346 2.52972 9.2705C2.69382 9.1064 2.91639 9.0142 3.14847 9.0142C3.38055 9.0142 3.60312 9.1064 3.76722 9.2705L6.16122 11.6645V1C6.16124 0.780326 6.24389 0.568695 6.39274 0.407146C6.5416 0.245597 6.74578 0.145951 6.96472 0.128L7.03622 0.125L6.96472 0.128Z" fill="#0C314C"/>
-                                            </svg>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <button type="submit" class="main-button submit-button">
-                                    Отправить
-                                  </button>
-                                </form>
-                                <button class="main-button resize-form">
-                                  Откликнуться
-                                </button>
-                              </div>
-                              <div class="item">
-                                <div class="item-title">Менеджер по управлению проектом</div>
-                                <div class="item-company">ООО Kastamonu</div>
-                                <div class="item-location">
-                                  <div class="item-location__icon">
-                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M7.5 6C7.5 5.60218 7.34196 5.22064 7.06066 4.93934C6.77936 4.65804 6.39782 4.5 6 4.5C5.60218 4.5 5.22064 4.65804 4.93934 4.93934C4.65804 5.22064 4.5 5.60218 4.5 6C4.5 6.39782 4.65804 6.77936 4.93934 7.06066C5.22064 7.34196 5.60218 7.5 6 7.5C6.39782 7.5 6.77936 7.34196 7.06066 7.06066C7.34196 6.77936 7.5 6.39782 7.5 6ZM12 6C12 8.874 8.903 12.016 7.159 13.558C6.84011 13.8428 6.42754 14.0002 6 14.0002C5.57246 14.0002 5.15989 13.8428 4.841 13.558C3.097 12.016 0 8.874 0 6C-1.17411e-08 5.21207 0.155195 4.43185 0.456723 3.7039C0.758251 2.97595 1.20021 2.31451 1.75736 1.75736C2.31451 1.20021 2.97595 0.758251 3.7039 0.456723C4.43185 0.155195 5.21207 0 6 0C6.78793 0 7.56815 0.155195 8.2961 0.456723C9.02405 0.758251 9.68549 1.20021 10.2426 1.75736C10.7998 2.31451 11.2417 2.97595 11.5433 3.7039C11.8448 4.43185 12 5.21207 12 6ZM11 6C11 4.67392 10.4732 3.40215 9.53553 2.46447C8.59785 1.52678 7.32608 1 6 1C4.67392 1 3.40215 1.52678 2.46447 2.46447C1.52678 3.40215 1 4.67392 1 6C1 7.108 1.615 8.395 2.57 9.683C3.504 10.941 4.657 12.06 5.503 12.809C5.63912 12.9324 5.81628 13.0007 6 13.0007C6.18372 13.0007 6.36088 12.9324 6.497 12.809C7.343 12.06 8.497 10.942 9.43 9.683C10.385 8.395 11 7.108 11 6Z" fill="#1D1D1D"/>
-                                    </svg>
-                                  </div>
-                                  <div class="item-location__text">Орск</div>
-                                  
-                                </div>
-                                <div class="item-discription">
-                                  Общение с клиентами по тедефону. Выезд на показ объекта. Заключение сделок. Грамотная устная речь без дефектов. Опрятный внешний вид. Позитивное отношение к жизни. Желание работать и приносить пользу людям.
-                                </div>
-                                <form id="form-resume-1" class="panel" action="">
-                                  <div class="panel-content">
-                                    <textarea 
-                                      class="panel-content__input"
-                                      placeholder="Сопроводительное письмо"
-                                      required="required"
-                                      name="text"
-                                    ></textarea>
-                                    <div class="form-group file-area">
-                                      <input type="file" name="images" required="required" multiple="multiple"/>
-                                      <div class="file-dummy">
-                                        <div class="success">Файл успешно добавлен</div>
-                                        <div class="default">
-                                          <div class="resume-text">Прикрепить резюме</div>
-                                          <div class="resume-icon">
-                                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M1.28622 16.25H13.0362C13.262 16.2501 13.479 16.3375 13.6418 16.4938C13.8047 16.6502 13.9008 16.8634 13.9101 17.089C13.9194 17.3145 13.8411 17.535 13.6917 17.7042C13.5423 17.8734 13.3332 17.9783 13.1082 17.997L13.0362 18H1.28622C1.06051 17.9998 0.84361 17.9123 0.680854 17.7559C0.518097 17.5995 0.422072 17.3863 0.412842 17.1608C0.403612 16.9353 0.48189 16.7149 0.631323 16.5457C0.780755 16.3766 0.989779 16.2717 1.21472 16.253L1.28622 16.25H13.0362H1.28622ZM6.96472 0.128L7.03622 0.125C7.25582 0.125008 7.46738 0.207585 7.62892 0.35634C7.79045 0.505094 7.89015 0.70915 7.90822 0.928L7.91122 1V11.6665L10.3077 9.2705C10.4718 9.1064 10.6944 9.0142 10.9265 9.0142C11.1585 9.0142 11.3811 9.1064 11.5452 9.2705C11.7093 9.4346 11.8015 9.65717 11.8015 9.88925C11.8015 10.1213 11.7093 10.3439 11.5452 10.508L7.65622 14.397C7.57497 14.4783 7.47851 14.5427 7.37234 14.5867C7.26617 14.6307 7.15238 14.6533 7.03747 14.6533C6.92256 14.6533 6.80877 14.6307 6.7026 14.5867C6.59644 14.5427 6.49997 14.4783 6.41872 14.397L2.52972 10.508C2.36562 10.3439 2.27343 10.1213 2.27343 9.88925C2.27343 9.65717 2.36562 9.4346 2.52972 9.2705C2.69382 9.1064 2.91639 9.0142 3.14847 9.0142C3.38055 9.0142 3.60312 9.1064 3.76722 9.2705L6.16122 11.6645V1C6.16124 0.780326 6.24389 0.568695 6.39274 0.407146C6.5416 0.245597 6.74578 0.145951 6.96472 0.128L7.03622 0.125L6.96472 0.128Z" fill="#0C314C"/>
-                                            </svg>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <button type="submit" class="main-button submit-button">
-                                    Отправить
-                                  </button>
-                                </form>
-                                <button class="main-button resize-form">
-                                  Откликнуться
-                                </button>
-                              </div>
-                            </div>
+                          <div class="form-input">
+                            <div class="form-input__text">Электронная почта</div>
+                            <input required="required" name="email" type="email" placeholder="Введите почту">
                           </div>
                         </div>
-                        <div class="content-feedback">
-                          <div class="content-feedback__title">Связаться с резидентом</div>
-                          <div class="content-feedback__phone">
-                            <div class="phone-icon">
-                              <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.05695 1.41844L4.22395 1.06668C5.54645 0.668038 6.95949 1.31227 7.52579 2.5721L8.42749 4.57782C8.91019 5.65165 8.65579 6.91366 7.79479 7.71661L6.30049 9.1101C6.25679 9.1508 6.22909 9.2058 6.22249 9.2652C6.17819 9.6623 6.44739 10.4357 7.06759 11.51C7.51869 12.2913 7.92689 12.8391 8.27439 13.1473C8.51649 13.362 8.64979 13.4084 8.70659 13.3915L10.7169 12.7769C11.8425 12.4328 13.0623 12.8431 13.751 13.7976L15.0317 15.5726C15.8378 16.6898 15.6929 18.2311 14.6926 19.1784L13.8062 20.0178C12.8498 20.9236 11.4882 21.2611 10.2195 20.907C7.46539 20.1383 4.99609 17.8141 2.78421 13.9831C0.569259 10.1467 -0.207931 6.84222 0.508519 4.07043C0.836389 2.80195 1.80252 1.79656 3.05695 1.41844ZM3.48985 2.85461C2.73719 3.08148 2.15751 3.68472 1.96079 4.44581C1.35814 6.77732 2.047 9.7062 4.08325 13.2331C6.11679 16.7552 8.30569 18.8155 10.6228 19.4622C11.384 19.6747 12.2009 19.4722 12.7748 18.9287L13.6611 18.0893C14.1158 17.6587 14.1817 16.9581 13.8153 16.4503L12.5346 14.6753C12.2215 14.2415 11.6671 14.0549 11.1554 14.2114L9.14009 14.8275C7.97039 15.1762 6.90869 14.2347 5.7686 12.26C5.00029 10.9293 4.6422 9.9006 4.73177 9.0987C4.77817 8.68322 4.97174 8.29812 5.27746 8.01303L6.77179 6.61958C7.16319 6.2546 7.27879 5.68096 7.05939 5.19286L6.15769 3.18714C5.90026 2.61449 5.25798 2.32165 4.65685 2.50285L3.48985 2.85461Z" fill="#0C314C"/>
-                              </svg>
-                            </div>
-                            <div class="phone-text">+7 (987) 654 32 10</div>
-                          </div>
-                          <div class="content-feedback__address">
-                            <div class="address-header">Адрес</div>
-                            <div class="address-text">Бульвар архитекторов 9</div>
-                          </div>
-                          <div class="content-feedback__email">
-                            <div class="email-header">Электронная почта</div>
-                            <div class="email-text">ExampleKastamonu@gmail.com</div>
-                          </div>
-                          <div class="content-feedback__site">
-                            <div class="site-header">Сайт компании</div>
-                            <div class="site-text">Example.com</div>
-                          </div>
+                        <div class="form-input">
+                          <div class="form-input__text">Тема вопроса</div>
+                          <input required="required" type="text" placeholder="Введите тему">
                         </div>
-                      </div>
+                        <div class="form-input">
+                          <div class="form-input__text">Ваш вопрос</div>
+                          <!-- <input type="text" placeholder="Введите вопрос"> -->
+                          <textarea required="required" placeholder="Введите вопрос"></textarea>
+                        </div>
+                        <button type="submit" class="main-button">Отправить</button>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -1141,15 +684,15 @@
   </div>
 </footer>
 
-    
+
     <nav class="nav">
-      <a href="/events" class="nav-item open-sheet" active-color="#ED0807">
+      <div class="nav-item open-sheet" active-color="#ED0807">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18.75 20H5.25C4.41986 20.0001 3.62117 19.6824 3.01777 19.1123C2.41437 18.5422 2.052 17.7628 2.005 16.934L2 16.75V6.25C1.99993 5.67987 2.2163 5.13098 2.60537 4.71425C2.99444 4.29751 3.52721 4.04402 4.096 4.005L4.25 4H16.75C17.3201 3.99993 17.869 4.2163 18.2858 4.60537C18.7025 4.99444 18.956 5.52721 18.995 6.096L19 6.25V7H19.75C20.3201 6.99993 20.869 7.2163 21.2858 7.60537C21.7025 7.99444 21.956 8.52721 21.995 9.096L22 9.25V16.75C22.0001 17.5801 21.6824 18.3788 21.1123 18.9822C20.5422 19.5856 19.7628 19.948 18.934 19.995L18.75 20H5.25H18.75ZM5.25 18.5H18.75C19.1893 18.5 19.6126 18.3347 19.9357 18.037C20.2588 17.7392 20.4581 17.3309 20.494 16.893L20.5 16.75V9.25C20.5 9.06876 20.4344 8.89366 20.3152 8.75707C20.1961 8.62048 20.0316 8.53165 19.852 8.507L19.75 8.5H19V16.25C19 16.4312 18.9344 16.6063 18.8152 16.7429C18.6961 16.8795 18.5316 16.9684 18.352 16.993L18.25 17C18.0688 17 17.8937 16.9344 17.7571 16.8152C17.6205 16.6961 17.5316 16.5316 17.507 16.352L17.5 16.25V6.25C17.5 6.06876 17.4344 5.89366 17.3152 5.75707C17.1961 5.62048 17.0316 5.53165 16.852 5.507L16.75 5.5H4.25C4.06876 5.50001 3.89366 5.56564 3.75707 5.68477C3.62048 5.80389 3.53165 5.96845 3.507 6.148L3.5 6.25V16.75C3.50002 17.1892 3.66517 17.6123 3.96268 17.9354C4.26019 18.2585 4.6683 18.4579 5.106 18.494L5.25 18.5H18.75H5.25ZM12.246 14.5H15.252C15.442 14.5001 15.6249 14.5722 15.7638 14.702C15.9026 14.8317 15.9871 15.0093 16 15.1989C16.013 15.3885 15.9535 15.5759 15.8336 15.7233C15.7137 15.8707 15.5422 15.9671 15.354 15.993L15.252 16H12.246C12.056 15.9999 11.8731 15.9278 11.7342 15.798C11.5954 15.6683 11.5109 15.4907 11.498 15.3011C11.485 15.1115 11.5445 14.9241 11.6644 14.7767C11.7843 14.6293 11.9558 14.5329 12.144 14.507L12.246 14.5H15.252H12.246ZM9.243 11.005C9.44191 11.005 9.63268 11.084 9.77333 11.2247C9.91398 11.3653 9.993 11.5561 9.993 11.755V15.25C9.993 15.4489 9.91398 15.6397 9.77333 15.7803C9.63268 15.921 9.44191 16 9.243 16H5.748C5.54909 16 5.35832 15.921 5.21767 15.7803C5.07702 15.6397 4.998 15.4489 4.998 15.25V11.755C4.998 11.5561 5.07702 11.3653 5.21767 11.2247C5.35832 11.084 5.54909 11.005 5.748 11.005H9.243ZM8.493 12.505H6.498V14.5H8.493V12.505ZM12.246 11.005H15.252C15.442 11.0051 15.6249 11.0772 15.7638 11.207C15.9026 11.3367 15.9871 11.5143 16 11.7039C16.013 11.8935 15.9535 12.0809 15.8336 12.2283C15.7137 12.3757 15.5422 12.4721 15.354 12.498L15.252 12.505H12.246C12.0546 12.5069 11.8697 12.4357 11.7292 12.3057C11.5887 12.1758 11.5032 11.9971 11.4901 11.8061C11.4771 11.6152 11.5375 11.4265 11.6591 11.2787C11.7807 11.1308 11.9541 11.0351 12.144 11.011L12.246 11.005H15.252H12.246ZM5.748 7.502H15.252C15.4434 7.50005 15.6283 7.57134 15.7688 7.70127C15.9093 7.8312 15.9948 8.00993 16.0079 8.20088C16.0209 8.39182 15.9605 8.58052 15.8389 8.72834C15.7173 8.87616 15.5439 8.97192 15.354 8.996L15.252 9.002H5.748C5.55798 9.00194 5.37506 8.92976 5.23621 8.80003C5.09736 8.6703 5.01293 8.4927 4.99997 8.30312C4.98702 8.11354 5.04652 7.92611 5.16643 7.7787C5.28635 7.63129 5.45775 7.5349 5.646 7.509L5.748 7.502H15.252H5.748Z"/>
           </svg>
           События
-      </a>
-      <div class="nav-item open-sheet is-active" active-color="#ED0807">
+      </div>
+      <div class="nav-item open-sheet" active-color="#ED0807">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.754 10C15.72 10 16.504 10.784 16.504 11.75V15H16.5V15.25C16.5 15.4489 16.421 15.6397 16.2803 15.7803C16.1397 15.921 15.9489 16 15.75 16C15.5511 16 15.3603 15.921 15.2197 15.7803C15.079 15.6397 15 15.4489 15 15.25V13H15.004V11.75C15.004 11.6837 14.9777 11.6201 14.9308 11.5732C14.8839 11.5263 14.8203 11.5 14.754 11.5H9.252C9.1857 11.5 9.12211 11.5263 9.07522 11.5732C9.02834 11.6201 9.002 11.6837 9.002 11.75V15H9V15.25C9 15.4489 8.92098 15.6397 8.78033 15.7803C8.63968 15.921 8.44891 16 8.25 16C8.05109 16 7.86032 15.921 7.71967 15.7803C7.57902 15.6397 7.5 15.4489 7.5 15.25V13H7.502V11.75C7.502 10.784 8.285 10 9.252 10H14.754ZM20.5 11.75V15.25C20.5 15.4489 20.579 15.6397 20.7197 15.7803C20.8603 15.921 21.0511 16 21.25 16C21.4489 16 21.6397 15.921 21.7803 15.7803C21.921 15.6397 22 15.4489 22 15.25V11.75C22 11.2859 21.8156 10.8408 21.4874 10.5126C21.1592 10.1844 20.7141 10 20.25 10H16.875C17.218 10.415 17.442 10.932 17.493 11.5H20.25C20.3163 11.5 20.3799 11.5263 20.4268 11.5732C20.4737 11.6201 20.5 11.6837 20.5 11.75ZM2 15.25C2 15.4489 2.07902 15.6397 2.21967 15.7803C2.36032 15.921 2.55109 16 2.75 16C2.94891 16 3.13968 15.921 3.28033 15.7803C3.42098 15.6397 3.5 15.4489 3.5 15.25V11.75C3.5 11.6837 3.52634 11.6201 3.57322 11.5732C3.62011 11.5263 3.6837 11.5 3.75 11.5H6.513C6.56274 10.949 6.7782 10.4261 7.131 10H3.75C3.28587 10 2.84075 10.1844 2.51256 10.5126C2.18437 10.8408 2 11.2859 2 11.75V15.25ZM12 3C12.7956 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6C15 6.79565 14.6839 7.55871 14.1213 8.12132C13.5587 8.68393 12.7956 9 12 9C11.2044 9 10.4413 8.68393 9.87868 8.12132C9.31607 7.55871 9 6.79565 9 6C9 5.20435 9.31607 4.44129 9.87868 3.87868C10.4413 3.31607 11.2044 3 12 3ZM12 4.5C11.6022 4.5 11.2206 4.65804 10.9393 4.93934C10.658 5.22064 10.5 5.60218 10.5 6C10.5 6.39782 10.658 6.77936 10.9393 7.06066C11.2206 7.34196 11.6022 7.5 12 7.5C12.3978 7.5 12.7794 7.34196 13.0607 7.06066C13.342 6.77936 13.5 6.39782 13.5 6C13.5 5.60218 13.342 5.22064 13.0607 4.93934C12.7794 4.65804 12.3978 4.5 12 4.5ZM18.5 4C19.163 4 19.7989 4.26339 20.2678 4.73223C20.7366 5.20107 21 5.83696 21 6.5C21 7.16304 20.7366 7.79893 20.2678 8.26777C19.7989 8.73661 19.163 9 18.5 9C17.837 9 17.2011 8.73661 16.7322 8.26777C16.2634 7.79893 16 7.16304 16 6.5C16 5.83696 16.2634 5.20107 16.7322 4.73223C17.2011 4.26339 17.837 4 18.5 4ZM18.5 5.5C18.2348 5.5 17.9804 5.60536 17.7929 5.79289C17.6054 5.98043 17.5 6.23478 17.5 6.5C17.5 6.76522 17.6054 7.01957 17.7929 7.20711C17.9804 7.39464 18.2348 7.5 18.5 7.5C18.7652 7.5 19.0196 7.39464 19.2071 7.20711C19.3946 7.01957 19.5 6.76522 19.5 6.5C19.5 6.23478 19.3946 5.98043 19.2071 5.79289C19.0196 5.60536 18.7652 5.5 18.5 5.5ZM5.5 4C6.16304 4 6.79893 4.26339 7.26777 4.73223C7.73661 5.20107 8 5.83696 8 6.5C8 7.16304 7.73661 7.79893 7.26777 8.26777C6.79893 8.73661 6.16304 9 5.5 9C4.83696 9 4.20107 8.73661 3.73223 8.26777C3.26339 7.79893 3 7.16304 3 6.5C3 5.83696 3.26339 5.20107 3.73223 4.73223C4.20107 4.26339 4.83696 4 5.5 4ZM5.5 5.5C5.23478 5.5 4.98043 5.60536 4.79289 5.79289C4.60536 5.98043 4.5 6.23478 4.5 6.5C4.5 6.76522 4.60536 7.01957 4.79289 7.20711C4.98043 7.39464 5.23478 7.5 5.5 7.5C5.76522 7.5 6.01957 7.39464 6.20711 7.20711C6.39464 7.01957 6.5 6.76522 6.5 6.5C6.5 6.23478 6.39464 5.98043 6.20711 5.79289C6.01957 5.60536 5.76522 5.5 5.5 5.5ZM2.75 17C2.55109 17 2.36032 17.079 2.21967 17.2197C2.07902 17.3603 2 17.5511 2 17.75V18.25C2 19.2446 2.39509 20.1984 3.09835 20.9017C3.80161 21.6049 4.75544 22 5.75 22H18.25C19.2446 22 20.1984 21.6049 20.9017 20.9017C21.6049 20.1984 22 19.2446 22 18.25V17.75C22 17.5511 21.921 17.3603 21.7803 17.2197C21.6397 17.079 21.4489 17 21.25 17H2.75ZM5.75 20.5C5.19656 20.5 4.66254 20.296 4.25004 19.927C3.83754 19.5581 3.57549 19.05 3.514 18.5H20.486C20.4245 19.05 20.1625 19.5581 19.75 19.927C19.3375 20.296 18.8034 20.5 18.25 20.5H5.75Z"/>
           </svg>
@@ -1179,7 +722,7 @@
                   </svg>
                 </div>
               </a>
-              <div class="sheet-button content-row mb-4 active">
+              <a href="/residents" class="sheet-button content-row mb-4">
                 <div class="sheet-button__text">Резиденты</div>
                 <div class="sheet-button__icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1188,20 +731,20 @@
                     </g>
                   </svg>
                 </div>
-              </div>
+              </a>
               <div class="sheet-buttons buttons-row">
-                <a href="/" class="sheet-button button-50">
+                <div class="sheet-button button-50">
                   Площадка Оренбург
-                </a>
-                <a href="/" class="sheet-button button-50">
+                </div>
+                <div class="sheet-button button-50">
                   Площадка Орск
-                </a>
+                </div>
               </div>
             </div>
           </main>
         </div>
       </div>
-      <div class="nav-item open-sheet" active-color="#ED0807">
+      <div class="nav-item open-sheet is-active" active-color="#ED0807">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.875 2.99955C4.77554 2.99955 4.68016 3.03906 4.60984 3.10938C4.53951 3.17971 4.5 3.27509 4.5 3.37455V16.1245C4.5 16.33 4.668 16.4995 4.875 16.4995H7.5V17.9995H4.875C3.84 17.9995 3 17.1595 3 16.123L3.003 3.37305C3.003 2.33805 3.843 1.49805 4.878 1.49805H11.6325C12.6675 1.49805 13.5075 2.33805 13.5075 3.37605L13.5045 6.37305C13.5045 6.58005 13.671 6.74805 13.8795 6.74805H14.625C15.1093 6.74764 15.575 6.93465 15.9245 7.2699C16.274 7.60516 16.4802 8.06264 16.5 8.54655C15.8096 8.14865 14.9895 8.04128 14.22 8.24805H13.8795C13.6329 8.24884 13.3885 8.20084 13.1605 8.10682C12.9324 8.0128 12.7253 7.87461 12.5508 7.7002C12.3764 7.52579 12.2382 7.31861 12.1442 7.09059C12.0502 6.86256 12.0022 6.61819 12.003 6.37155L12.006 3.37305C12.006 3.27359 11.9665 3.17821 11.8962 3.10788C11.8258 3.03756 11.7305 2.99805 11.631 2.99805H4.875V2.99955ZM16.02 10.048C15.7425 9.79037 15.3779 9.64717 14.9993 9.64717C14.6206 9.64717 14.256 9.79037 13.9785 10.048L9.7185 14.0035C9.49137 14.2142 9.31018 14.4695 9.18629 14.7534C9.06239 15.0373 8.99846 15.3438 8.9985 15.6535V20.998C8.9985 21.3959 9.15654 21.7774 9.43784 22.0587C9.71914 22.34 10.1007 22.498 10.4985 22.498H12.7485C13.1463 22.498 13.5279 22.34 13.8092 22.0587C14.0905 21.7774 14.2485 21.3959 14.2485 20.998V19.498H15.7485V20.998C15.7485 21.3959 15.9065 21.7774 16.1878 22.0587C16.4691 22.34 16.8507 22.498 17.2485 22.498H19.4985C19.8963 22.498 20.2779 22.34 20.5592 22.0587C20.8405 21.7774 20.9985 21.3959 20.9985 20.998V15.652C20.9983 15.3425 20.9343 15.0364 20.8104 14.7527C20.6865 14.4691 20.5054 14.214 20.2785 14.0035L16.02 10.0495V10.048ZM10.7385 15.103L14.9985 11.1475L19.2585 15.103C19.3341 15.1731 19.3944 15.2581 19.4357 15.3525C19.477 15.447 19.4984 15.549 19.4985 15.652V20.9995H17.2485V19.4995C17.2485 19.1017 17.0905 18.7202 16.8092 18.4389C16.5279 18.1576 16.1463 17.9995 15.7485 17.9995H14.2485C13.8507 17.9995 13.4691 18.1576 13.1878 18.4389C12.9065 18.7202 12.7485 19.1017 12.7485 19.4995V20.9995H10.4985V15.6535C10.4986 15.5505 10.52 15.4485 10.5613 15.354C10.6026 15.2596 10.6629 15.1746 10.7385 15.1045V15.103ZM7.4985 5.24805C7.4985 5.44696 7.41948 5.63772 7.27883 5.77838C7.13818 5.91903 6.94741 5.99805 6.7485 5.99805C6.54959 5.99805 6.35882 5.91903 6.21817 5.77838C6.07752 5.63772 5.9985 5.44696 5.9985 5.24805C5.9985 5.04913 6.07752 4.85837 6.21817 4.71772C6.35882 4.57706 6.54959 4.49805 6.7485 4.49805C6.94741 4.49805 7.13818 4.57706 7.27883 4.71772C7.41948 4.85837 7.4985 5.04913 7.4985 5.24805ZM6.7485 8.99805C6.94741 8.99805 7.13818 8.91903 7.27883 8.77838C7.41948 8.63772 7.4985 8.44696 7.4985 8.24805C7.4985 8.04913 7.41948 7.85837 7.27883 7.71772C7.13818 7.57706 6.94741 7.49805 6.7485 7.49805C6.54959 7.49805 6.35882 7.57706 6.21817 7.71772C6.07752 7.85837 5.9985 8.04913 5.9985 8.24805C5.9985 8.44696 6.07752 8.63772 6.21817 8.77838C6.35882 8.91903 6.54959 8.99805 6.7485 8.99805ZM7.4985 11.248C7.4985 11.447 7.41948 11.6377 7.27883 11.7784C7.13818 11.919 6.94741 11.998 6.7485 11.998C6.54959 11.998 6.35882 11.919 6.21817 11.7784C6.07752 11.6377 5.9985 11.447 5.9985 11.248C5.9985 11.0491 6.07752 10.8584 6.21817 10.7177C6.35882 10.5771 6.54959 10.498 6.7485 10.498C6.94741 10.498 7.13818 10.5771 7.27883 10.7177C7.41948 10.8584 7.4985 11.0491 7.4985 11.248ZM9.7485 5.99805C9.94741 5.99805 10.1382 5.91903 10.2788 5.77838C10.4195 5.63772 10.4985 5.44696 10.4985 5.24805C10.4985 5.04913 10.4195 4.85837 10.2788 4.71772C10.1382 4.57706 9.94741 4.49805 9.7485 4.49805C9.54959 4.49805 9.35882 4.57706 9.21817 4.71772C9.07752 4.85837 8.9985 5.04913 8.9985 5.24805C8.9985 5.44696 9.07752 5.63772 9.21817 5.77838C9.35882 5.91903 9.54959 5.99805 9.7485 5.99805ZM10.4985 8.24805C10.4985 8.44696 10.4195 8.63772 10.2788 8.77838C10.1382 8.91903 9.94741 8.99805 9.7485 8.99805C9.54959 8.99805 9.35882 8.91903 9.21817 8.77838C9.07752 8.63772 8.9985 8.44696 8.9985 8.24805C8.9985 8.04913 9.07752 7.85837 9.21817 7.71772C9.35882 7.57706 9.54959 7.49805 9.7485 7.49805C9.94741 7.49805 10.1382 7.57706 10.2788 7.71772C10.4195 7.85837 10.4985 8.04913 10.4985 8.24805ZM9.7485 11.998C9.94741 11.998 10.1382 11.919 10.2788 11.7784C10.4195 11.6377 10.4985 11.447 10.4985 11.248C10.4985 11.0491 10.4195 10.8584 10.2788 10.7177C10.1382 10.5771 9.94741 10.498 9.7485 10.498C9.54959 10.498 9.35882 10.5771 9.21817 10.7177C9.07752 10.8584 8.9985 11.0491 8.9985 11.248C8.9985 11.447 9.07752 11.6377 9.21817 11.7784C9.35882 11.919 9.54959 11.998 9.7485 11.998Z"/>
           </svg>
@@ -1275,11 +818,11 @@
                 <a href="/management" class="sheet-button button-50">
                   Руководство
                 </a>
-                <a href="/contacts" class="sheet-button button-50">
+                <a class="sheet-button button-50 active">
                   Контакты
                 </a>
               </div>
-              
+
               <a href="/career" class="sheet-button content-row mt-4">
                 <div class="sheet-button__text">Карьера</div>
                 <div class="sheet-button__icon">
@@ -1290,7 +833,7 @@
                   </svg>
                 </div>
               </a>
-              <a href="/" class="sheet-button content-row mt-4">
+              <a href="" class="sheet-button content-row mt-4">
                 <div class="sheet-button__text">Раскрытие информации</div>
                 <div class="sheet-button__icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1305,14 +848,14 @@
         </div>
       </div>
       <div class="open-sheet nav-item" active-color="#ED0807">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 6.25C2 5.65326 2.23705 5.08097 2.65901 4.65901C3.08097 4.23705 3.65326 4 4.25 4H19.75C20.3467 4 20.919 4.23705 21.341 4.65901C21.7629 5.08097 22 5.65326 22 6.25V17.75C22 18.0455 21.9418 18.3381 21.8287 18.611C21.7157 18.884 21.5499 19.1321 21.341 19.341C21.1321 19.5499 20.884 19.7157 20.611 19.8287C20.3381 19.9418 20.0455 20 19.75 20H4.25C3.95453 20 3.66194 19.9418 3.38896 19.8287C3.11598 19.7157 2.86794 19.5499 2.65901 19.341C2.45008 19.1321 2.28434 18.884 2.17127 18.611C2.0582 18.3381 2 18.0455 2 17.75V6.25ZM4.25 5.5C4.05109 5.5 3.86032 5.57902 3.71967 5.71967C3.57902 5.86032 3.5 6.05109 3.5 6.25V17.75C3.5 18.164 3.836 18.5 4.25 18.5H19.75C19.9489 18.5 20.1397 18.421 20.2803 18.2803C20.421 18.1397 20.5 17.9489 20.5 17.75V6.25C20.5 6.05109 20.421 5.86032 20.2803 5.71967C20.1397 5.57902 19.9489 5.5 19.75 5.5H4.25ZM12 7.245C12.1988 7.24517 12.3895 7.32431 12.53 7.465L15.785 10.72C15.8587 10.7887 15.9178 10.8715 15.9588 10.9635C15.9998 11.0555 16.0218 11.1548 16.0236 11.2555C16.0254 11.3562 16.0068 11.4562 15.9691 11.5496C15.9314 11.643 15.8753 11.7278 15.804 11.799C15.7328 11.8703 15.648 11.9264 15.5546 11.9641C15.4612 12.0018 15.3612 12.0204 15.2605 12.0186C15.1598 12.0168 15.0605 11.9948 14.9685 11.9538C14.8765 11.9128 14.7937 11.8537 14.725 11.78L12.75 9.806V16.253C12.75 16.4519 12.671 16.6427 12.5303 16.7833C12.3897 16.924 12.1989 17.003 12 17.003C11.8011 17.003 11.6103 16.924 11.4697 16.7833C11.329 16.6427 11.25 16.4519 11.25 16.253V9.808L9.28 11.78C9.21134 11.8537 9.12854 11.9128 9.03654 11.9538C8.94454 11.9948 8.84522 12.0168 8.74452 12.0186C8.64382 12.0204 8.54379 12.0018 8.4504 11.9641C8.35701 11.9264 8.27218 11.8703 8.20096 11.799C8.12974 11.7278 8.0736 11.643 8.03588 11.5496C7.99816 11.4562 7.97963 11.3562 7.98141 11.2555C7.98319 11.1548 8.00523 11.0555 8.04622 10.9635C8.08721 10.8715 8.14631 10.7887 8.22 10.72L11.47 7.466C11.6105 7.32531 11.8012 7.24617 12 7.246V7.245Z"/>
-        </svg>
-        Старт
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 6.25C2 5.65326 2.23705 5.08097 2.65901 4.65901C3.08097 4.23705 3.65326 4 4.25 4H19.75C20.3467 4 20.919 4.23705 21.341 4.65901C21.7629 5.08097 22 5.65326 22 6.25V17.75C22 18.0455 21.9418 18.3381 21.8287 18.611C21.7157 18.884 21.5499 19.1321 21.341 19.341C21.1321 19.5499 20.884 19.7157 20.611 19.8287C20.3381 19.9418 20.0455 20 19.75 20H4.25C3.95453 20 3.66194 19.9418 3.38896 19.8287C3.11598 19.7157 2.86794 19.5499 2.65901 19.341C2.45008 19.1321 2.28434 18.884 2.17127 18.611C2.0582 18.3381 2 18.0455 2 17.75V6.25ZM4.25 5.5C4.05109 5.5 3.86032 5.57902 3.71967 5.71967C3.57902 5.86032 3.5 6.05109 3.5 6.25V17.75C3.5 18.164 3.836 18.5 4.25 18.5H19.75C19.9489 18.5 20.1397 18.421 20.2803 18.2803C20.421 18.1397 20.5 17.9489 20.5 17.75V6.25C20.5 6.05109 20.421 5.86032 20.2803 5.71967C20.1397 5.57902 19.9489 5.5 19.75 5.5H4.25ZM12 7.245C12.1988 7.24517 12.3895 7.32431 12.53 7.465L15.785 10.72C15.8587 10.7887 15.9178 10.8715 15.9588 10.9635C15.9998 11.0555 16.0218 11.1548 16.0236 11.2555C16.0254 11.3562 16.0068 11.4562 15.9691 11.5496C15.9314 11.643 15.8753 11.7278 15.804 11.799C15.7328 11.8703 15.648 11.9264 15.5546 11.9641C15.4612 12.0018 15.3612 12.0204 15.2605 12.0186C15.1598 12.0168 15.0605 11.9948 14.9685 11.9538C14.8765 11.9128 14.7937 11.8537 14.725 11.78L12.75 9.806V16.253C12.75 16.4519 12.671 16.6427 12.5303 16.7833C12.3897 16.924 12.1989 17.003 12 17.003C11.8011 17.003 11.6103 16.924 11.4697 16.7833C11.329 16.6427 11.25 16.4519 11.25 16.253V9.808L9.28 11.78C9.21134 11.8537 9.12854 11.9128 9.03654 11.9538C8.94454 11.9948 8.84522 12.0168 8.74452 12.0186C8.64382 12.0204 8.54379 12.0018 8.4504 11.9641C8.35701 11.9264 8.27218 11.8703 8.20096 11.799C8.12974 11.7278 8.0736 11.643 8.03588 11.5496C7.99816 11.4562 7.97963 11.3562 7.98141 11.2555C7.98319 11.1548 8.00523 11.0555 8.04622 10.9635C8.08721 10.8715 8.14631 10.7887 8.22 10.72L11.47 7.466C11.6105 7.32531 11.8012 7.24617 12 7.246V7.245Z"/>
+          </svg>
+          Старт
       </div>
       <div id="sheet" class="sheet column items-center justify-end" aria-hidden="true">
         <div class="overlay"></div>
-  
+
         <div class="contents column">
           <header class="controls">
             <div class="draggable-area">
@@ -1320,19 +863,19 @@
             </div>
             <div class="close-sheet">&times;</div>
           </header>
-  
+
           <main class="body fill column">
             <div class="sheet">
               <div class="sheet-header">
                 Старт
               </div>
               <div class="sheet-buttons buttons-row">
-                <a href="/" class="sheet-button button-50">
+                <div class="sheet-button button-50">
                   Подобрать площадку
-                </a>
-                <a href="/" class="sheet-button button-50">
+                </div>
+                <div class="sheet-button button-50">
                   Личный кабинет
-                </a>
+                </div>
               </div>
             </div>
           </main>
@@ -1341,164 +884,5 @@
       <span class="nav-indicator"></span>
     </nav>
   </div>
-<script>
-  const swiffyslider = {
-  version: "1.6.0",
-  init(e = document.body) {
-      for (let t of e.querySelectorAll(".swiffy-slider")) this.initSlider(t)
-  },
-  initSlider(e) {
-      for (let t of e.querySelectorAll(".slider-nav")) {
-          let i = t.classList.contains("slider-nav-next");
-          t.addEventListener("click", () => this.slide(e, i), {
-              passive: !0
-          })
-      }
-      for (let t of e.querySelectorAll(".slider-indicators")) t.addEventListener("click", () => this.slideToByIndicator()), this.onSlideEnd(e, () => this.handleIndicators(e), 60);
-      if (e.classList.contains("slider-nav-autoplay")) {
-          const t = e.getAttribute("data-slider-nav-autoplay-interval") ? e.getAttribute("data-slider-nav-autoplay-interval") : 2500;
-          this.autoPlay(e, t, e.classList.contains("slider-nav-autopause"))
-      }
-      if (["slider-nav-autohide", "slider-nav-animation"].some(t => e.classList.contains(t))) {
-          const t = e.getAttribute("data-slider-nav-animation-threshold") ? e.getAttribute("data-slider-nav-animation-threshold") : .3;
-          this.setVisibleSlides(e, t)
-      }
-  },
-  setVisibleSlides(e, t = .3) {
-      let i = new IntersectionObserver(t => {
-          t.forEach(e => {
-              e.isIntersecting ? e.target.classList.add("slide-visible") : e.target.classList.remove("slide-visible")
-          }), e.querySelector(".slider-container>*:first-child").classList.contains("slide-visible") ? e.classList.add("slider-item-first-visible") : e.classList.remove("slider-item-first-visible"), e.querySelector(".slider-container>*:last-child").classList.contains("slide-visible") ? e.classList.add("slider-item-last-visible") : e.classList.remove("slider-item-last-visible")
-      }, {
-          root: e.querySelector(".slider-container"),
-          threshold: t
-      });
-      for (let t of e.querySelectorAll(".slider-container>*")) i.observe(t)
-  },
-  slide(e, t = !0) {
-      const i = e.querySelector(".slider-container"),
-          s = e.classList.contains("slider-nav-page"),
-          l = e.classList.contains("slider-nav-noloop"),
-          r = e.classList.contains("slider-nav-nodelay"),
-          o = i.children,
-          n = parseInt(window.getComputedStyle(i).columnGap),
-          a = o[0].offsetWidth + n;
-      let d = t ? i.scrollLeft + a : i.scrollLeft - a;
-      s && (d = t ? i.scrollLeft + i.offsetWidth : i.scrollLeft - i.offsetWidth), i.scrollLeft < 1 && !t && !l && (d = i.scrollWidth - i.offsetWidth), i.scrollLeft >= i.scrollWidth - i.offsetWidth && t && !l && (d = 0), i.scroll({
-          left: d,
-          behavior: r ? "auto" : "smooth"
-      })
-  },
-  slideToByIndicator() {
-      const e = window.event.target,
-          t = Array.from(e.parentElement.children).indexOf(e),
-          i = e.parentElement.children.length,
-          s = e.closest(".swiffy-slider"),
-          l = s.querySelector(".slider-container").children.length / i * t;
-      this.slideTo(s, l)
-  },
-  slideTo(e, t) {
-      const i = e.querySelector(".slider-container"),
-          s = parseInt(window.getComputedStyle(i).columnGap),
-          l = i.children[0].offsetWidth + s,
-          r = e.classList.contains("slider-nav-nodelay");
-      i.scroll({
-          left: l * t,
-          behavior: r ? "auto" : "smooth"
-      })
-  },
-  onSlideEnd(e, t, i = 125) {
-      let s;
-      e.querySelector(".slider-container").addEventListener("scroll", (function() {
-          window.clearTimeout(s), s = setTimeout(t, i)
-      }), {
-          capture: !1,
-          passive: !0
-      })
-  },
-  autoPlay(e, t, i) {
-      t = t < 750 ? 750 : t;
-      let s = setInterval(() => this.slide(e), t);
-      const l = () => this.autoPlay(e, t, i);
-      return i && (["mouseover", "touchstart"].forEach((function(t) {
-          e.addEventListener(t, (function() {
-              window.clearTimeout(s)
-          }), {
-              once: !0,
-              passive: !0
-          })
-      })), ["mouseout", "touchend"].forEach((function(t) {
-          e.addEventListener(t, (function() {
-              l()
-          }), {
-              once: !0,
-              passive: !0
-          })
-      }))), s
-  },
-  handleIndicators(e) {
-      if (!e) return;
-      const t = e.querySelector(".slider-container"),
-          i = t.scrollWidth - t.offsetWidth,
-          s = t.scrollLeft / i;
-      for (let t of e.querySelectorAll(".slider-indicators")) {
-          let e = t.children,
-              i = Math.abs(Math.round((e.length - 1) * s));
-          for (let t of e) t.classList.remove("active");
-          e[i].classList.add("active")
-      }
-  }
-};
-window.swiffyslider = swiffyslider, document.currentScript.hasAttribute("data-noinit") || (document.currentScript.hasAttribute("defer") ? swiffyslider.init() : document.onreadystatechange = () => {
-  "interactive" === document.readyState && swiffyslider.init()
-});
-</script>
-
-<script>
-  const swiffysliderextensions = {
-    version: "1.6.0",
-    draggingtimer: null,
-    init(e = document.body) {
-        for (const s of e.querySelectorAll(".swiffy-slider")) this.initSlider(s)
-    },
-    initSlider(e) {
-        e.classList.contains("slider-nav-mousedrag") && e.addEventListener("mousedown", s => this.handleMouseDrag(s, e), {
-            passive: !0
-        })
-    },
-    handleMouseDrag(e, s) {
-        if (e.srcElement.classList.contains("slider-nav") || e.srcElement.parentElement.classList.contains("slider-indicators")) return;
-        const t = s.querySelector(".slider-container");
-        s.classList.contains("dragging") && clearTimeout(this.draggingtimer), t.style.cursor = "grabbing", s.classList.add("dragging");
-        const i = t.scrollLeft,
-            n = e.clientX,
-            r = t.children[0].offsetWidth + parseInt(window.getComputedStyle(t).columnGap),
-            o = r * (t.children.length - 1),
-            l = t.scrollLeft;
-        let d = l;
-        const a = e => {
-            const s = e.clientX - n,
-                a = i - 1.8 * s;
-            a > 0 && a <= o && (t.scrollLeft = a, s < 0 ? d = o <= l ? l : t.scrollLeft + (r + 1.8 * s) : l > 0 && (d = t.scrollLeft - (r - 1.8 * s)))
-        };
-        t.addEventListener("mousemove", a, {
-            passive: !0
-        }), document.addEventListener("mouseup", () => {
-            t.removeEventListener("mousemove", a), t.style.cursor = null, d < 0 && (d = 0), t.scroll({
-                left: d,
-                behavior: "smooth"
-            }), this.draggingtimer = setTimeout(() => {
-                s.classList.remove("dragging")
-            }, 550)
-        }, {
-            once: !0,
-            passive: !0
-        })
-    }
-};
-window.swiffyslider.extensions = swiffysliderextensions, document.currentScript.hasAttribute("data-noinit") || window.addEventListener("load", () => {
-    swiffyslider.extensions.init()
-});
-</script>
 </body>
 </html>

@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
-  <title>Оренбуржье</title>
-  <!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script defer src="js/main.js"></script>
- 
-  <style>ion-drawer {padding: 0 20px;}</style>
-</head>
+@include('partials/head.html')
 
 <body class="page__body">
-  
+
   <div class="site-container h-100">
-    
+    <!-- @include('partials/header.html') -->
     <main class="main h-100">
       <div class="main-container h-100">
-  
+
         <div class="personal-cabinet-login h-100">
-          <div class="personal-cabinet-login__back">
-            <div class="back-button"></div>
-            <div class="back-text"></div>
-          </div>
+          <a href="/" class="personal-cabinet-login__back">
+            <div class="back-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.7202 18.952C14.5473 19.1165 14.3162 19.2056 14.0777 19.1997C13.8392 19.1939 13.6128 19.0936 13.4482 18.9208L7.44698 12.6208C7.28742 12.4534 7.19841 12.2311 7.19841 11.9998C7.19841 11.7686 7.28742 11.5462 7.44698 11.3788L13.447 5.07882C13.5285 4.99317 13.626 4.92441 13.734 4.87646C13.8421 4.82851 13.9585 4.80231 14.0767 4.79936C14.1949 4.7964 14.3125 4.81676 14.4228 4.85925C14.5331 4.90174 14.6339 4.96555 14.7196 5.04702C14.8052 5.12849 14.874 5.22604 14.9219 5.33408C14.9699 5.44213 14.9961 5.55856 14.999 5.67673C15.002 5.79491 14.9816 5.9125 14.9392 6.02281C14.8967 6.13312 14.8329 6.23397 14.7514 6.31962L9.34058 12.0004L14.7526 17.6812C14.9169 17.8542 15.0058 18.0854 14.9997 18.3239C14.9936 18.5625 14.8931 18.7888 14.7202 18.9532V18.952Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="back-text">Назад</div>
+          </a>
           <div class="personal-cabinet-login__main h-100">
             <div class="personal-cabinet-login__main__content h-100">
               <div class="content-preview h-100">
@@ -301,7 +292,7 @@
                           </div>
                           <div class="item-content">
                             <div class="item-content__title">
-                              Транспортировка электроэнергии 
+                              Транспортировка электроэнергии
                             </div>
                           </div>
                         </div>
@@ -316,7 +307,7 @@
                           </div>
                           <div class="item-content">
                             <div class="item-content__title">
-                              Транспортировка электроэнергии 
+                              Транспортировка электроэнергии
                             </div>
                           </div>
                         </div>
@@ -331,7 +322,7 @@
                           </div>
                           <div class="item-content">
                             <div class="item-content__title">
-                              Транспортировка электроэнергии 
+                              Транспортировка электроэнергии
                             </div>
                           </div>
                         </div>
@@ -346,7 +337,7 @@
                           </div>
                           <div class="item-content">
                             <div class="item-content__title">
-                              Транспортировка электроэнергии 
+                              Транспортировка электроэнергии
                             </div>
                           </div>
                         </div>
@@ -361,7 +352,7 @@
                           </div>
                           <div class="item-content">
                             <div class="item-content__title">
-                              Транспортировка электроэнергии 
+                              Транспортировка электроэнергии
                             </div>
                           </div>
                         </div>
@@ -376,14 +367,14 @@
                           </div>
                           <div class="item-content">
                             <div class="item-content__title">
-                              Транспортировка электроэнергии 
+                              Транспортировка электроэнергии
                             </div>
                           </div>
                         </div>
                       </li>
                     </ul>
-                  
-                    
+
+
                     <div class="slider-indicators archSlide">
                       <button class="active"></button>
                       <button></button>
@@ -433,13 +424,28 @@
                   <div class="content-auth__phone">
                     <div class="phone-text">На указанный номер будет отправлен смс-код</div>
                     <input class="tel" value="" type="tel" placeholder="+7 (000) 000-00-00" />
+                    <div class="content-auth__submit-button main-button">Получить код</div>
                   </div>
                   <div class="content-auth__numbers">
-                    <div class="phone-text">На указанный номер будет отправлен смс-код</div>
-                    <input class="tel" value="" type="tel" placeholder="+7 (000) 000-00-00" />
+                    <div class="phone-text">Введите 4-х значный код для входа в кабинет инвестора</div>
+                    <!-- <input class="tel" value="" type="tel" placeholder="+7 (000) 000-00-00" /> -->
+
+                    <form onsubmit="onSubmit(event)" class="content-area">
+                      <fieldset class='number-code'>
+                          <input type="number" name='code' class='code-input' required placeholder="0"/>
+                          <input type="number" name='code' class='code-input' required placeholder="0"/>
+                          <input type="number" name='code' class='code-input' required placeholder="0"/>
+                          <input type="number" name='code' class='code-input' required placeholder="0"/>
+                          <!-- <input name='code' class='code-input' required/> -->
+                          <!-- <input name='code' class='code-input' required/> -->
+                      </fieldset>
+                      <!-- <p><a href='#'>Resend Code</a></p> -->
+                      <button class="content-auth__submit-button__numbers main-button" type="submit">Отправить</button>
+                      <!-- <button type="submit" class="content-auth__submit-button__numbers main-button">Отправить повторно</button> -->
+                    </form>
                   </div>
                 </div>
-                <div class="content-auth__submit-button main-button">Получить код</div>
+                <!-- <div class="content-auth__submit-button main-button">Отправить повторно</div> -->
                 <!-- <div class="content-auth__code"></div> -->
               </div>
             </div>
@@ -447,9 +453,44 @@
         </div>
       </div>
     </main>
-    
+    <!-- @include('partials/footer.html') -->
   </div>
 </body>
+
+<script>
+  const inputElements = [...document.querySelectorAll('input.code-input')]
+
+inputElements.forEach((ele,index)=>{
+  ele.addEventListener('keydown',(e)=>{
+    // if the keycode is backspace & the current field is empty
+    // focus the input before the current. Then the event happens
+    // which will clear the "before" input box.
+    if(e.keyCode === 8 && e.target.value==='') inputElements[Math.max(0,index-1)].focus()
+  })
+  ele.addEventListener('input',(e)=>{
+    // take the first character of the input
+    // this actually breaks if you input an emoji like 👨‍👩‍👧‍👦....
+    // but I'm willing to overlook insane security code practices.
+    const [first,...rest] = e.target.value
+    e.target.value = first ?? '' // first will be undefined when backspace was entered, so set the input to ""
+    const lastInputBox = index===inputElements.length-1
+    const didInsertContent = first!==undefined
+    if(didInsertContent && !lastInputBox) {
+      // continue to input the rest of the string
+      inputElements[index+1].focus()
+      inputElements[index+1].value = rest.join('')
+      inputElements[index+1].dispatchEvent(new Event('input'))
+    }
+  })
+})
+
+
+// mini example on how to pull the data on submit of the form
+function onSubmit(e){
+  e.preventDefault()
+  const code = inputElements.map(({value})=>value).join('')
+}
+</script>
 
 <script>
 const input = document.querySelector(".tel");
@@ -473,13 +514,6 @@ input.addEventListener("input", (e) => {
   const numberLength = 11;
 
   let result = "+";
-  /* if (input.value.includes("+8") || input.value[0] === "8") {
-    result = "+";
-  } else {
-    result = "+";
-  } */
-
-  //
   for (let i = 0; i < value.length && i < numberLength; i++) {
     switch (i) {
       case 0:
@@ -506,6 +540,7 @@ input.addEventListener("input", (e) => {
 <script>
 var container = document.querySelector(".content-auth__container"),
  submitButton = document.querySelector(".content-auth__submit-button"),
+//  submitButtonNumbers = document.querySelector(".content-auth__submit-button__numbers"),
          step = 1,
         timer = 0;
 function changeStep() {

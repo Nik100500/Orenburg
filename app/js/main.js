@@ -533,6 +533,7 @@ if (image !== undefined) {
 const filters = document.querySelectorAll('.filter');
 let selectedFilter = 'all';
 let selectedFilter2 = 'all';
+var eventsPage = document.querySelectorAll('events__main__content');
 filters.forEach(filter => {
   filter.addEventListener('click', function () {
     filters.forEach(filter => {
@@ -553,7 +554,7 @@ filters.forEach(filter => {
       let secondFilter = el.getAttribute('data-filter2')
       if (secondFilter == selectedFilter2 || selectedFilter2 == 'all') {
         el.classList.remove('hide');
-        el.classList.add('show'); 
+        el.classList.add('show');
       }
     });
     itemsToHide.forEach(el => {
@@ -574,6 +575,18 @@ filters.forEach(filter => {
       el.classList.add('hide');
       el.classList.remove('show');
     });
+    var elementsShowed = document.querySelectorAll('.show');
+    if (eventsPage) {
+      for (var i = 0; i < elementsShowed.length; i++) {
+        if (i == 0 || i == 1 || i % 5 == 0 || i % 6 == 0) {
+          elementsShowed[i].style.height = "511px";
+          elementsShowed[i].style.width = "calc(50% - 14px)";
+        } else {
+          elementsShowed[i].style.height = "488px";
+          elementsShowed[i].style.width = "calc(33.333% - 19px)";
+        }
+      }
+    }
   });
 });
 const filters2 = document.querySelectorAll('.filter2');
@@ -593,7 +606,7 @@ filters2.forEach(filter => {
       let secondFilter = el.getAttribute('data-filter')
       if (secondFilter == selectedFilter || selectedFilter == 'all') {
         el.classList.remove('hide');
-        el.classList.add('show'); 
+        el.classList.add('show');
       }
     });
     itemsToHide.forEach(el => {
@@ -614,6 +627,18 @@ filters2.forEach(filter => {
       el.classList.add('hide');
       el.classList.remove('show');
     });
+    var elementsShowed = document.querySelectorAll('.show');
+    if (eventsPage) {
+      for (var i = 0; i < elementsShowed.length; i++) {
+        if (i == 0 || i == 1 || i % 5 == 0 || i % 6 == 0) {
+          elementsShowed[i].style.height = "511px";
+          elementsShowed[i].style.width = "calc(50% - 14px)";
+        } else {
+          elementsShowed[i].style.height = "488px";
+          elementsShowed[i].style.width = "calc(33.333% - 19px)";
+        }
+      }
+    }
   });
 });
 
@@ -850,7 +875,7 @@ if (exporterCheckbox !== null) {
     resultsOEZ = document.getElementById('results-oez'),
     input1 = document.getElementById('range1'),
     input2 = document.getElementById('range2'),
-    input3 = document.getElementById('range3'),
+    //  input3 = document.getElementById('range3'),
     input4 = document.getElementById('range4'),
     input5 = document.getElementById('range5'),
     RF = 0,
@@ -867,11 +892,10 @@ if (exporterCheckbox !== null) {
     OEZ = OEZ;
     // OEZ = OEZ + (input2.value * 0.022 * 39)
   }
-
-  function input3Math() {
-    RF = RF;
-    OEZ = OEZ;
-  }
+  // function input3Math() {
+  //   RF = RF
+  //   OEZ = OEZ
+  // }
   function input4Math() {
     RF = RF + input4.value * 0.075 * 10;
     OEZ = OEZ;
@@ -887,20 +911,22 @@ if (exporterCheckbox !== null) {
     OEZ = 0;
     input1Math();
     input2Math();
-    input3Math();
+    // input3Math()
     input4Math();
     input5Math();
     RF = Math.round(RF);
     OEZ = Math.round(OEZ);
+    OEZ = RF - OEZ;
+    RF = OEZ;
     resultsRF.querySelector('.rf-count').innerHTML = RF;
     resultsOEZ.querySelector('.oez-count').innerHTML = OEZ;
     resultsRF.querySelector('.rf-graph').style.height = RF / 8 + "px";
-    resultsOEZ.querySelector('.oez-graph').style.height = OEZ / 3 + "px";
+    resultsOEZ.querySelector('.oez-graph').style.height = OEZ / 6 + "px";
   }
   document.onload = formMath();
   input1.addEventListener('change', () => formMath());
   input2.addEventListener('change', () => formMath());
-  input3.addEventListener('change', () => formMath());
+  // input3.addEventListener('change', ()=> formMath())
   input4.addEventListener('change', () => formMath());
   input5.addEventListener('change', () => formMath());
 }
