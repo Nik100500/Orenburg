@@ -412,7 +412,8 @@ submitButton.addEventListener("click", ()=> submitSMS()) */
   \********************************************/
 /***/ (() => {
 
-var image = document.getElementsByClassName('my-img')[0];
+var image = document.getElementsByClassName('my-img')[0],
+  mapOrsk = document.querySelector('.map-orsk__main');
 if (image !== undefined) {
   var imgCntnrs = document.getElementsByClassName('img-cntnr'),
     dragImgMouseStart = {},
@@ -506,6 +507,7 @@ if (image !== undefined) {
     scale = 1920 / windowWidth;
     image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x) / scale + "px," + (currentPos.y + lastDiff.y) / scale + "px)";
     windowWidth > 950 ? plusWidth = 400 : '';
+    mapOrsk !== null ? windowHeight = windowHeight - 200 : '';
   }
   function mouseupDragImg(e) {
     e.preventDefault();

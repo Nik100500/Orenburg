@@ -1,5 +1,6 @@
 
-    var     image = document.getElementsByClassName('my-img')[0]
+    var     image = document.getElementsByClassName('my-img')[0],
+            mapOrsk = document.querySelector('.map-orsk__main')
     if (image !== undefined) {
         var     imgCntnrs = document.getElementsByClassName('img-cntnr'),
         dragImgMouseStart = {},
@@ -22,7 +23,7 @@
         window.addEventListener('mousemove', mousemoveDragImg);
         window.addEventListener('mouseup', mouseupDragImg);
         }
-        
+
         function touchstartDragImg(e) {
         dragImgTouchStart.x = e.changedTouches[0].clientX;
         dragImgTouchStart.y = e.changedTouches[0].clientY;
@@ -33,7 +34,7 @@
         window.addEventListener('touchend', touchendDragImg);
         document.body.classList.add('overflow');
         }
-        
+
         // function changeScale() {
         // // scale == 2 ? scale = 1 : scale = 2;
         // scale = scale*2;
@@ -47,14 +48,14 @@
         //     orenburgButton !== null ? orenburgButton.classList.add("hidden") : orskButton !== null ? orskButton.classList.add("hidden") : ""
         // }, 500);
         // }
-        
+
         // document.getElementById("scale-map").addEventListener('click', changeScale)
-        
+
         function mousemoveDragImg(e) {
         e.preventDefault();
         // lastDiff.x = e.clientX - dragImgMouseStart.x;
         // lastDiff.y = e.clientY - dragImgMouseStart.y;
-        
+
         if ((currentPos.x + (e.clientX - dragImgMouseStart.x)) < (1920 - windowWidth)/2 + plusWidth && (currentPos.x + (e.clientX - dragImgMouseStart.x)) > (-1920 + windowWidth)/2) {
             lastDiff.x = e.clientX - dragImgMouseStart.x;
             console.log(windowWidth)
@@ -74,18 +75,19 @@
         if ((currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y)) < 0 && (currentPos.y + (e.changedTouches[0].clientY - dragImgTouchStart.y)) > (-imgHeight + windowHeight)) {
             lastDiff.y = e.changedTouches[0].clientY - dragImgTouchStart.y;
         }
-        
+
             requestAnimationFrame(function(){
             image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x)/scale + "px," + (currentPos.y + lastDiff.y)/scale + "px)";
             });
         }
-        
+
         function changeStartPosition() {
             scale = 1920 / windowWidth
             image.style.transform = "scale(" + scale + ") " + "translate(" + (currentPos.x + lastDiff.x)/scale + "px," + (currentPos.y + lastDiff.y)/scale + "px)";
             windowWidth > 950 ? plusWidth = 400 : ''
+            mapOrsk !== null ? windowHeight = windowHeight - 200 : ''
         }
-        
+
         function mouseupDragImg(e) {
         e.preventDefault();
         window.removeEventListener('mousemove', mousemoveDragImg);
@@ -96,11 +98,10 @@
         window.removeEventListener('touchend', touchendDragImg);
         document.body.classList.remove('overflow');
         }
-        
+
         image.addEventListener('mousedown', mousedownDragImg);
         image.addEventListener('touchstart', touchstartDragImg);
-        
+
         document.onload = changeStartPosition();
-        
+
     }
-    
