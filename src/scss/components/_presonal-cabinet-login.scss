@@ -1,25 +1,28 @@
 .personal-cabinet-login {
   &__back {
-    position: absolute;
-    left: 74px;
-    top: 48px;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    color: #FFFFFF;
-    .back {
-      &-icon {
-        background: rgba($color: #FFFFFF, $alpha: 0.1);
-        backdrop-filter: blur(7px);
-        border-radius: 50%;
-        width: 38px;
-        height: 38px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    display: none;
+    @media screen and (min-width: 1250px){
+      position: absolute;
+      left: 74px;
+      top: 48px;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: #FFFFFF;
+      .back {
+        &-icon {
+          background: rgba($color: #FFFFFF, $alpha: 0.1);
+          backdrop-filter: blur(7px);
+          border-radius: 50%;
+          width: 38px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
@@ -29,6 +32,9 @@
       flex-direction: row;
       .content {
         &-preview {
+          @media screen and (max-width: 1250px){
+            display: none;
+          }
           width: 71.5625%;
           display: flex;
           flex-direction: column;
@@ -99,13 +105,61 @@
           }
         }
         &-auth {
+          @media screen and (max-width: 1250px){
+            width: 100%;
+          }
           width: 28.4375%;
+          padding: 74px 0;
+          position: relative;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
-          padding: 74px 16px;
+          /* @media screen and (min-width: 480px){
+            padding: 74px 16px;
+          } */
           overflow: hidden;
+          &__exit-button {
+            position: absolute;
+            right: 16px;
+            top: 74px;
+            background: rgba(12, 49, 76, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            transition: all 0.5s;
+            transform: translateX(0);
+          }
+          &__back-button {
+            position: absolute;
+            left: 16px;
+            top: 74px;
+            background: rgba(#FFFFFF, .7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            transition: all 0.5s;
+            transform: translateX(-50px);
+          }
+          &.submit-sms {
+            .content-auth {
+              &__container {
+                transform: translateX(-25%);
+              }
+              &__exit-button {
+                transform: translateX(50px);
+              }
+              &__back-button {
+                transform: translateX(0px);
+              }
+            }
+          }
           &__logo {
             display: flex;
             flex-direction: row;
@@ -137,9 +191,13 @@
             width: 100%;
             height: 1px;
             background: #1d1d1d;
-            opacity: .2;
-            margin: 65px 0;
+            margin: 39px 0;
             max-width: 402px;
+            opacity: 0;
+            @media screen and (min-width: 1250px){
+              opacity: .2;
+              margin: 65px 0;
+            }
           }
           &__title {
             font-weight: 800;
@@ -161,6 +219,7 @@
             flex-direction: column;
             align-items: center;
             // justify-content: space-between;
+            padding: 0 16px;
             height: 204px;
             .phone {
               &-text {
@@ -192,12 +251,13 @@
             width: 200%;
             transition: all .5s;
             transform: translateX(25%);
-            &.submit-sms {
-              transform: translateX(-25%);
-            }
+            // &.submit-sms {
+            //   transform: translateX(-25%);
+            // }
           }
           &__numbers {
             width: 100%;
+            padding: 0 16px;
             margin-top: 10px;
             display: flex;
             flex-direction: column;

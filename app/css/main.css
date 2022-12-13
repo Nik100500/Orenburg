@@ -15157,42 +15157,47 @@ main.main.overflow-map {
   }
 }
 .personal-cabinet-login__back {
-  position: absolute;
-  left: 74px;
-  top: 48px;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 16px;
-  color: #FFFFFF;
+  display: none;
 }
-.personal-cabinet-login__back .back-icon {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(7px);
-  backdrop-filter: blur(7px);
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+@media screen and (min-width: 1250px) {
+  .personal-cabinet-login__back {
+    position: absolute;
+    left: 74px;
+    top: 48px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 16px;
+    color: #FFFFFF;
+  }
+  .personal-cabinet-login__back .back-icon {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 .personal-cabinet-login__main__content {
   display: -webkit-box;
@@ -15217,6 +15222,11 @@ main.main.overflow-map {
   justify-content: center;
   background: -o-linear-gradient(266.71deg, #080C2C 13.99%, #110036 93.14%);
   background: linear-gradient(183.29deg, #080C2C 13.99%, #110036 93.14%);
+}
+@media screen and (max-width: 1250px) {
+  .personal-cabinet-login__main__content .content-preview {
+    display: none;
+  }
 }
 .personal-cabinet-login__main__content .content-preview__title {
   margin-bottom: 34px;
@@ -15282,6 +15292,8 @@ main.main.overflow-map {
 }
 .personal-cabinet-login__main__content .content-auth {
   width: 28.4375%;
+  padding: 74px 0;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15295,8 +15307,78 @@ main.main.overflow-map {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 74px 16px;
+  /* @media screen and (min-width: 480px){
+    padding: 74px 16px;
+  } */
   overflow: hidden;
+}
+@media screen and (max-width: 1250px) {
+  .personal-cabinet-login__main__content .content-auth {
+    width: 100%;
+  }
+}
+.personal-cabinet-login__main__content .content-auth__exit-button {
+  position: absolute;
+  right: 16px;
+  top: 74px;
+  background: rgba(12, 49, 76, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.personal-cabinet-login__main__content .content-auth__back-button {
+  position: absolute;
+  left: 16px;
+  top: 74px;
+  background: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  transform: translateX(-50px);
+}
+.personal-cabinet-login__main__content .content-auth.submit-sms .content-auth__container {
+  -webkit-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  transform: translateX(-25%);
+}
+.personal-cabinet-login__main__content .content-auth.submit-sms .content-auth__exit-button {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+}
+.personal-cabinet-login__main__content .content-auth.submit-sms .content-auth__back-button {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
 }
 .personal-cabinet-login__main__content .content-auth__logo {
   display: -webkit-box;
@@ -15331,9 +15413,15 @@ main.main.overflow-map {
   width: 100%;
   height: 1px;
   background: #1d1d1d;
-  opacity: 0.2;
-  margin: 65px 0;
+  margin: 39px 0;
   max-width: 402px;
+  opacity: 0;
+}
+@media screen and (min-width: 1250px) {
+  .personal-cabinet-login__main__content .content-auth .underline {
+    opacity: 0.2;
+    margin: 65px 0;
+  }
 }
 .personal-cabinet-login__main__content .content-auth__title {
   font-weight: 800;
@@ -15364,6 +15452,7 @@ main.main.overflow-map {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0 16px;
   height: 204px;
 }
 .personal-cabinet-login__main__content .content-auth__phone .phone-text {
@@ -15405,13 +15494,9 @@ main.main.overflow-map {
   -ms-transform: translateX(25%);
   transform: translateX(25%);
 }
-.personal-cabinet-login__main__content .content-auth__container.submit-sms {
-  -webkit-transform: translateX(-25%);
-  -ms-transform: translateX(-25%);
-  transform: translateX(-25%);
-}
 .personal-cabinet-login__main__content .content-auth__numbers {
   width: 100%;
+  padding: 0 16px;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
