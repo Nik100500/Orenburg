@@ -105,10 +105,10 @@
           }
         }
         &-auth {
-          @media screen and (max-width: 1250px){
-            width: 100%;
+          width: 100%;
+          @media screen and (min-width: 1250px){
+            width: 28.4375%;
           }
-          width: 28.4375%;
           padding: 74px 0;
           position: relative;
           display: flex;
@@ -132,6 +132,9 @@
             border-radius: 50%;
             transition: all 0.5s;
             transform: translateX(0);
+            @media screen and (min-width: 1250px){
+              display: none;
+            }
           }
           &__back-button {
             position: absolute;
@@ -146,6 +149,9 @@
             border-radius: 50%;
             transition: all 0.5s;
             transform: translateX(-50px);
+            @media screen and (min-width: 1250px){
+              display: none;
+            }
           }
           &.submit-sms {
             .content-auth {
