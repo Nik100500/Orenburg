@@ -15,3 +15,4 @@ import './components/sidebar-map.js';
 import './components/swiffy-slider.js';
 import './components/custom-alert.js';
 import './components/tree-steps-preview.js';
+import './components/pc-sidebar-menu.js';

@@ -725,4 +725,43 @@
     </nav>
   </div>
 </body>
+<script>
+  /* function resizeForm() {
+    var res = document.getElementsByClassName("resize-form");
+    var i;
+
+    for (i = 0; i < res.length; i++) {
+      res[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        
+        var panel = this.previousElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  } */
+  const resizeForm = {
+    init(e = document.body) {
+      for (let t of e.querySelectorAll(".resize-form")) this.initResizeForm(t)
+    },
+    initResizeForm(e) {
+      e.addEventListener("click", function () {
+        this.classList.toggle("active");
+        
+        var panel = this.previousElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  }
+  window.resizeForm = resizeForm, document.currentScript.hasAttribute("data-noinit") || (document.currentScript.hasAttribute("defer") ? resizeForm.init() : document.onreadystatechange = () => {
+    "interactive" === document.readyState && resizeForm.init()
+  });
+</script>
 </html>

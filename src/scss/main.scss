@@ -23,6 +23,7 @@
 @import "./components/uploader";
 
 @import "./components/header";
+@import "./components/header-pc";
 @import "./components/footer";
 @import "./components/management";
 @import "./components/residents";
@@ -34,6 +35,9 @@
 @import "./components/contacts";
 @import "./components/map-orenburg";
 @import "./components/map-orsk";
-@import "./components/presonal-cabinet-login";
-@import "./components/presonal-cabinet-registration";
+@import "./components/personal-cabinet/login";
+@import "./components/personal-cabinet/registration";
+@import "./components/personal-cabinet/objects";
+@import "./components/personal-cabinet/requests";
+@import "./components/personal-cabinet/reports";
 

@@ -41,7 +41,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_custom_alert_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_components_custom_alert_js__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _components_tree_steps_preview_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/tree-steps-preview.js */ "./src/js/components/tree-steps-preview.js");
 /* harmony import */ var _components_tree_steps_preview_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_components_tree_steps_preview_js__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _components_pc_sidebar_menu_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/pc-sidebar-menu.js */ "./src/js/components/pc-sidebar-menu.js");
+/* harmony import */ var _components_pc_sidebar_menu_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_components_pc_sidebar_menu_js__WEBPACK_IMPORTED_MODULE_16__);
 // import './components/modal.js';
+
 
 
 
@@ -222,24 +225,13 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
     this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
-
-    /* var panel = this.previousElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } */
   });
 }
 
@@ -864,6 +856,28 @@ const colorArray = ["#94c356", "#46a4cc", "#a63e4b"];
 
 /***/ }),
 
+/***/ "./src/js/components/pc-sidebar-menu.js":
+/*!**********************************************!*\
+  !*** ./src/js/components/pc-sidebar-menu.js ***!
+  \**********************************************/
+/***/ (() => {
+
+var buttonPcSidebarOpen = document.getElementById("buttonPcSidebarOpen"),
+  buttonPcSidebarClose = document.getElementById("buttonPcSidebarClose"),
+  subButtonPcSidebarClose = document.getElementById("subButtonPcSidebarClose"),
+  container = document.querySelector(".page__body");
+function openMenu() {
+  container.classList.add("open-sidebar-menu");
+}
+function closeMenu() {
+  container.classList.remove("open-sidebar-menu");
+}
+buttonPcSidebarOpen ? buttonPcSidebarOpen.addEventListener('click', () => openMenu()) : '';
+buttonPcSidebarClose ? buttonPcSidebarClose.addEventListener('click', () => closeMenu()) : '';
+subButtonPcSidebarClose ? subButtonPcSidebarClose.addEventListener('click', () => closeMenu()) : '';
+
+/***/ }),
+
 /***/ "./src/js/components/preview-calculator.js":
 /*!*************************************************!*\
   !*** ./src/js/components/preview-calculator.js ***!
@@ -941,11 +955,13 @@ if (exporterCheckbox !== null) {
   \******************************************/
 /***/ (() => {
 
-var res = document.getElementsByClassName("resize-form");
+/* var res = document.getElementsByClassName("resize-form");
 var i;
+
 for (i = 0; i < res.length; i++) {
   res[i].addEventListener("click", function () {
     this.classList.toggle("active");
+    
     var panel = this.previousElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -953,7 +969,7 @@ for (i = 0; i < res.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
-}
+} */
 
 /***/ }),
 

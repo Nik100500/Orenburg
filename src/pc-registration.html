@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+  <div class="site-container h-100">
+    <!-- @include('partials/header.html') -->
+    <main class="main h-100">
+      <div class="main-container h-100">
+
+        <div class="personal-cabinet-registration third-step h-100" style="background-image: url('/img/pc/registration/bg.jpg');">
+          <a href="/pc-login" class="personal-cabinet-registration__back">
+            <div class="back-text">Закрыть</div>
+            <div class="back-icon">
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.89716 4.05416L3.97016 3.97016C4.09715 3.84314 4.2655 3.76591 4.44461 3.75252C4.62372 3.73912 4.80169 3.79044 4.94616 3.89716L5.03016 3.97016L10.0002 8.93916L14.9702 3.96916C15.0973 3.84229 15.2657 3.76525 15.4448 3.75203C15.6239 3.73882 15.8018 3.79032 15.9462 3.89716L16.0302 3.97016C16.1572 4.09715 16.2344 4.2655 16.2478 4.44461C16.2612 4.62372 16.2099 4.80169 16.1032 4.94616L16.0302 5.03016L11.0612 10.0002L16.0312 14.9702C16.158 15.0973 16.2351 15.2657 16.2483 15.4448C16.2615 15.6239 16.21 15.8018 16.1032 15.9462L16.0302 16.0302C15.9032 16.1572 15.7348 16.2344 15.5557 16.2478C15.3766 16.2612 15.1986 16.2099 15.0542 16.1032L14.9702 16.0302L10.0002 11.0612L5.03016 16.0312C4.90304 16.158 4.73463 16.2351 4.55552 16.2483C4.37641 16.2615 4.19851 16.21 4.05416 16.1032L3.97016 16.0302C3.84314 15.9032 3.76591 15.7348 3.75252 15.5557C3.73912 15.3766 3.79044 15.1986 3.89716 15.0542L3.97016 14.9702L8.93916 10.0002L3.96916 5.03016C3.84229 4.90304 3.76525 4.73463 3.75203 4.55552C3.73882 4.37641 3.79032 4.19851 3.89716 4.05416L3.97016 3.97016L3.89716 4.05416Z"/>
+              </svg>
+            </div>
+          </a>
+          <div id="navButtonBack" class="personal-cabinet-registration__back-step">
+            <div class="back-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.7202 18.952C14.5473 19.1165 14.3162 19.2056 14.0777 19.1997C13.8392 19.1939 13.6128 19.0936 13.4482 18.9208L7.44698 12.6208C7.28742 12.4534 7.19841 12.2311 7.19841 11.9998C7.19841 11.7686 7.28742 11.5462 7.44698 11.3788L13.447 5.07882C13.5285 4.99317 13.626 4.92441 13.734 4.87646C13.8421 4.82851 13.9585 4.80231 14.0767 4.79936C14.1949 4.7964 14.3125 4.81676 14.4228 4.85925C14.5331 4.90174 14.6339 4.96555 14.7196 5.04702C14.8052 5.12849 14.874 5.22604 14.9219 5.33408C14.9699 5.44213 14.9961 5.55856 14.999 5.67673C15.002 5.79491 14.9816 5.9125 14.9392 6.02281C14.8967 6.13312 14.8329 6.23397 14.7514 6.31962L9.34058 12.0004L14.7526 17.6812C14.9169 17.8542 15.0058 18.0854 14.9997 18.3239C14.9936 18.5625 14.8931 18.7888 14.7202 18.9532V18.952Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="back-text">Назад</div>
+          </div>
+          <div class="personal-cabinet-registration__main h-100">
+            <div class="personal-cabinet-registration__main__content h-100">
+              <form class="content-create-form">
+                <div class="content-create-form__1">
+                  <div class="form-header">
+                    <div class="form-header__title">Создание профиля резидента</div>
+                    <div class="form-header__step">Шаг 1/2</div>
+                  </div>
+                  <div class="form-navigation__mobile">
+                    <div class="form-navigation__mobile-button__1 active">
+
+                    </div>
+                    <div id="navButtonMbNext" class="form-navigation__mobile-button__2">
+
+                    </div>
+                  </div>
+                  <div class="form-container">
+                    <div class="form-container__content">
+                      <div class="content-title">Информация о компании</div>
+                      <div class="content-business">
+                        <div class="content-business__title">Сфера деятельности</div>
+                        <div class="content-business__items">
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="businessChoice1"
+                              name="business" 
+                              value="1"
+                              class="item__radio"
+                            >
+                            <label class="item__label" for="businessChoice1">Логистика</label>
+                          </div>
+                     
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="businessChoice2"
+                              name="business" 
+                              value="2"
+                              class="item__radio"
+                            >
+                            <label class="item__label" for="businessChoice2">Легкая промышленность</label>
+                          </div>
+                     
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="businessChoice3"
+                              name="business" 
+                              value="3"
+                              class="item__radio"
+                            >
+                            <label class="item__label" for="businessChoice3">Сельское хозяйство</label>
+                          </div>
+                          
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="businessChoice4"
+                              name="business" 
+                              value="4"
+                              class="item__radio"
+                            >
+                            <label class="item__label" for="businessChoice4">Строительные материалы</label>
+                          </div>
+                     
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="businessChoice5"
+                              name="business" 
+                              value="5"
+                              class="item__radio"
+                            >
+                            <label class="item__label" for="businessChoice5">Цифровизация, управление данными</label>
+                          </div>
+                     
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="businessChoice6"
+                              name="business" 
+                              value="6"
+                              class="item__radio"
+                              checked
+                            >
+                            <label class="item__label" for="businessChoice6">Металлургия</label>
+                          </div>
+                     
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="businessChoice7"
+                              name="business" 
+                              value="7"
+                              class="item__radio"
+                            >
+                            <label class="item__label" for="businessChoice7">Нефтегазовый сектор</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-investments">
+                        <div class="content-investments__title">Предполагаемые инвестиции</div>
+                        <div class="content-investments__items">
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="investmentsChoice1"
+                              name="investments" 
+                              value="1"
+                              class="item__radio"
+                            >
+                            <label class="item__label" for="investmentsChoice1">От 120 млн до 1 млрд ₽</label>
+                          </div>
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="investmentsChoice2"
+                              name="investments" 
+                              value="2"
+                              class="item__radio"
+                            >
+                            <label class="item__label" for="investmentsChoice2">От 1 до 5 млрд ₽</label>
+                          </div>
+                          <div class="item">
+                            <input 
+                              type="radio" 
+                              id="investmentsChoice3"
+                              name="investments" 
+                              value="3"
+                              class="item__radio"
+                              checked
+                            >
+                            <label class="item__label" for="investmentsChoice3">От 5 млрд ₽</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-button-next__1 main-button">
+                        Далее
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-create-form__2">
+                  <div class="form-header">
+                    <div class="form-header__title">Создание профиля резидента</div>
+                    <div class="form-header__step">Шаг 2/2</div>
+                  </div>
+                  <div class="form-navigation__mobile">
+                    <div id="navButtonMbBack" class="form-navigation__mobile-button__1 complete">
+
+                    </div>
+                    <div class="form-navigation__mobile-button__2 active">
+
+                    </div>
+                  </div>
+                  <div action="" class="form-container">
+                    <div class="form-container__content">
+                      <div class="content-title">Контактная информация</div>
+                      <div class="content-items">
+                        <div class="item">
+                          <div class="item-input">
+                            <div class="item-input__text">Как к вам обращаться?</div>
+                            <input required="required" name="userName" id="userName" type="userName" placeholder="Введите форму обращения к вам">
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="item-input">
+                            <div class="item-input__text">Название компании</div>
+                            <input required="required" name="companyName" type="companyName" id="userName" placeholder="Введите название компании">
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit" class="content-button-next__2 main-button">
+                        Далее
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-create-form__3">
+                  <div class="form-header">
+                    <div class="form-header__title">Создание профиля резидента</div>
+                  </div>
+                  <div class="form-container">
+                    <div class="form-container__content">
+                      <div class="content-avatar">
+                        <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1378_48413)">
+                          <path d="M69.9993 11.6665C37.7993 11.6665 11.666 37.7998 11.666 69.9998C11.666 102.2 37.7993 128.333 69.9993 128.333C102.199 128.333 128.333 102.2 128.333 69.9998C128.333 37.7998 102.199 11.6665 69.9993 11.6665ZM69.9993 34.9998C81.2577 34.9998 90.416 44.1582 90.416 55.4165C90.416 66.6748 81.2577 75.8332 69.9993 75.8332C58.741 75.8332 49.5827 66.6748 49.5827 55.4165C49.5827 44.1582 58.741 34.9998 69.9993 34.9998ZM69.9993 116.666C58.1577 116.666 44.1577 111.883 34.1827 99.8665C44.4004 91.8499 57.0121 87.4929 69.9993 87.4929C82.9866 87.4929 95.5983 91.8499 105.816 99.8665C95.841 111.883 81.841 116.666 69.9993 116.666Z" fill="url(#paint0_linear_1378_48413)"/>
+                          <g filter="url(#filter0_d_1378_48413)">
+                          <circle cx="115" cy="111" r="21" fill="white"/>
+                          <circle cx="115" cy="111" r="20" stroke="#EABD00" stroke-width="2"/>
+                          </g>
+                          <path d="M110.902 115.982L106.654 111.734L106.654 111.734L106.651 111.731C106.384 111.473 106.026 111.33 105.654 111.333C105.283 111.337 104.928 111.486 104.665 111.748C104.402 112.011 104.253 112.366 104.25 112.738C104.247 113.109 104.39 113.467 104.648 113.734L104.648 113.734L104.651 113.737L109.901 118.987L109.901 118.987C110.166 119.253 110.527 119.402 110.902 119.402C111.278 119.402 111.638 119.253 111.904 118.987L111.904 118.987L124.737 106.154L124.737 106.154L124.74 106.151C124.998 105.884 125.141 105.526 125.138 105.154C125.135 104.783 124.986 104.428 124.723 104.165C124.46 103.902 124.105 103.753 123.734 103.75C123.362 103.747 123.004 103.89 122.737 104.148L122.737 104.148L122.734 104.151L110.902 115.982Z" fill="#EABD00" stroke="#EABD00" stroke-width="0.5"/>
+                          </g>
+                          <defs>
+                          <filter id="filter0_d_1378_48413" x="89" y="87" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset dy="2"/>
+                          <feGaussianBlur stdDeviation="2.5"/>
+                          <feComposite in2="hardAlpha" operator="out"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1378_48413"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1378_48413" result="shape"/>
+                          </filter>
+                          <linearGradient id="paint0_linear_1378_48413" x1="123.654" y1="11.6665" x2="104.65" y2="148.26" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#007BD5"/>
+                          <stop offset="1" stop-color="#2BB6FF"/>
+                          </linearGradient>
+                          <clipPath id="clip0_1378_48413">
+                          <rect width="140" height="140" fill="white"/>
+                          </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="content-container">
+                        <div class="content-title">
+                          Профиль резидента успешно создан!
+                        </div>
+                        <div class="content-discription">
+                          На указанный номер отправлен код по СМС для авторизации в профиле
+                        </div>
+                        <a href="/" class="content-button main-button">
+                          Приступить
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+<script>
+var firstStepButton = document.querySelector(".content-button-next__1"),
+   secondStepButton = document.querySelector(".content-button-next__2"),
+ firstStepButtonDsk = document.getElementById("navButtonBack"), 
+  firstStepButtonMb = document.getElementById("navButtonMbBack"),
+ secondStepButtonMb = document.getElementById("navButtonMbNext"),
+          container = document.querySelector(".personal-cabinet-registration"),
+          inputName = document.getElementById("userName"),
+       inputCompany = document.getElementById("companyName"),
+               step = 1;
+function addStep() {
+  step == 1 ? (container.classList.remove("first-step"), container.classList.add("second-step"), step = 2) : (container.classList.remove("second-step"), container.classList.add("third-step"), step = 3)
+}
+function removeStep() {
+  step == 3 ? (container.classList.remove("third-step"), container.classList.add("second-step"), step = 2) : step == 2 ? (container.classList.remove("second-step"), container.classList.add("first-step"), step = 1) : ''
+}
+firstStepButton.addEventListener("click", ()=> addStep())
+secondStepButtonMb.addEventListener("click", ()=> addStep())
+firstStepButtonMb.addEventListener("click", ()=> removeStep())
+firstStepButtonDsk.addEventListener("click", ()=> removeStep())
+secondStepButton.addEventListener("click", ()=> {
+  (inputName.value && inputCompany.value) ? (console.log('enter secondStepButton'), addStep()) : ''
+})
+/* backButton.addEventListener("click", ()=> {
+  container.classList.remove("second-step")
+}) */
+</script>
+</html>

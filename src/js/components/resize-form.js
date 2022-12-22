@@ -1,4 +1,4 @@
-var res = document.getElementsByClassName("resize-form");
+/* var res = document.getElementsByClassName("resize-form");
 var i;
 
 for (i = 0; i < res.length; i++) {
@@ -12,4 +12,4 @@ for (i = 0; i < res.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
-}
+} */

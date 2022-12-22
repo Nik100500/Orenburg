@@ -4,11 +4,13 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  min-height: 100%;
 }
 
 body {
   // height: max-content;
   height: 100%;
+  min-height: 100%;
   &.overflow {
     overflow: hidden;
   }
@@ -17,14 +19,17 @@ body {
 
 main {
 	height: 100%;
+  min-height: 100%;
 }
 
 .h-100 {
+  min-height: 100%;
   height: 100%;
 }
 
 .main-container {
 	height: 100%;
+  min-height: 100%;
 }
 
 *,
@@ -35,6 +40,7 @@ main {
 
 .page {
   height: 100%;
+  min-height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
   // width: 100%; 
@@ -62,7 +68,6 @@ a {
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
   width: 100%;
-  // height: 100%;
 }
 
 .is-hidden {
