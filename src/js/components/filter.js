@@ -2,7 +2,7 @@
 const filters = document.querySelectorAll('.filter');
 let selectedFilter = 'all'
 let selectedFilter2 = 'all'
-var eventsPage = document.querySelectorAll('events__main__content')
+const eventsPage = document.querySelector('.events__main__content')
 filters.forEach(filter => {
   filter.addEventListener('click', function() {
     filters.forEach(filter => {
@@ -45,7 +45,7 @@ filters.forEach(filter => {
       el.classList.remove('show');
     });
     var elementsShowed = document.querySelectorAll('.show')
-    if (eventsPage) {
+    if (eventsPage !== null && window.innerWidth > 950) {
       for (var i = 0; i < elementsShowed.length; i++) {
         if (i == 0 || i == 1 || i %  5 == 0 || i % 6 == 0) {
           elementsShowed[i].style.height="511px"
@@ -100,7 +100,7 @@ filters2.forEach(filter => {
       el.classList.remove('show');
     });
     var elementsShowed = document.querySelectorAll('.show')
-    if (eventsPage) {
+    if (eventsPage && window.innerWidth > 950) {
       for (var i = 0; i < elementsShowed.length; i++) {
         if (i == 0 || i == 1 || i %  5 == 0 || i % 6 == 0) {
           elementsShowed[i].style.height="511px"
