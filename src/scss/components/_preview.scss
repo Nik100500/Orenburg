@@ -1457,27 +1457,27 @@
 .plane-1 {
   opacity: 0;
   animation: animate-plane-1 18s linear forwards;
-  animation-delay: 14s;
+  animation-delay: 9s;
 }
 .plane-2 {
   opacity: 0;
   animation: animate-plane-2 8s linear forwards;
-  animation-delay: 14s;
+  animation-delay: 9s;
 }
 .plane-3 {
   opacity: 0;
   animation: animate-plane-3 8s linear forwards;
-  animation-delay: 14s;
+  animation-delay: 9s;
 }
 .plane-4 {
   opacity: 0;
   animation: animate-plane-4 10s linear forwards;
-  animation-delay: 14s;
+  animation-delay: 9s;
 }
 .plane-5 {
   opacity: 0;
   animation: animate-plane-5 12s linear forwards;
-  animation-delay: 14s;
+  animation-delay: 9s;
 }
 
 .orsk-orenburg-map {
@@ -1496,149 +1496,149 @@
 }
 .orenburg-map {
   opacity: 0;
-  animation: animation-opacity-0-1 .55s linear forwards;
-  animation-delay: 10.25s;
+  animation: animation-opacity-0-1 .25s linear forwards;
+  animation-delay: 6.25s;
   &-logo {
     &__1 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 11.5s;
+      animation-delay: 6.5s;
     }
     &__2 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 11.65s;
+      animation-delay: 6.65s;
     }
     &__3 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 11.8s;
+      animation-delay: 6.8s;
     }
     &__4 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 11.95s;
+      animation-delay: 6.95s;
     }
     &__5 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.1s;
+      animation-delay: 7.1s;
     }
     &__6 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.25s;
+      animation-delay: 7.25s;
     }
     &__7 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.4s;
+      animation-delay: 7.4s;
     }
     &__8 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.55s;
+      animation-delay: 7.55s;
     }
     &__9 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.7s;
+      animation-delay: 7.7s;
     }
     &__10 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.85s;
+      animation-delay: 7.85s;
     }
     &__11 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 13s;
+      animation-delay: 8s;
     }
     &__12 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 13.15s;
+      animation-delay: 8.15s;
     }
   }
   &-text {
     path {
       transform: translateY(-30px);
       animation: animation-text .75s linear forwards;
-      animation-delay: 13.15s;
+      animation-delay: 8.15s;
     }
   }
 }
 .orsk-map {
   opacity: 0;
   animation: animation-opacity-0-1 .25s linear forwards;
-  animation-delay: 10.25s;
+  animation-delay: 6.25s;
   &-logo {
     &__1 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 11.5s;
+      animation-delay: 6.5s;
     }
     &__2 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 11.65s;
+      animation-delay: 6.65s;
     }
     &__3 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 11.8s;
+      animation-delay: 6.8s;
     }
     &__4 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 11.95s;
+      animation-delay: 6.95s;
     }
     &__5 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.1s;
+      animation-delay: 7.1s;
     }
     &__6 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.25s;
+      animation-delay: 7.25s;
     }
     &__7 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.4s;
+      animation-delay: 7.4s;
     }
     &__8 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.55s;
+      animation-delay: 7.55s;
     }
     &__9 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.7s;
+      animation-delay: 7.7s;
     }
     &__10 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 12.85s;
+      animation-delay: 7.85s;
     }
     &__11 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 13s;
+      animation-delay: 8s;
     }
     &__12 {
       opacity: 0;
       animation: animation-opacity-0-1 .15s linear forwards;
-      animation-delay: 13.15s;
+      animation-delay: 8.15s;
     }
   }
   &-text {
     path {
       transform: translateY(-30px);
       animation: animation-text .75s linear forwards;
-      animation-delay: 13.15s;
+      animation-delay: 8.15s;
     }
   }
 }

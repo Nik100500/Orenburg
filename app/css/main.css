@@ -9094,40 +9094,40 @@ button {
   opacity: 0;
   -webkit-animation: animate-plane-1 18s linear forwards;
   animation: animate-plane-1 18s linear forwards;
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
 }
 
 .plane-2 {
   opacity: 0;
   -webkit-animation: animate-plane-2 8s linear forwards;
   animation: animate-plane-2 8s linear forwards;
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
 }
 
 .plane-3 {
   opacity: 0;
   -webkit-animation: animate-plane-3 8s linear forwards;
   animation: animate-plane-3 8s linear forwards;
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
 }
 
 .plane-4 {
   opacity: 0;
   -webkit-animation: animate-plane-4 10s linear forwards;
   animation: animate-plane-4 10s linear forwards;
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
 }
 
 .plane-5 {
   opacity: 0;
   -webkit-animation: animate-plane-5 12s linear forwards;
   animation: animate-plane-5 12s linear forwards;
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
 }
 
 .orsk-orenburg-map {
@@ -9148,94 +9148,94 @@ button {
 
 .orenburg-map {
   opacity: 0;
-  -webkit-animation: animation-opacity-0-1 0.55s linear forwards;
-  animation: animation-opacity-0-1 0.55s linear forwards;
-  -webkit-animation-delay: 10.25s;
-  animation-delay: 10.25s;
+  -webkit-animation: animation-opacity-0-1 0.25s linear forwards;
+  animation: animation-opacity-0-1 0.25s linear forwards;
+  -webkit-animation-delay: 6.25s;
+  animation-delay: 6.25s;
 }
 .orenburg-map-logo__1 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 11.5s;
-  animation-delay: 11.5s;
+  -webkit-animation-delay: 6.5s;
+  animation-delay: 6.5s;
 }
 .orenburg-map-logo__2 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 11.65s;
-  animation-delay: 11.65s;
+  -webkit-animation-delay: 6.65s;
+  animation-delay: 6.65s;
 }
 .orenburg-map-logo__3 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 11.8s;
-  animation-delay: 11.8s;
+  -webkit-animation-delay: 6.8s;
+  animation-delay: 6.8s;
 }
 .orenburg-map-logo__4 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 11.95s;
-  animation-delay: 11.95s;
+  -webkit-animation-delay: 6.95s;
+  animation-delay: 6.95s;
 }
 .orenburg-map-logo__5 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.1s;
-  animation-delay: 12.1s;
+  -webkit-animation-delay: 7.1s;
+  animation-delay: 7.1s;
 }
 .orenburg-map-logo__6 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.25s;
-  animation-delay: 12.25s;
+  -webkit-animation-delay: 7.25s;
+  animation-delay: 7.25s;
 }
 .orenburg-map-logo__7 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.4s;
-  animation-delay: 12.4s;
+  -webkit-animation-delay: 7.4s;
+  animation-delay: 7.4s;
 }
 .orenburg-map-logo__8 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.55s;
-  animation-delay: 12.55s;
+  -webkit-animation-delay: 7.55s;
+  animation-delay: 7.55s;
 }
 .orenburg-map-logo__9 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.7s;
-  animation-delay: 12.7s;
+  -webkit-animation-delay: 7.7s;
+  animation-delay: 7.7s;
 }
 .orenburg-map-logo__10 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.85s;
-  animation-delay: 12.85s;
+  -webkit-animation-delay: 7.85s;
+  animation-delay: 7.85s;
 }
 .orenburg-map-logo__11 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 13s;
-  animation-delay: 13s;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
 }
 .orenburg-map-logo__12 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 13.15s;
-  animation-delay: 13.15s;
+  -webkit-animation-delay: 8.15s;
+  animation-delay: 8.15s;
 }
 .orenburg-map-text path {
   -webkit-transform: translateY(-30px);
@@ -9243,100 +9243,100 @@ button {
   transform: translateY(-30px);
   -webkit-animation: animation-text 0.75s linear forwards;
   animation: animation-text 0.75s linear forwards;
-  -webkit-animation-delay: 13.15s;
-  animation-delay: 13.15s;
+  -webkit-animation-delay: 8.15s;
+  animation-delay: 8.15s;
 }
 
 .orsk-map {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.25s linear forwards;
   animation: animation-opacity-0-1 0.25s linear forwards;
-  -webkit-animation-delay: 10.25s;
-  animation-delay: 10.25s;
+  -webkit-animation-delay: 6.25s;
+  animation-delay: 6.25s;
 }
 .orsk-map-logo__1 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 11.5s;
-  animation-delay: 11.5s;
+  -webkit-animation-delay: 6.5s;
+  animation-delay: 6.5s;
 }
 .orsk-map-logo__2 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 11.65s;
-  animation-delay: 11.65s;
+  -webkit-animation-delay: 6.65s;
+  animation-delay: 6.65s;
 }
 .orsk-map-logo__3 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 11.8s;
-  animation-delay: 11.8s;
+  -webkit-animation-delay: 6.8s;
+  animation-delay: 6.8s;
 }
 .orsk-map-logo__4 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 11.95s;
-  animation-delay: 11.95s;
+  -webkit-animation-delay: 6.95s;
+  animation-delay: 6.95s;
 }
 .orsk-map-logo__5 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.1s;
-  animation-delay: 12.1s;
+  -webkit-animation-delay: 7.1s;
+  animation-delay: 7.1s;
 }
 .orsk-map-logo__6 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.25s;
-  animation-delay: 12.25s;
+  -webkit-animation-delay: 7.25s;
+  animation-delay: 7.25s;
 }
 .orsk-map-logo__7 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.4s;
-  animation-delay: 12.4s;
+  -webkit-animation-delay: 7.4s;
+  animation-delay: 7.4s;
 }
 .orsk-map-logo__8 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.55s;
-  animation-delay: 12.55s;
+  -webkit-animation-delay: 7.55s;
+  animation-delay: 7.55s;
 }
 .orsk-map-logo__9 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.7s;
-  animation-delay: 12.7s;
+  -webkit-animation-delay: 7.7s;
+  animation-delay: 7.7s;
 }
 .orsk-map-logo__10 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 12.85s;
-  animation-delay: 12.85s;
+  -webkit-animation-delay: 7.85s;
+  animation-delay: 7.85s;
 }
 .orsk-map-logo__11 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 13s;
-  animation-delay: 13s;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
 }
 .orsk-map-logo__12 {
   opacity: 0;
   -webkit-animation: animation-opacity-0-1 0.15s linear forwards;
   animation: animation-opacity-0-1 0.15s linear forwards;
-  -webkit-animation-delay: 13.15s;
-  animation-delay: 13.15s;
+  -webkit-animation-delay: 8.15s;
+  animation-delay: 8.15s;
 }
 .orsk-map-text path {
   -webkit-transform: translateY(-30px);
@@ -9344,8 +9344,8 @@ button {
   transform: translateY(-30px);
   -webkit-animation: animation-text 0.75s linear forwards;
   animation: animation-text 0.75s linear forwards;
-  -webkit-animation-delay: 13.15s;
-  animation-delay: 13.15s;
+  -webkit-animation-delay: 8.15s;
+  animation-delay: 8.15s;
 }
 
 .lake {
@@ -12394,8 +12394,8 @@ main.main.overflow-map {
   color: #0C314C;
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-status.red {
-  background: -o-linear-gradient(200.09deg, #0BCAD7 -12.95%, #1ABEBF 48.01%, #0FE7DA 102.71%);
-  background: linear-gradient(249.91deg, #0BCAD7 -12.95%, #1ABEBF 48.01%, #0FE7DA 102.71%);
+  background: -o-linear-gradient(199.17deg, #C91717 -6.44%, #E7500F 103.44%);
+  background: linear-gradient(250.83deg, #C91717 -6.44%, #E7500F 103.44%);
 }
 .map-orenburg__main__content .content-modals .graph-modal__container .graph-modal__content .content-desk-info {
   display: none;
@@ -14422,8 +14422,8 @@ main.main.overflow-map {
   color: #0C314C;
 }
 .map-orsk__main__content .content-modals .graph-modal__container .graph-modal__content .content-status.red {
-  background: -o-linear-gradient(200.09deg, #0BCAD7 -12.95%, #1ABEBF 48.01%, #0FE7DA 102.71%);
-  background: linear-gradient(249.91deg, #0BCAD7 -12.95%, #1ABEBF 48.01%, #0FE7DA 102.71%);
+  background: -o-linear-gradient(199.17deg, #C91717 -6.44%, #E7500F 103.44%);
+  background: linear-gradient(250.83deg, #C91717 -6.44%, #E7500F 103.44%);
 }
 .map-orsk__main__content .content-modals .graph-modal__container .graph-modal__content .content-desk-info {
   display: none;
