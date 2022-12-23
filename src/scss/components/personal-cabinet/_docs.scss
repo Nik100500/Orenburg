@@ -1,4 +1,4 @@
-.pesonal-cabinet-reports {
+.pesonal-cabinet-docs {
   height: 100%;
   min-height: 100%;
   &__main {
@@ -170,7 +170,6 @@
                 }
               }
             }
-
           }
           &__button {
             padding: 9px 18px;
@@ -231,7 +230,6 @@
               padding-left: clamp(16px, 4.165vw, 100px);
             }
           }
-          
           &__content {
             max-width: 1172px;
             height: 100%;
@@ -318,31 +316,10 @@
                       font-size: 18px;
                       line-height: 23px;
                       &__container {
-                        width: 100%;
                         display: flex;
                         justify-content: flex-start;
                         order: 0;
-                        margin-bottom: 16px;
-                      }
-                    }
-                    &-date {
-                      font-weight: 500;
-                      font-size: 14px;
-                      line-height: 18px;
-                      color: #1D1D1D;
-                      
-                      opacity: 0.7;
-                      &__container {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        order: 2;
-                      }
-                    }
-                    &-button-menu {
-                      padding-left: 12px;
-                      &__container {
-                        order: 3;
+                        width: calc(100% - 60px);
                       }
                     }
                     &-button {
@@ -374,6 +351,21 @@
                         background: rgba(12, 49, 76, 0.1);
                       }
                     }
+                    
+                    &-button-menu {
+                      padding: 12px;
+                      border-radius: 50%;
+                      cursor: pointer;
+                      border: 1px solid rgba(#0C314C, .2);
+                      width: 48px;
+                      height: 48px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      &__container {
+                        margin-left: 12px;
+                      }
+                    }
                   }
                 }
                 @media screen and (min-width: 950px) {
@@ -394,6 +386,9 @@
                       width: 48px;
                       height: 48px;
                       border-radius: 50%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
                     }
                     &-name {
                       padding-left: 18px;
@@ -425,28 +420,16 @@
                       }
                     }
                     &-button-menu {
-                      padding-left: 24px;
+                      padding: 12px;
+                      border-radius: 50%;
                       cursor: pointer;
-                    }
-                    /* &-content-left {
-                      font-weight: 800;
-                      font-size: 18px;
-                      line-height: 23px;
-                      color: #1D1D1D;
+                      border: 1px solid rgba(#0C314C, .2);
+                      width: 48px;
+                      height: 48px;
                       display: flex;
-                      flex-direction: row;
+                      justify-content: center;
                       align-items: center;
                     }
-                    &-content-right {
-                      font-weight: 500;
-                      font-size: 16px;
-                      line-height: 20px;
-                      color: #0C314C;
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      gap: 18px;
-                    } */
                   }
                 }
                 

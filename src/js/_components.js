@@ -16,3 +16,4 @@ import './components/swiffy-slider.js';
 import './components/custom-alert.js';
 import './components/tree-steps-preview.js';
 import './components/pc-sidebar-menu.js';
+import './components/phone-mask.js';

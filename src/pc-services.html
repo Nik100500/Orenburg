@@ -52,7 +52,7 @@
               </div>
             </a>
             <div class="underline"></div>
-            <div id="subButtonPcSidebarClose" class="item">
+            <a href="/pc-services" class="item">
               <div class="item-text">Отчеты</div>
               <div class="item-icon">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,9 +61,9 @@
                   </g>
                 </svg>
               </div>
-            </div>
+            </a>
             <div class="underline"></div>
-            <a href="/pc-services" class="item">
+            <div id="subButtonPcSidebarClose" class="item">
               <div class="item-text">Все услуги</div>
               <div class="item-icon">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +72,7 @@
                   </g>
                 </svg>
               </div>
-            </a>
+            </div>
             <div class="underline"></div>
             <a href="/pc-docs" class="item">
               <div class="item-text">Мои документы</div>
@@ -113,14 +113,14 @@
           </g>
         </svg>
       </div>
-      <div class="mobile-title">Отчеты</div>
+      <div class="mobile-title">Все услуги</div>
       <div class="mobile-placeholder"></div>
     </div>
     <main class="main pc-main-h-100">
       <div class="main-container">
-        <div class="pesonal-cabinet-requests">
-          <div class="pesonal-cabinet-requests__main">
-            <div class="pesonal-cabinet-requests__main__content">
+        <div class="pesonal-cabinet-services">
+          <div class="pesonal-cabinet-services__main">
+            <div class="pesonal-cabinet-services__main__content">
               <div class="content-left">
                 <div class="content-left__container">
                   <div class="content-left__items">
@@ -210,19 +210,9 @@
                   <div class="content-right__content">
                     <div class="content-header">
                       <div class="header-title">Все услуги</div>
-                      <div class="header-button main-button">
-                        <div class="header-button__icon">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.6774 5.67742C12.6774 5.49776 12.606 5.32545 12.479 5.19841C12.352 5.07137 12.1797 5 12 5C11.8203 5 11.648 5.07137 11.521 5.19841C11.394 5.32545 11.3226 5.49776 11.3226 5.67742V11.3226H5.67742C5.49776 11.3226 5.32545 11.394 5.19841 11.521C5.07137 11.648 5 11.8203 5 12C5 12.1797 5.07137 12.352 5.19841 12.479C5.32545 12.606 5.49776 12.6774 5.67742 12.6774H11.3226V18.3226C11.3226 18.5022 11.394 18.6745 11.521 18.8016C11.648 18.9286 11.8203 19 12 19C12.1797 19 12.352 18.9286 12.479 18.8016C12.606 18.6745 12.6774 18.5022 12.6774 18.3226V12.6774H18.3226C18.5022 12.6774 18.6745 12.606 18.8016 12.479C18.9286 12.352 19 12.1797 19 12C19 11.8203 18.9286 11.648 18.8016 11.521C18.6745 11.394 18.5022 11.3226 18.3226 11.3226H12.6774V5.67742Z" fill="white"/>
-                          </svg>
-                        </div>
-                        <div class="header-button__text">
-                          Создать запрос
-                        </div>
-                      </div>
                     </div>
                     <div class="content-items">
-                      <div class="item">
+                      <div class="item" data-graph-path="second">
                         <div class="item-icon__container">
                           <div class="item-icon"></div>
                         </div>
@@ -249,5 +239,89 @@
       </div>
     </main>
   </div>
+  <div class="content-modals">
+    <div class="graph-modal">
+      <div class="graph-modal__container pc-services" role="dialog" aria-modal="true" data-graph-target="second">
+        <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.897158 1.05416L0.970158 0.970158C1.09715 0.84314 1.2655 0.765912 1.44461 0.752515C1.62372 0.739119 1.80169 0.790444 1.94616 0.897158L2.03016 0.970158L7.00016 5.93916L11.9702 0.969158C12.0973 0.84229 12.2657 0.765246 12.4448 0.752034C12.6239 0.738821 12.8018 0.790316 12.9462 0.897158L13.0302 0.970158C13.1572 1.09715 13.2344 1.2655 13.2478 1.44461C13.2612 1.62372 13.2099 1.80169 13.1032 1.94616L13.0302 2.03016L8.06116 7.00016L13.0312 11.9702C13.158 12.0973 13.2351 12.2657 13.2483 12.4448C13.2615 12.6239 13.21 12.8018 13.1032 12.9462L13.0302 13.0302C12.9032 13.1572 12.7348 13.2344 12.5557 13.2478C12.3766 13.2612 12.1986 13.2099 12.0542 13.1032L11.9702 13.0302L7.00016 8.06116L2.03016 13.0312C1.90304 13.158 1.73463 13.2351 1.55552 13.2483C1.37641 13.2615 1.19851 13.21 1.05416 13.1032L0.970158 13.0302C0.84314 12.9032 0.765912 12.7348 0.752515 12.5557C0.739119 12.3766 0.790444 12.1986 0.897158 12.0542L0.970158 11.9702L5.93916 7.00016L0.969158 2.03016C0.84229 1.90304 0.765246 1.73463 0.752034 1.55552C0.738821 1.37641 0.790316 1.19851 0.897158 1.05416L0.970158 0.970158L0.897158 1.05416Z" fill="white"/>
+          </svg>
+        </button>
+        <div class="graph-modal__content">
+          <div class="content-header">
+            <div class="content-header__title">Услуга</div>
+            <div class="underline"></div>
+            <div class="content-header__description">Оказание содействия в продвижении товаров и услуг резидентов, а также новых технологий для промышленных предприятий</div>
+          </div>
+          <div class="content-info">
+            <div class="content-info__description">
+              Оказания содействия в продвижении товаров и услуг резидентов, а также новых технологий для промышленных предприятий Оренбургской области Оказания содействия в продвижении товаров и услуг резидентов, а также новых технологий для промышленных предприятий Оренбургской областиОказания содействия в продвижении товаров и услуг резидентов, а также новых технологий для промышленных предприятий Оренбургской области
+            </div>
+            <div class="content-info__items">
+              <div class="item">
+                <div class="item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.48771 16.5737L4.69471 12.7807C4.50611 12.5986 4.25351 12.4978 3.99131 12.5C3.72911 12.5023 3.4783 12.6075 3.29289 12.7929C3.10749 12.9783 3.00232 13.2291 3.00004 13.4913C2.99776 13.7535 3.09855 14.0061 3.28071 14.1947L7.78071 18.6947C7.96824 18.8822 8.22255 18.9875 8.48771 18.9875C8.75288 18.9875 9.00718 18.8822 9.19471 18.6947L20.1947 7.69471C20.3769 7.50611 20.4777 7.25351 20.4754 6.99131C20.4731 6.72911 20.3679 6.4783 20.1825 6.29289C19.9971 6.10749 19.7463 6.00232 19.4841 6.00004C19.2219 5.99776 18.9693 6.09855 18.7807 6.28071L8.48771 16.5737Z" fill="white"/>
+                  </svg>
+                </div>
+                <div class="item-title">Сформирована заявка</div>
+              </div>
+              <div class="item">
+                <div class="item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.48771 16.5737L4.69471 12.7807C4.50611 12.5986 4.25351 12.4978 3.99131 12.5C3.72911 12.5023 3.4783 12.6075 3.29289 12.7929C3.10749 12.9783 3.00232 13.2291 3.00004 13.4913C2.99776 13.7535 3.09855 14.0061 3.28071 14.1947L7.78071 18.6947C7.96824 18.8822 8.22255 18.9875 8.48771 18.9875C8.75288 18.9875 9.00718 18.8822 9.19471 18.6947L20.1947 7.69471C20.3769 7.50611 20.4777 7.25351 20.4754 6.99131C20.4731 6.72911 20.3679 6.4783 20.1825 6.29289C19.9971 6.10749 19.7463 6.00232 19.4841 6.00004C19.2219 5.99776 18.9693 6.09855 18.7807 6.28071L8.48771 16.5737Z" fill="white"/>
+                  </svg>
+                </div>
+                <div class="item-title">Таможенный пункт</div>
+              </div>
+              <div class="item">
+                <div class="item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.48771 16.5737L4.69471 12.7807C4.50611 12.5986 4.25351 12.4978 3.99131 12.5C3.72911 12.5023 3.4783 12.6075 3.29289 12.7929C3.10749 12.9783 3.00232 13.2291 3.00004 13.4913C2.99776 13.7535 3.09855 14.0061 3.28071 14.1947L7.78071 18.6947C7.96824 18.8822 8.22255 18.9875 8.48771 18.9875C8.75288 18.9875 9.00718 18.8822 9.19471 18.6947L20.1947 7.69471C20.3769 7.50611 20.4777 7.25351 20.4754 6.99131C20.4731 6.72911 20.3679 6.4783 20.1825 6.29289C19.9971 6.10749 19.7463 6.00232 19.4841 6.00004C19.2219 5.99776 18.9693 6.09855 18.7807 6.28071L8.48771 16.5737Z" fill="white"/>
+                  </svg>
+                </div>
+                <div class="item-title">Отсутствие налогов</div>
+              </div>
+            </div>
+          </div>
+          <div class="content-request">
+            <div class="content-request__title">
+              Новая заявка
+            </div>
+            <div class="content-request__input">
+              <div class="input-title">Номер телефона</div>
+              <form action="" class="input__container">
+                <input class="tel" required type="tel" placeholder="+7 (987) 654 32 10">
+                <button type="submit" class="input-button main-button">Запрос услуги</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
+<script>
+var container = document.querySelector(".content-auth"),
+ submitButton = document.querySelector(".content-auth__submit-button"),
+   backButton = document.querySelector(".content-auth__back-button"),
+         step = 1,
+        timer = 0;
+function changeStep() {
+  step == 1 ? (container.classList.add("submit-sms"), step = 2) : (container.classList.remove("submit-sms"), step = 1)
+}
+function submitSMS() {
+  step == 1 ? changeStep() : changeStep()
+  if (timer == 0) {
+    timer = 60
+    submitButton.classList.add("disabled")
+  } else {
+  }
+}
+submitButton.addEventListener("click", ()=> submitSMS())
+backButton.addEventListener("click", ()=> {
+  container.classList.remove("submit-sms")
+})
+</script>
 </html>

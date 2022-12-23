@@ -43,7 +43,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_tree_steps_preview_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_components_tree_steps_preview_js__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _components_pc_sidebar_menu_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/pc-sidebar-menu.js */ "./src/js/components/pc-sidebar-menu.js");
 /* harmony import */ var _components_pc_sidebar_menu_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_components_pc_sidebar_menu_js__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _components_phone_mask_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/phone-mask.js */ "./src/js/components/phone-mask.js");
+/* harmony import */ var _components_phone_mask_js__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_components_phone_mask_js__WEBPACK_IMPORTED_MODULE_17__);
 // import './components/modal.js';
+
 
 
 
@@ -875,6 +878,57 @@ function closeMenu() {
 buttonPcSidebarOpen ? buttonPcSidebarOpen.addEventListener('click', () => openMenu()) : '';
 buttonPcSidebarClose ? buttonPcSidebarClose.addEventListener('click', () => closeMenu()) : '';
 subButtonPcSidebarClose ? subButtonPcSidebarClose.addEventListener('click', () => closeMenu()) : '';
+
+/***/ }),
+
+/***/ "./src/js/components/phone-mask.js":
+/*!*****************************************!*\
+  !*** ./src/js/components/phone-mask.js ***!
+  \*****************************************/
+/***/ (() => {
+
+const input = document.querySelector(".tel");
+if (input) {
+  const prefixNumber = str => {
+    if (str === "7") {
+      return "7 (";
+    }
+    if (str === "8") {
+      return "7 (";
+    }
+    if (str === "9") {
+      return "7 (9";
+    }
+    return "7 (";
+  };
+
+  // ======================================
+  input.addEventListener("input", e => {
+    const value = input.value.replace(/\D+/g, "");
+    const numberLength = 11;
+    let result = "+";
+    for (let i = 0; i < value.length && i < numberLength; i++) {
+      switch (i) {
+        case 0:
+          result += prefixNumber(value[i]);
+          continue;
+        case 4:
+          result += ") ";
+          break;
+        case 7:
+          result += "-";
+          break;
+        case 9:
+          result += "-";
+          break;
+        default:
+          break;
+      }
+      result += value[i];
+    }
+    input.value = result;
+  });
+}
 
 /***/ }),
 
