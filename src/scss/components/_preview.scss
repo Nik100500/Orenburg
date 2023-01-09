@@ -342,6 +342,7 @@
                   padding-left: 54px;
                 }
                 &-icon {
+                  padding-left: 8px;
                   background: #ED0807;
                   border-radius: 58px;
                   height: 90px;
@@ -887,10 +888,19 @@
                   .line {
                     position: absolute;
                     top: calc(50% - 1px);
-                    left: 0;
+                    left: 32px;
                     width: 120%;
                     height: 2px;
                     background: linear-gradient(120deg, rgba(12, 49, 76, 1) 50%, rgba(12, 49, 76, 0) 100%);
+                    &__zero {
+                      font-weight: 500;
+                      font-size: 32px;
+                      line-height: 25px;
+                      color: #FFFFFF;
+                      width: max-content;
+                      margin-left: -32px;
+                      margin-top: -10px;
+                    }
                   }
                   &__rf {
                     height: 50%;
@@ -908,6 +918,8 @@
                         opacity: 0.7;
                         margin-top: 12px;
                         margin-bottom: 2px;
+                        position: relative;
+                        z-index: 2;
                       }
                       &-text {
                         width: 228px;
@@ -916,6 +928,8 @@
                         font-size: 28px;
                         line-height: 25px;
                         color: #FFFFFF;
+                        position: relative;
+                        z-index: 2;
                       }
                       &-count {
                       }
@@ -926,11 +940,27 @@
                         &-width {
                           width: 96px;
                           margin-left: calc(50% - 100px);
+                          position: relative;
                           @media screen and (min-width: 950px){
                             margin-left: 100px;
                           }
                           @media screen and (min-width: 950px) {
                             width: 228px;
+                          }
+                          .rf {
+                            &-ellipse {
+                              &.red {
+                                position: absolute;
+                                bottom: -150px;
+                                left: -85px;
+                                width: 420px;
+                                height: 400px;
+                                background-position: center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                z-index: 0;
+                              }
+                            }
                           }
                         }
                       }
@@ -965,6 +995,8 @@
                         line-height: 25px;
                         color: #FFFFFF;
                         opacity: 0.7;
+                        z-index: 2;
+                        position: relative;
                       }
                       &-text {
                         width: 228px;
@@ -974,8 +1006,11 @@
                         line-height: 25px;
                         color: #FFFFFF;
                         margin-bottom: 12px;
+                        z-index: 2;
+                        position: relative;
                       }
                       &-count {
+                        z-index: 2;
                       }
                       &-container {
                         width: 100%;
@@ -988,16 +1023,33 @@
                           width: 96px;
                           margin-right: calc(50% - 100px);
                           margin-left: 0;
+                          position: relative;
                           @media screen and (min-width: 950px) {
                             width: 228px;
                             margin-right: 0;
                             margin-left: 180px;
+                          }
+                          .oez {
+                            &-ellipse {
+                              &.green {
+                                position: absolute;
+                                top: -150px;
+                                left: -90px;
+                                width: 400px;
+                                height: 500px;
+                                background-position: center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                z-index: 0;
+                              }
+                            }
                           }
                         }
                       }
                       &-graph {
                         width: 100%;
                         max-width: 96px;
+                        z-index: 2;
                         @media screen and (min-width: 950px) {
                           max-width: 228px;
                         }
@@ -1192,6 +1244,9 @@
               flex-direction: row;
               margin-bottom: 160px;
               margin-top: 0px;
+            }
+            @media screen and (min-width: 1280px) {
+              margin-top: 166px;
             }
           }
           &__title {
@@ -1456,27 +1511,27 @@
 
 .plane-1 {
   opacity: 0;
-  animation: animate-plane-1 18s linear forwards;
+  animation: animate-plane-1 18s linear infinite;
   animation-delay: 9s;
 }
 .plane-2 {
   opacity: 0;
-  animation: animate-plane-2 8s linear forwards;
+  animation: animate-plane-2 8s linear infinite;
   animation-delay: 9s;
 }
 .plane-3 {
   opacity: 0;
-  animation: animate-plane-3 8s linear forwards;
+  animation: animate-plane-3 8s linear infinite;
   animation-delay: 9s;
 }
 .plane-4 {
   opacity: 0;
-  animation: animate-plane-4 10s linear forwards;
+  animation: animate-plane-4 10s linear infinite;
   animation-delay: 9s;
 }
 .plane-5 {
   opacity: 0;
-  animation: animate-plane-5 12s linear forwards;
+  animation: animate-plane-5 12s linear infinite;
   animation-delay: 9s;
 }
 
@@ -1649,3 +1704,49 @@
   animation-delay: 10s;
 }
 
+@keyframes animation-car-translate-bottom-right {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  20% {
+    transform: translate(-60px, -60px);
+  }
+  70% {
+    transform: translate(-230px, -150px);
+  }
+  100% {
+    transform: translate(-230px, -260px);
+  }
+}
+
+@keyframes animation-car-rotate-bottom-right {
+  0% {
+    rotate: 0deg;
+  }
+  20% {
+    rotate: -20deg;
+  }
+  65% {
+    rotate: -20deg;
+  }
+  70% {
+    rotate: 40deg;
+  }
+  100% {
+    rotate: 40deg;
+  }
+}
+
+.car-bottom-right {
+  animation: animation-car-translate-bottom-right 5s linear forwards;
+  animation-delay: 10s;
+  .car {
+    transform-box: fill-box;
+    animation: animation-car-rotate-bottom-right 5s linear forwards;
+    animation-delay: 10s;
+    // rotate: 0deg;
+  }
+  // transform: translate(-2%, -3%);
+  // animation: animation-car-bottom-right 5s linear forwards;
+  // animation-delay: 10s;
+}
