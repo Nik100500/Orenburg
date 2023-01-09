@@ -8,7 +8,7 @@ for (i = 0; i < sh.length; i++) {
       sh[j].nextElementSibling.setAttribute("aria-hidden", true)
       // document.body.classList.remove("overflow")
     }
-    document.getElementsByTagName('html')[0].classList.remove("overflow")
+    // document.getElementsByTagName('html')[0].classList.remove("overflow")
 
     var sheet = this.nextElementSibling;
     const sheetContents = sheet.querySelector(".contents")
